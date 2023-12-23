@@ -1,0 +1,33 @@
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+DEBUG:root:This message should go to the log file
+INFO:root:So should this
+WARNING:root:And this, too
+ERROR:root:And non-ASCII stuff, too, like Øresund and Malmö
+DEBUG:simple_example:debug message
+INFO:simple_example:info message
+WARNING:simple_example:warn message
+ERROR:simple_example:error message
+CRITICAL:simple_example:critical message
+DEBUG:__main__:debug message
+INFO:__main__:info message
+WARNING:__main__:warn message
+ERROR:__main__:error message
+CRITICAL:__main__:critical message
+DEBUG:__main__:debug message
+INFO:__main__:info message
+WARNING:__main__:warn message
+ERROR:__main__:error message
+CRITICAL:__main__:critical message
+DEBUG:__main__:debug message
+INFO:__main__:info message
+WARNING:__main__:warn message
+ERROR:__main__:error message
+CRITICAL:__main__:critical message
+DEBUG:__main__:debug message
+INFO:__main__:info message
+WARNING:__main__:warn message
+ERROR:__main__:error message
+CRITICAL:__main__:critical message

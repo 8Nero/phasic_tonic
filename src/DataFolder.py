@@ -4,17 +4,17 @@ import numpy as np
 class DataFolder:
     def __init__(self, input_dir: str):
         """
-        Initialize the Dataset object.
+        Initialize a DataFolder instance.
 
         Args:
-            input_dir (str): The directory containing REM files in npz format.
+            input_dir (str): The directory containing REM recordings in .npz format.
         """
         self.input_dir = input_dir
         self.paths = list(Path(input_dir).rglob('*.npz'))
 
     def load(self, index: int):
         """
-        Load data from the specified file.
+        Load data in .npz format from the specified file.
 
         Returns:
             list: List of Numpy arrays.
@@ -25,9 +25,9 @@ class DataFolder:
 
         return data
 
-    def get_name(self, index: int):
+    def get_metadata(self, index: int):
         """
-        Get metadata from the file name.
+        Extract metadata from the file name.
         """
 
         filename = self.paths[index].stem
@@ -45,7 +45,7 @@ class DataFolder:
         Returns:
             dict: Dictionary containing metadata (dict) and loaded data (np.ndarray).
         """
-        data_dict = self.get_name(index)
+        data_dict = self.get_metadata(index)
         data = {"data" : self.load(index)}
         data["metadata"] = data_dict
         return data
@@ -54,5 +54,4 @@ class DataFolder:
         return len(self.paths)
     
     def __str__(self):
-        num_files = len(self.paths)
-        return f"DataFolder in '{self.input_dir}', contains {num_files} files."
+        return f"DataFolder in '{self.input_dir}', contains {len(self.paths)} files."

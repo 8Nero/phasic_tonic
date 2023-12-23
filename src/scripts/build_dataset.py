@@ -1,43 +1,58 @@
 import re
+from pathlib import Path
 import numpy as np
 import pandas as pd
 import scipy.io
-from pathlib import Path
-import yaml
 
-OVERVIEW_PATH = '/home/miranjo/common-datasets/LFP_CBD/overview.csv'
-OUTPUT_FILE = '/home/miranjo/common-datasets/LFP_CBD/rem/'
+DATASET_DIR     = "/home/miranjo/common-datasets/LFP_CBD/"
+OUTPUT_DIR      = '/home/miranjo/common-datasets/LFP_CBD/rem/'
+POSTTRIAL_EXPR  = "*posttrial*.mat"
+OVERVIEW_PATH   = '/home/miranjo/common-datasets/LFP_CBD/overview.csv'
 
-def load_config(config_path):
-    """Load configuration settings from a YAML file."""
-    with open(config_path, 'r') as f:
-        cfg = yaml.safe_load(f)
-    return cfg
+"""
+This script is based on the Genzel Lab's CBD dataset.
+The expected data structure:
+    -rat3
+        -SD1
+        -SD2
+        ...
+    -rat4
+        -SD1
+        -SD2
+        ...
+    ...
+    overview.csv
+
+For each study day there are 5 post-trials, and a pre-sleep trial directories. In each post-sleep 
+directory there is a LFP file for the hippocampus and states.mat file which contains timestamps for 
+REM states. An overview document (.csv format) of study days is used for extracting the metadata 
+(condition, treatment).
+"""
+
 
 def find_matching_files(input_directory, expression):
     """
     Find all files in the given directory that match the specified expression.
 
     Args:
-        input_directory (str or Path): The directory to search for matching files.
+        input_directory (Path): The directory to search for matching files.
         expression (str): The pattern to match against file names.
 
     Returns:
         List of Path objects that match the pattern.
     """
-    input_directory = Path.home() / Path(input_directory)
     matching_files = list(input_directory.rglob(expression))
     return matching_files
 
-def find_HPC_files(posttrial_states):
+def map_HPC_files(posttrial_states):
     """
-    Find corresponding HPC files for a list of posttrial state file paths.
+    Map the corresponding HPC files to a list of posttrial state file paths.
 
     Args:
         posttrial_states (list of pathlib.Path): List of file paths to posttrial states.
 
     Returns:
-        dict: A dictionary mapping posttrial state file paths to corresponding HPC file paths.
+        dict: A dictionary mapping posttrial state file paths to the corresponding HPC file paths.
     """
     files_connected = {}
 
@@ -59,14 +74,14 @@ def rem_extract(lfp, sleep_trans):
     Returns:
         list of numpy.ndarray: A list of NumPy arrays, each representing a segment of REM sleep data.
     """
-    REM = []
+    rems = []
 
     for rem in sleep_trans:
         t1 = int(rem[0])
         t2 = int(rem[1])
-        REM.append(lfp[t1:t2])
+        rems.append(lfp[t1:t2])
 
-    return REM
+    return rems
 
 def extract_REM(HPC_files):
     """
@@ -76,24 +91,27 @@ def extract_REM(HPC_files):
         HPC_files (dictionary of pathlib.Path): A dictionary where the keys are Paths to states
             and values are Paths to the LFP recordings.
     """
+    #extracting the treatment value from the Study days overview document
+    overview_df = pd.read_csv(OVERVIEW_PATH, comment='#')
+
     for state_file in HPC_files.keys():
         HPC_file = HPC_files[state_file]
-        name = create_name(str(HPC_file))
+        name = create_name(str(HPC_file), overview_df)
         lfp = scipy.io.loadmat(HPC_file)['HPC']
         lfp = np.transpose(lfp)
-        sleep = scipy.io.loadmat(str(state_file))
+        sleep = scipy.io.loadmat(state_file)
         transitions = sleep['transitions']
 
         if np.any(transitions[:, 0] == 5):
             sleep_transitions = transitions[transitions[:, 0] == 5][:, -2:]
             lfp = lfp[0]
             sleep_trans = np.floor(sleep_transitions * 2500)
-            REM_file = OUTPUT_FILE + name
+            REM_file = OUTPUT_DIR + name
             print(f'Saving REM data to: {REM_file}')
             REM = rem_extract(lfp, sleep_trans)
             np.savez(REM_file, *REM)
 
-def create_name(file):
+def create_name(file, overview_df):
     #pattern for matching the information on the rat
     pattern = r'Rat(\d+)_.*_SD(\d+)_([A-Z]+).*posttrial(\d+)'
 
@@ -109,14 +127,10 @@ def create_name(file):
     else:
         condition_full = 'ObjectSpace'
 
-    #extracting the treatment value from the Study days overview document
-    # Read the Excel file
-    df = pd.read_csv(OVERVIEW_PATH, comment='#')
-
-    mask = (df['Rat no.'] == rat_num) & (df['Study Day'] == sd_num) & (df['Condition'] == condition)
+    mask = (overview_df['Rat no.'] == rat_num) & (overview_df['Study Day'] == sd_num) & (overview_df['Condition'] == condition)
 
     # use boolean indexing to extract the Treatment value
-    treatment_value = df.loc[mask, 'Treatment'].values[0]
+    treatment_value = overview_df.loc[mask, 'Treatment'].values[0]
     
     # Extract the value from the "treatment" column of the matching row
     if treatment_value == 0:
@@ -126,4 +140,16 @@ def create_name(file):
        
     title_name = 'Rat' + str(rat_num) +'_' + 'SD' + str(sd_num) + '_' + condition +'_' + condition_full + '_' + treatment + '_' + 'posttrial' + str(posttrial_num)
     #RatID,StudyDay,condition,conditionfull, treatment, treatmentfull, posstrial number
+
     return title_name
+
+if __name__ == '__main__':
+
+    # Search recursively for *posttrial*.mat files in the given dataset directory
+    posttrial_states = find_matching_files(input_directory=Path(DATASET_DIR), expression=POSTTRIAL_EXPR)
+    
+    # Map the posttrial state files with corresponding HPC files
+    HPC_files = map_HPC_files(posttrial_states)
+    
+    # Extract and save REM states
+    extract_REM(HPC_files)

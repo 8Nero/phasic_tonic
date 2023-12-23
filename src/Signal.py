@@ -9,7 +9,7 @@ class Signal:
     Args:
         array (np.ndarray): The raw signal data.
         sampling_rate (int): The sampling rate in Hz.
-    """
+    """ 
 
     def __init__(self, array: np.ndarray, sampling_rate: int):
         """
@@ -107,3 +107,16 @@ class Signal:
         sampling_rate_info = f"Sampling rate: {self.sampling_rate} Hz\n"
         array_str = str(self.raw_signal)  # Get the string representation of the NumPy array
         return sampling_rate_info + array_str
+
+    def __add__(self, other):
+        """
+        Concatenate the raw signals.
+        """
+        if not isinstance(other, Signal):
+            raise ValueError("Can only add two Signal objects")
+        
+        if (self.sampling_rate != other.sampling_rate):
+            raise ValueError("Sampling rates do not match")
+
+        return Signal(np.concatenate((self.raw_signal, other.raw_signal)), self.sampling_rate)
+    
