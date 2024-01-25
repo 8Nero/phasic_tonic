@@ -1,6 +1,6 @@
 ---
 # Filter settings
-fs: 2500
+fs: 1000
 f_theta_lower: 4
 f_theta_upper: 12
 f_lowpass: 25

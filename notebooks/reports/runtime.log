@@ -1,0 +1,148 @@
+[20:23:49] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(334, 36710)]
+[20:23:49] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:49] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:49] [DEBUG   ] [2721574653:            <module>] : tonic shape: (36376,)
+[20:23:49] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_1
+[20:23:49] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:49] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:49] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (93000,), 2500 Hz.
+[20:23:49] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:49] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:49] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:49] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:49] [INFO    ] [NeuralSignal:             segment] : Found 261 tonic cycles in the signal
+[20:23:49] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:49] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(326, 92843)]
+[20:23:49] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:49] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:49] [DEBUG   ] [2721574653:            <module>] : tonic shape: (92517,)
+[20:23:49] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_2
+[20:23:49] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:49] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:49] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (119000,), 2500 Hz.
+[20:23:49] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:49] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:49] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 349 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(534, 118837)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (118303,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_3
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (81000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 232 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(308, 80834)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (80526,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_4
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (225000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 636 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(395, 224596)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (224201,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_5
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (33000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 88 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(234, 32957)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (32723,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_6
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (140000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 392 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(321, 139977)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (139656,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_7
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (102000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 275 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(174, 101378)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (101204,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_8
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (29000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 86 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(201, 28684)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat3_SD8_HC_0_posttrial5
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (28483,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat3_SD8_HC_0_posttrial5_tonic_9
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 101
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (12000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : Found 34 tonic cycles in the signal
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:50] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(428, 11618)]
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:50] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat5_SD1_OR_1_posttrial3
+[20:23:50] [DEBUG   ] [2721574653:            <module>] : tonic shape: (11190,)
+[20:23:50] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat5_SD1_OR_1_posttrial3_tonic_0
+[20:23:50] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:50] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[20:23:50] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (56000,), 2500 Hz.
+[20:23:50] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[20:23:50] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[20:23:50] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[20:23:51] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[20:23:51] [INFO    ] [NeuralSignal:             segment] : Found 149 tonic cycles in the signal
+[20:23:51] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[20:23:51] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(358, 55975)]
+[20:23:51] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[20:23:51] [INFO    ] [NeuralSignal:        set_metadata] : Metadata: Rat5_SD1_OR_1_posttrial3
+[20:23:51] [DEBUG   ] [2721574653:            <module>] : tonic shape: (55617,)
+[20:23:51] [INFO    ] [2721574653:            <module>] : Saving to: /home/miranjo/phasic_tonic/data/interim/Rat5_SD1_OR_1_posttrial3_tonic_1
+[20:23:51] [INFO    ] [2721574653:            <module>] : No phasic episodes detected.
+[20:23:51] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 102
