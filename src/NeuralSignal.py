@@ -212,7 +212,7 @@ class NeuralSignal(BaseSignal):
         # Extract the timestamps and burst detection results
         df = df[["sample_last_trough", "sample_next_trough", "is_burst"]]
         phasic_df = df[df["is_burst"] == True]
-        tonic_df = df[df["is_burst"] == False]
+        tonic_df = df[df["is_burst"] == False]  
 
         logger.info("Found {0} phasic cycles in the signal".format(len(phasic_df)))
         logger.info("Found {0} tonic cycles in the signal".format(len(tonic_df)))
