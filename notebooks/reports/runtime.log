@@ -1,556 +1,979 @@
-[11:44:29] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(232, 392396)]
-[11:44:29] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:29] [DEBUG   ] [2670194244:            <module>] : tonic shape: (392164,)
-[11:44:29] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:29] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (77500,), 2500 Hz.
-[11:44:29] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:29] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:29] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:29] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:29] [INFO    ] [NeuralSignal:             segment] : Found 253 tonic cycles in the signal
-[11:44:29] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:29] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(327, 77410)]
-[11:44:29] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:29] [DEBUG   ] [2670194244:            <module>] : tonic shape: (77083,)
-[11:44:29] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:29] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (185000,), 2500 Hz.
-[11:44:29] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:29] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 556 tonic cycles in the signal
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(136, 184977)]
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [DEBUG   ] [2670194244:            <module>] : tonic shape: (184841,)
-[11:44:30] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:30] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (180000,), 2500 Hz.
-[11:44:30] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:30] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 534 tonic cycles in the signal
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(465, 179936)]
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [DEBUG   ] [2670194244:            <module>] : tonic shape: (179471,)
-[11:44:30] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:30] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (87500,), 2500 Hz.
-[11:44:30] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:30] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 268 tonic cycles in the signal
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(132, 87433)]
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [DEBUG   ] [2670194244:            <module>] : tonic shape: (87301,)
-[11:44:30] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:30] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (117500,), 2500 Hz.
-[11:44:30] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:30] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 369 tonic cycles in the signal
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(364, 117413)]
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [DEBUG   ] [2670194244:            <module>] : tonic shape: (117049,)
-[11:44:30] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:30] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (142500,), 2500 Hz.
-[11:44:30] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:30] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : Found 434 tonic cycles in the signal
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:30] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(219, 142335)]
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:30] [DEBUG   ] [2670194244:            <module>] : tonic shape: (142116,)
-[11:44:30] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:30] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (180000,), 2500 Hz.
-[11:44:30] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:30] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:30] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 553 tonic cycles in the signal
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(350, 179918)]
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [DEBUG   ] [2670194244:            <module>] : tonic shape: (179568,)
-[11:44:31] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:31] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (290000,), 2500 Hz.
-[11:44:31] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:31] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 899 tonic cycles in the signal
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(232201, 234615)]
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(334, 232201), (234615, 289992)]
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [DEBUG   ] [2670194244:            <module>] : tonic shape: (287244,)
-[11:44:31] [DEBUG   ] [2670194244:            <module>] : signal shape: (2414,)
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 186
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 187
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 188
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 189
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 190
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 191
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 192
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 193
-[11:44:31] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:31] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (70000,), 2500 Hz.
-[11:44:31] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:31] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 215 tonic cycles in the signal
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(313, 69840)]
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [DEBUG   ] [2670194244:            <module>] : tonic shape: (69527,)
-[11:44:31] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:31] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (242500,), 2500 Hz.
-[11:44:31] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:31] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : Found 731 tonic cycles in the signal
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(40642, 43435)]
-[11:44:31] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(406, 40642), (43435, 242469)]
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:31] [DEBUG   ] [2670194244:            <module>] : tonic shape: (239270,)
-[11:44:31] [DEBUG   ] [2670194244:            <module>] : signal shape: (2793,)
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 194
-[11:44:31] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 195
-[11:44:31] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:31] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (207500,), 2500 Hz.
-[11:44:31] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:31] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:31] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 626 tonic cycles in the signal
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(391, 207499)]
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : tonic shape: (207108,)
-[11:44:32] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:32] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (87500,), 2500 Hz.
-[11:44:32] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:32] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 265 tonic cycles in the signal
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(432, 87451)]
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : tonic shape: (87019,)
-[11:44:32] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:32] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (355000,), 2500 Hz.
-[11:44:32] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:32] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 1030 tonic cycles in the signal
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(138568, 141224)]
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(397, 138568), (141224, 354802)]
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : tonic shape: (351749,)
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : signal shape: (2656,)
-[11:44:32] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:32] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (127500,), 2500 Hz.
-[11:44:32] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:32] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 376 tonic cycles in the signal
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(54287, 57391)]
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(481, 54287), (57391, 127362)]
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : tonic shape: (123777,)
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : signal shape: (3104,)
-[11:44:32] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:32] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (130000,), 2500 Hz.
-[11:44:32] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:32] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : Found 401 tonic cycles in the signal
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:32] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(333, 129952)]
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:32] [DEBUG   ] [2670194244:            <module>] : tonic shape: (129619,)
-[11:44:32] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:32] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (197500,), 2500 Hz.
-[11:44:32] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:32] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:32] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 571 tonic cycles in the signal
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(99, 197447)]
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [DEBUG   ] [2670194244:            <module>] : tonic shape: (197348,)
-[11:44:33] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:33] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (250000,), 2500 Hz.
-[11:44:33] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:33] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 720 tonic cycles in the signal
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(263, 249999)]
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [DEBUG   ] [2670194244:            <module>] : tonic shape: (249736,)
-[11:44:33] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:33] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (87500,), 2500 Hz.
-[11:44:33] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:33] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 239 tonic cycles in the signal
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(161, 87487)]
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [DEBUG   ] [2670194244:            <module>] : tonic shape: (87326,)
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 196
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 197
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 198
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 199
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 200
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 201
-[11:44:33] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 202
-[11:44:33] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:33] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (297500,), 2500 Hz.
-[11:44:33] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:33] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : Found 927 tonic cycles in the signal
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(196356, 198281)]
-[11:44:33] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(456, 196356), (198281, 297450)]
-[11:44:33] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:33] [DEBUG   ] [2670194244:            <module>] : tonic shape: (295069,)
-[11:44:34] [DEBUG   ] [2670194244:            <module>] : signal shape: (1925,)
-[11:44:34] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:34] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (55000,), 2500 Hz.
-[11:44:34] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:34] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 175 tonic cycles in the signal
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(228, 54890)]
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [DEBUG   ] [2670194244:            <module>] : tonic shape: (54662,)
-[11:44:34] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:34] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (102500,), 2500 Hz.
-[11:44:34] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:34] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 328 tonic cycles in the signal
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(519, 102323)]
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [DEBUG   ] [2670194244:            <module>] : tonic shape: (101804,)
-[11:44:34] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:34] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (35000,), 2500 Hz.
-[11:44:34] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:34] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 112 tonic cycles in the signal
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(208, 34903)]
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [DEBUG   ] [2670194244:            <module>] : tonic shape: (34695,)
-[11:44:34] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:34] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (295000,), 2500 Hz.
-[11:44:34] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:34] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 915 tonic cycles in the signal
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(209, 294969)]
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [DEBUG   ] [2670194244:            <module>] : tonic shape: (294760,)
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 203
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 204
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 205
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 206
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 207
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 208
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 209
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 210
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 211
-[11:44:34] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:34] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (195000,), 2500 Hz.
-[11:44:34] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:34] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : Found 578 tonic cycles in the signal
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:34] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(209, 194890)]
-[11:44:34] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:34] [DEBUG   ] [2670194244:            <module>] : tonic shape: (194681,)
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 212
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 213
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 214
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 215
-[11:44:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 216
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 217
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 218
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 219
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 220
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 221
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 222
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 223
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 224
-[11:44:35] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 225
-[11:44:35] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:35] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (67500,), 2500 Hz.
-[11:44:35] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:35] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : Found 206 tonic cycles in the signal
-[11:44:35] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:35] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(168, 67329)]
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:35] [DEBUG   ] [2670194244:            <module>] : tonic shape: (67161,)
-[11:44:35] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:35] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (367500,), 2500 Hz.
-[11:44:35] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:35] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : Found 29 phasic cycles in the signal
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : Found 1048 tonic cycles in the signal
-[11:44:35] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(215024, 217987), (342412, 348194)]
-[11:44:35] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(361, 215024), (217987, 342412), (345240, 345865), (348194, 367479)]
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:35] [DEBUG   ] [2670194244:            <module>] : tonic shape: (358998,)
-[11:44:35] [DEBUG   ] [2670194244:            <module>] : signal shape: (8745,)
-[11:44:35] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:35] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (220000,), 2500 Hz.
-[11:44:35] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:35] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : Found 17 phasic cycles in the signal
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : Found 666 tonic cycles in the signal
-[11:44:35] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(201614, 204247), (216868, 219160)]
-[11:44:35] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(346, 201614), (204247, 216868), (219160, 219843)]
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:35] [DEBUG   ] [2670194244:            <module>] : tonic shape: (214572,)
-[11:44:35] [DEBUG   ] [2670194244:            <module>] : signal shape: (4925,)
-[11:44:35] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:35] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (130000,), 2500 Hz.
-[11:44:35] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:35] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:35] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : Found 353 tonic cycles in the signal
-[11:44:36] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(34568, 37672)]
-[11:44:36] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(175, 34568), (37672, 129852)]
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:36] [DEBUG   ] [2670194244:            <module>] : tonic shape: (126573,)
-[11:44:36] [DEBUG   ] [2670194244:            <module>] : signal shape: (3104,)
-[11:44:36] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:36] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (217500,), 2500 Hz.
-[11:44:36] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:36] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : Found 669 tonic cycles in the signal
-[11:44:36] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:36] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(109, 217264)]
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:36] [DEBUG   ] [2670194244:            <module>] : tonic shape: (217155,)
-[11:44:36] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:36] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (102500,), 2500 Hz.
-[11:44:36] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:36] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : Found 278 tonic cycles in the signal
-[11:44:36] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(98511, 101050)]
-[11:44:36] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(419, 98511), (101050, 102258)]
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:36] [DEBUG   ] [2670194244:            <module>] : tonic shape: (99300,)
-[11:44:36] [DEBUG   ] [2670194244:            <module>] : signal shape: (2539,)
-[11:44:36] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:36] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (440000,), 2500 Hz.
-[11:44:36] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:36] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:36] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 47 phasic cycles in the signal
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 1270 tonic cycles in the signal
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(146066, 148509), (257554, 259872), (312393, 316040), (322395, 325212), (386906, 389852)]
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(242, 146066), (148509, 257554), (259872, 312393), (316040, 322395), (325212, 386906), (389852, 439760)]
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : tonic shape: (425347,)
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : signal shape: (14171,)
-[11:44:37] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:37] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (265000,), 2500 Hz.
-[11:44:37] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:37] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 18 phasic cycles in the signal
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 777 tonic cycles in the signal
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(72454, 75138), (215329, 217887)]
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(115, 72454), (75138, 215329), (217887, 264744)]
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : tonic shape: (259387,)
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : signal shape: (5242,)
-[11:44:37] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 226
-[11:44:37] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 227
-[11:44:37] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 228
-[11:44:37] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 229
-[11:44:37] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 230
-[11:44:37] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 231
-[11:44:37] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:37] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (55000,), 2500 Hz.
-[11:44:37] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:37] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 171 tonic cycles in the signal
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(381, 54860)]
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : tonic shape: (54479,)
-[11:44:37] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:37] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (152500,), 2500 Hz.
-[11:44:37] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:37] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 486 tonic cycles in the signal
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(147182, 149898)]
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(196, 147182), (149898, 152352)]
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : tonic shape: (149440,)
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : signal shape: (2716,)
-[11:44:37] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:37] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (210000,), 2500 Hz.
-[11:44:37] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:37] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : Found 643 tonic cycles in the signal
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:37] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(372, 209999)]
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:37] [DEBUG   ] [2670194244:            <module>] : tonic shape: (209627,)
-[11:44:37] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:37] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (175000,), 2500 Hz.
-[11:44:37] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:37] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:37] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 548 tonic cycles in the signal
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(180, 174704)]
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [DEBUG   ] [2670194244:            <module>] : tonic shape: (174524,)
-[11:44:38] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:38] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (155000,), 2500 Hz.
-[11:44:38] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:38] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 482 tonic cycles in the signal
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(218, 154902)]
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [DEBUG   ] [2670194244:            <module>] : tonic shape: (154684,)
-[11:44:38] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:38] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (70000,), 2500 Hz.
-[11:44:38] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:38] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 218 tonic cycles in the signal
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(337, 69777)]
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [DEBUG   ] [2670194244:            <module>] : tonic shape: (69440,)
-[11:44:38] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:38] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (282500,), 2500 Hz.
-[11:44:38] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:38] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 912 tonic cycles in the signal
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(169, 282375)]
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [DEBUG   ] [2670194244:            <module>] : tonic shape: (282206,)
-[11:44:38] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 232
-[11:44:38] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 233
-[11:44:38] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:38] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (30000,), 2500 Hz.
-[11:44:38] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:38] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : Found 89 tonic cycles in the signal
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:38] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(577, 29957)]
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:38] [DEBUG   ] [2670194244:            <module>] : tonic shape: (29380,)
-[11:44:38] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:44:38] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (140000,), 2500 Hz.
-[11:44:38] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:44:38] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:44:38] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:44:39] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:44:39] [INFO    ] [NeuralSignal:             segment] : Found 436 tonic cycles in the signal
-[11:44:39] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:44:39] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(350, 139811)]
-[11:44:39] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:44:39] [DEBUG   ] [2670194244:            <module>] : tonic shape: (139461,)
-[11:44:39] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 234
-[11:47:23] [INFO    ] [runtime_logger:        logger_setup] : Runtime log started.
-[11:47:23] [INFO    ] [runtime_logger:        logger_setup] : Logging to file runtime.log
-[11:47:25] [INFO    ] [DataFolder:            __init__] : Initializing a DataFolder.
-[11:47:25] [INFO    ] [DataFolder:            __init__] : DataFolder in /home/miranjo/phasic_tonic/data/processed contains 234 files.
-[11:47:27] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 3
-[11:47:56] [INFO    ] [runtime_logger:        logger_setup] : Runtime log started.
-[11:47:56] [INFO    ] [runtime_logger:        logger_setup] : Logging to file runtime.log
-[11:47:57] [INFO    ] [DataFolder:            __init__] : Initializing a DataFolder.
-[11:47:57] [INFO    ] [DataFolder:            __init__] : DataFolder in /home/miranjo/phasic_tonic/data/processed/CBD contains 0 files.
-[11:47:59] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 3
-[11:48:39] [INFO    ] [runtime_logger:        logger_setup] : Runtime log started.
-[11:48:39] [INFO    ] [runtime_logger:        logger_setup] : Logging to file runtime.log
-[11:48:41] [INFO    ] [DataFolder:            __init__] : Initializing a DataFolder.
-[11:48:41] [INFO    ] [DataFolder:            __init__] : DataFolder in /home/miranjo/phasic_tonic/data/processed/combined contains 234 files.
-[11:48:46] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 3
-[11:49:41] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 0
-[11:50:05] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 1
-[11:50:42] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 3
-[11:50:42] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:50:42] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (3000,), 2500 Hz.
-[11:50:42] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:50:42] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:50:44] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:50:44] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
-[11:50:44] [INFO    ] [NeuralSignal:             segment] : Found 8 tonic cycles in the signal
-[11:50:44] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
-[11:50:44] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(346, 2925)]
-[11:50:44] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:51:40] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 2
-[11:51:53] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 4
-[11:51:53] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
-[11:51:53] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (96000,), 2500 Hz.
-[11:51:53] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
-[11:51:53] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
-[11:51:56] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
-[11:51:56] [INFO    ] [NeuralSignal:             segment] : Found 11 phasic cycles in the signal
-[11:51:56] [INFO    ] [NeuralSignal:             segment] : Found 310 tonic cycles in the signal
-[11:51:56] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(58073, 60644)]
-[11:51:56] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(102, 58073), (60644, 95968)]
-[11:51:56] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
-[11:52:02] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 4
+[22:14:00] [INFO    ] [NeuralSignal:             segment] : Found 223 tonic cycles in the signal
+[22:14:00] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:00] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(187, 30982)]
+[22:14:00] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:00] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 1
+[22:14:00] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:00] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (140000,), 1000 Hz.
+[22:14:00] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:00] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:00] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : Found 1037 tonic cycles in the signal
+[22:14:01] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:01] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(67, 139985)]
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:01] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:01] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (56000,), 1000 Hz.
+[22:14:01] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:01] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : Found 387 tonic cycles in the signal
+[22:14:01] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(39690, 40730)]
+[22:14:01] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(165, 39690), (40730, 55932)]
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:01] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:01] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (184000,), 1000 Hz.
+[22:14:01] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:01] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : Found 1341 tonic cycles in the signal
+[22:14:01] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:01] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(181, 183869)]
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:01] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 2
+[22:14:01] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:01] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (137000,), 1000 Hz.
+[22:14:01] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:01] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:01] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : Found 1001 tonic cycles in the signal
+[22:14:02] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:02] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(138, 136982)]
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:02] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:02] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (135000,), 1000 Hz.
+[22:14:02] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:02] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : Found 977 tonic cycles in the signal
+[22:14:02] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(74966, 75980)]
+[22:14:02] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(172, 74966), (75980, 134891)]
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:02] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 3
+[22:14:02] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:02] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (141000,), 1000 Hz.
+[22:14:02] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:02] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : Found 905 tonic cycles in the signal
+[22:14:02] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:02] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(97, 140847)]
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:02] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:02] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (136000,), 1000 Hz.
+[22:14:02] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:02] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:02] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : Found 887 tonic cycles in the signal
+[22:14:03] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:03] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(184, 135920)]
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:03] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:03] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (195000,), 1000 Hz.
+[22:14:03] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:03] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : Found 1249 tonic cycles in the signal
+[22:14:03] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:03] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(159, 194941)]
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:03] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:03] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (54000,), 1000 Hz.
+[22:14:03] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:03] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : Found 8 phasic cycles in the signal
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : Found 337 tonic cycles in the signal
+[22:14:03] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(31006, 32349)]
+[22:14:03] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(150, 31006), (32349, 53862)]
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:03] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:03] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (146000,), 1000 Hz.
+[22:14:03] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:03] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:03] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 970 tonic cycles in the signal
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(170, 145918)]
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:04] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (26000,), 1000 Hz.
+[22:14:04] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:04] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 177 tonic cycles in the signal
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(157, 25846)]
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:04] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (53000,), 1000 Hz.
+[22:14:04] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:04] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 354 tonic cycles in the signal
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(164, 52933)]
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:04] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (163000,), 1000 Hz.
+[22:14:04] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:04] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 1090 tonic cycles in the signal
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(289, 162953)]
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:04] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (43000,), 1000 Hz.
+[22:14:04] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:04] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : Found 287 tonic cycles in the signal
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:04] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(86, 42912)]
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:04] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 4
+[22:14:04] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:04] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (169000,), 1000 Hz.
+[22:14:04] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:04] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:04] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : Found 1112 tonic cycles in the signal
+[22:14:05] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:05] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(108, 168979)]
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:05] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:05] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (218000,), 1000 Hz.
+[22:14:05] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:05] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : Found 1436 tonic cycles in the signal
+[22:14:05] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:05] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(62, 217901)]
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:05] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:05] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (166000,), 1000 Hz.
+[22:14:05] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:05] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : Found 1113 tonic cycles in the signal
+[22:14:05] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:05] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(87, 165859)]
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:05] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:05] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (54000,), 1000 Hz.
+[22:14:05] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:05] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:05] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 362 tonic cycles in the signal
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(50, 53902)]
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:06] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (37000,), 1000 Hz.
+[22:14:06] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:06] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 238 tonic cycles in the signal
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(136, 36897)]
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:06] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (179000,), 1000 Hz.
+[22:14:06] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:06] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 1215 tonic cycles in the signal
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(212, 178981)]
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:06] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (174000,), 1000 Hz.
+[22:14:06] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:06] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 1168 tonic cycles in the signal
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(151, 173985)]
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 5
+[22:14:06] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:06] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (3000,), 1000 Hz.
+[22:14:06] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:06] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : Found 20 tonic cycles in the signal
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:06] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(218, 2921)]
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:06] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:06] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (72000,), 1000 Hz.
+[22:14:06] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:06] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:06] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 534 tonic cycles in the signal
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(41765, 42747)]
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(91, 41765), (42747, 71983)]
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:07] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (63000,), 1000 Hz.
+[22:14:07] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:07] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 25 phasic cycles in the signal
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 447 tonic cycles in the signal
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(8341, 9268), (48194, 51252)]
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(127, 8341), (9268, 48194), (49132, 50434), (51252, 62949)]
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:07] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (84000,), 1000 Hz.
+[22:14:07] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:07] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 34 phasic cycles in the signal
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 616 tonic cycles in the signal
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(49172, 52067), (75224, 76020)]
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(43, 49172), (52067, 75224), (76020, 83935)]
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 6
+[22:14:07] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:07] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (59000,), 1000 Hz.
+[22:14:07] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:07] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 385 tonic cycles in the signal
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(158, 58977)]
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:07] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (61000,), 1000 Hz.
+[22:14:07] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:07] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 411 tonic cycles in the signal
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(249, 60910)]
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:07] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (63000,), 1000 Hz.
+[22:14:07] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:07] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : Found 429 tonic cycles in the signal
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:07] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(87, 62926)]
+[22:14:07] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:07] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:07] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (142000,), 1000 Hz.
+[22:14:07] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:07] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 920 tonic cycles in the signal
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(221, 141997)]
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:08] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (84000,), 1000 Hz.
+[22:14:08] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:08] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 10 phasic cycles in the signal
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 558 tonic cycles in the signal
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(40447, 42183)]
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(144, 40447), (42183, 83910)]
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 7
+[22:14:08] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:08] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (96000,), 1000 Hz.
+[22:14:08] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:08] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 20 phasic cycles in the signal
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 720 tonic cycles in the signal
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(34096, 35334), (58310, 59606)]
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(112, 34096), (35334, 58310), (59606, 95962)]
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 8
+[22:14:08] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:08] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (17000,), 1000 Hz.
+[22:14:08] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:08] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : Found 115 tonic cycles in the signal
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:08] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(188, 16936)]
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:08] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:08] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (139000,), 1000 Hz.
+[22:14:08] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:08] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:08] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 914 tonic cycles in the signal
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(231, 138908)]
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:09] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (117000,), 1000 Hz.
+[22:14:09] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:09] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 766 tonic cycles in the signal
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(79, 116917)]
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:09] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (112000,), 1000 Hz.
+[22:14:09] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:09] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 765 tonic cycles in the signal
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(137, 111867)]
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:09] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (96000,), 1000 Hz.
+[22:14:09] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:09] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 627 tonic cycles in the signal
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(322, 95928)]
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 9
+[22:14:09] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:09] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (40000,), 1000 Hz.
+[22:14:09] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:09] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : Found 281 tonic cycles in the signal
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(28969, 30086)]
+[22:14:09] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(116, 28969), (30086, 39939)]
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:09] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:09] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (104000,), 1000 Hz.
+[22:14:09] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:09] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:09] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 19 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 752 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(71510, 75091)]
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(130, 71510), (72727, 73911), (75091, 103818)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (52000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 386 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(193, 51939)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 10
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (24000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 189 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(123, 23974)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (72000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 20 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 521 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(34862, 36046), (60581, 61758)]
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(75, 34862), (36046, 60581), (61758, 71986)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (9000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 68 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(173, 8925)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (29000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 210 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(126, 28943)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (30000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 225 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(94, 29963)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (26000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 181 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(165, 25905)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (3000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : Found 22 tonic cycles in the signal
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:10] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(107, 2997)]
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:10] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:10] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (61000,), 1000 Hz.
+[22:14:10] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:10] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:10] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 439 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(45, 60943)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (59000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 46 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 393 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(22018, 22971), (39430, 41324), (55902, 58759)]
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(45, 22018), (22971, 39430), (41324, 55902), (58759, 58991)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (16000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 121 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(103, 15989)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (92000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 35 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 648 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(39498, 43687), (75381, 76955)]
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(202, 39498), (40815, 42539), (43687, 75381), (76955, 91977)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (39000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 283 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(49, 38839)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (15000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 113 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(189, 14926)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (16000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 116 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(38, 15851)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (45000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 337 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(43, 44937)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (14000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 102 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(81, 13980)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (19000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : Found 141 tonic cycles in the signal
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:11] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(35, 18918)]
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:11] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:11] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (75000,), 1000 Hz.
+[22:14:11] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:11] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:11] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 21 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 538 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(67834, 70144)]
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(51, 67834), (70144, 74992)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (38000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 11 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 263 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(30312, 31634)]
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(130, 30312), (31634, 37998)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (43000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 11 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 307 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(18080, 19491)]
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(124, 18080), (19491, 42989)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (25000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 190 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(39, 24965)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (65000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 490 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(32, 64939)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (4000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 29 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(66, 3967)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (26000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 193 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(124, 25990)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (23000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 174 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(103, 22937)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (58000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 30 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 399 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(30432, 35402)]
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(50, 30432), (31769, 32063), (33309, 34179), (35402, 57930)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (21000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 154 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(96, 20914)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (12000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : Found 89 tonic cycles in the signal
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:12] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(115, 11927)]
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:12] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:12] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (43000,), 1000 Hz.
+[22:14:12] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:12] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:12] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 313 tonic cycles in the signal
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(194, 42994)]
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:13] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (5000,), 1000 Hz.
+[22:14:13] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:13] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 36 tonic cycles in the signal
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(99, 4891)]
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 11
+[22:14:13] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:13] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (112000,), 1000 Hz.
+[22:14:13] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:13] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 845 tonic cycles in the signal
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(130, 111979)]
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 12
+[22:14:13] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:13] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (10000,), 1000 Hz.
+[22:14:13] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:13] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 71 tonic cycles in the signal
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(160, 9948)]
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:13] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (164000,), 1000 Hz.
+[22:14:13] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:13] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 1091 tonic cycles in the signal
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(177, 163978)]
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:13] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (84000,), 1000 Hz.
+[22:14:13] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:13] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : Found 572 tonic cycles in the signal
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:13] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(131, 83900)]
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:13] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:13] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (137000,), 1000 Hz.
+[22:14:13] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:13] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:13] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : Found 864 tonic cycles in the signal
+[22:14:14] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:14] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(124, 136988)]
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:14] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:14] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (65000,), 1000 Hz.
+[22:14:14] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:14] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : Found 447 tonic cycles in the signal
+[22:14:14] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:14] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(201, 64867)]
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:14] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:14:14] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:14] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (300000,), 2500 Hz.
+[22:14:14] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:14] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : Found 943 tonic cycles in the signal
+[22:14:14] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:14] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(289, 299756)]
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:14] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:14] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (102500,), 2500 Hz.
+[22:14:14] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:14] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:14] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : Found 307 tonic cycles in the signal
+[22:14:15] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(15864, 18249)]
+[22:14:15] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(349, 15864), (18249, 102433)]
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:15] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:15] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (417500,), 2500 Hz.
+[22:14:15] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:15] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : Found 1277 tonic cycles in the signal
+[22:14:15] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:15] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(230, 417416)]
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:15] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:15] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (312500,), 2500 Hz.
+[22:14:15] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:15] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:15] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : Found 41 phasic cycles in the signal
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : Found 918 tonic cycles in the signal
+[22:14:16] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(165607, 167691), (186951, 189202), (211485, 213821), (217236, 219867), (228734, 231133)]
+[22:14:16] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(346, 165607), (167691, 186951), (189202, 211485), (213821, 217236), (219867, 228734), (231133, 312454)]
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:16] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:16] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (55000,), 2500 Hz.
+[22:14:16] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:16] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : Found 169 tonic cycles in the signal
+[22:14:16] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:16] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(247, 54781)]
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:16] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:16] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (150000,), 2500 Hz.
+[22:14:16] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:16] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : Found 11 phasic cycles in the signal
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : Found 453 tonic cycles in the signal
+[22:14:16] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(99468, 102678)]
+[22:14:16] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(349, 99468), (102678, 149994)]
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:16] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:16] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (430000,), 2500 Hz.
+[22:14:16] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:16] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:16] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : Found 31 phasic cycles in the signal
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : Found 1266 tonic cycles in the signal
+[22:14:17] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(173111, 175793), (381163, 385127), (390533, 392641)]
+[22:14:17] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(268, 173111), (175793, 381163), (385127, 390533), (392641, 429923)]
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:17] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:17] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (212500,), 2500 Hz.
+[22:14:17] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:17] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : Found 11 phasic cycles in the signal
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : Found 643 tonic cycles in the signal
+[22:14:17] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(178465, 181203)]
+[22:14:17] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(345, 178465), (181203, 212336)]
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:17] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 14
+[22:14:17] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:17] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (26000,), 1000 Hz.
+[22:14:17] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:17] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : Found 188 tonic cycles in the signal
+[22:14:17] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:17] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(82, 25953)]
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:17] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:17] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (75000,), 1000 Hz.
+[22:14:17] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:17] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:17] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 9 phasic cycles in the signal
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 557 tonic cycles in the signal
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(25770, 26790)]
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(137, 25770), (26790, 74990)]
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:18] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (78000,), 1000 Hz.
+[22:14:18] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:18] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 586 tonic cycles in the signal
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(85, 77991)]
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:18] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (87000,), 1000 Hz.
+[22:14:18] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:18] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 663 tonic cycles in the signal
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(67, 86955)]
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:18] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (24000,), 1000 Hz.
+[22:14:18] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:18] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 184 tonic cycles in the signal
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(86, 23943)]
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:18] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (46000,), 1000 Hz.
+[22:14:18] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:18] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : Found 369 tonic cycles in the signal
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:18] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(106, 45887)]
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:18] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:18] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (197000,), 1000 Hz.
+[22:14:18] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:18] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:18] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : Found 20 phasic cycles in the signal
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : Found 1467 tonic cycles in the signal
+[22:14:19] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(30158, 31632), (45727, 46754)]
+[22:14:19] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(88, 30158), (31632, 45727), (46754, 196987)]
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:19] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:19] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (64000,), 1000 Hz.
+[22:14:19] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:19] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : Found 0 phasic cycles in the signal
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : Found 496 tonic cycles in the signal
+[22:14:19] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: []
+[22:14:19] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(41, 63992)]
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:14:19] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:14:19] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (145000,), 1000 Hz.
+[22:14:19] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:14:19] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:14:19] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:15:29] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:15:29] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[22:15:29] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (312500,), 1000 Hz.
+[22:15:29] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[22:15:29] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[22:15:32] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[22:15:33] [INFO    ] [NeuralSignal:             segment] : Found 42 phasic cycles in the signal
+[22:15:33] [INFO    ] [NeuralSignal:             segment] : Found 1833 tonic cycles in the signal
+[22:15:33] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(164268, 168526), (171619, 173702), (186352, 188449), (217236, 219767)]
+[22:15:33] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(350, 164268), (168526, 171619), (173702, 186352), (188449, 217236), (219767, 312448)]
+[22:15:33] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[22:15:50] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:15:53] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:16:02] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:16:08] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:16:12] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[22:17:21] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[23:01:27] [INFO    ] [runtime_logger:        logger_setup] : Runtime log started.
+[23:01:27] [INFO    ] [runtime_logger:        logger_setup] : Logging to file runtime.log
+[23:01:29] [INFO    ] [DataFolder:            __init__] : Initializing a DataFolder.
+[23:01:29] [INFO    ] [DataFolder:            __init__] : DataFolder in /home/miranjo/phasic_tonic/data/processed/combined contains 391 files.
+[23:01:32] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[23:01:34] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[23:06:38] [DEBUG   ] [DataFolder:         __getitem__] : Retrieving index number: 13
+[23:06:38] [INFO    ] [NeuralSignal:            __init__] : Initializing NeuralSignal.
+[23:06:38] [DEBUG   ] [NeuralSignal:            __init__] : Signal of shape (312500,), 2500 Hz.
+[23:06:38] [INFO    ] [NeuralSignal:              filter] : Filterting the signal with lowpass filter.
+[23:06:38] [DEBUG   ] [NeuralSignal:              filter] : n_seconds = 0.5, frequency = 25
+[23:06:42] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[23:06:42] [INFO    ] [NeuralSignal:             segment] : Found 41 phasic cycles in the signal
+[23:06:42] [INFO    ] [NeuralSignal:             segment] : Found 918 tonic cycles in the signal
+[23:06:42] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(165607, 167691), (186951, 189202), (211485, 213821), (217236, 219867), (228734, 231133)]
+[23:06:42] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(346, 165607), (167691, 186951), (189202, 211485), (213821, 217236), (219867, 228734), (231133, 312454)]
+[23:06:42] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[23:06:47] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[23:06:47] [INFO    ] [NeuralSignal:             segment] : Found 41 phasic cycles in the signal
+[23:06:47] [INFO    ] [NeuralSignal:             segment] : Found 918 tonic cycles in the signal
+[23:06:47] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(165607, 167691), (186951, 189202), (211485, 213821), (217236, 219867), (228734, 231133)]
+[23:06:47] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(346, 165607), (167691, 186951), (189202, 211485), (213821, 217236), (219867, 228734), (231133, 312454)]
+[23:06:47] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
+[23:07:37] [INFO    ] [NeuralSignal:             segment] : STARTED: Segmenting the signal into phasic and tonic episodes.
+[23:07:37] [INFO    ] [NeuralSignal:             segment] : Found 41 phasic cycles in the signal
+[23:07:37] [INFO    ] [NeuralSignal:             segment] : Found 918 tonic cycles in the signal
+[23:07:37] [DEBUG   ] [NeuralSignal:             segment] : Phasic episodes: [(165607, 167691), (186951, 189202), (211485, 213821), (217236, 219867), (228734, 231133)]
+[23:07:37] [DEBUG   ] [NeuralSignal:             segment] : Tonic episodes: [(346, 165607), (167691, 186951), (189202, 211485), (213821, 217236), (219867, 228734), (231133, 312454)]
+[23:07:37] [INFO    ] [NeuralSignal:             segment] : COMPLETED: Segmenting the signal into phasic and tonic episodes.
