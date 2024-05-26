@@ -1,0 +1,1410 @@
+[17:25:22] [runtime_logger:        logger_setup]: Runtime log started.
+[17:25:22] [runtime_logger:        logger_setup]: Logging to file record.log
+[17:25:22] [new_phasic5:            <module>]: Saving to: /home/nero/datasets/preprocesssed/
+[17:25:22] [new_phasic5:        run_analysis]: Loading: Rat5_SD8_HC_0_posttrial3
+[17:25:22] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD8_HC_20210721/2021-07-21_13-33-49_posttrial3/2021-07-21_13-33-49_posttrial3-states_ES.mat
+[17:25:22] [new_phasic5:        run_analysis]: LFP shape: (6752854,), size: 51MB)
+[17:25:22] [new_phasic5:        run_analysis]: Memory usage: 4.8G (37.4%)
+[17:25:22] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:23] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:23] [new_phasic5:        run_analysis]: Resampled: (6752854,) -> (1350571,).
+[17:25:23] [new_phasic5:        run_analysis]: Memory usage: 4.7G (38.9%)
+[17:25:23] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:23] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:23] [new_phasic5:        run_analysis]: Resampled data shape: (1350571,), size: 10MB)
+[17:25:23] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:23] [new_phasic5:        run_analysis]: REM indices: [(1331, 1485), (2428, 2475)].
+[17:25:23] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:23] [new_phasic5:        run_analysis]: Memory usage: 4.7G (38.1%)
+[17:25:23] [new_phasic5:        run_analysis]: Saving as: Rat5_SD8_HC_0_posttrial3.
+[17:25:23] [new_phasic5:        run_analysis]: Loading: Rat5_SD8_HC_0_posttrial1
+[17:25:23] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD8_HC_20210721/2021-07-21_11-50-58_posttrial1/2021-07-21_11-50-58_posttrial1-states_ES.mat
+[17:25:23] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:23] [new_phasic5:        run_analysis]: Loading: Rat5_SD8_HC_0_posttrial2
+[17:25:23] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD8_HC_20210721/2021-07-21_12-41-46_posttrial2/2021-07-21_12-41-46_posttrial2-states_ES.mat
+[17:25:24] [new_phasic5:        run_analysis]: LFP shape: (6765483,), size: 51MB)
+[17:25:24] [new_phasic5:        run_analysis]: Memory usage: 4.7G (38.8%)
+[17:25:24] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:26] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:26] [new_phasic5:        run_analysis]: Resampled: (6765483,) -> (1353097,).
+[17:25:26] [new_phasic5:        run_analysis]: Memory usage: 4.2G (45.5%)
+[17:25:26] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:26] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:26] [new_phasic5:        run_analysis]: Resampled data shape: (1353097,), size: 10MB)
+[17:25:26] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:26] [new_phasic5:        run_analysis]: REM indices: [(411, 496), (1564, 1620), (1625, 1709), (2480, 2653)].
+[17:25:26] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:26] [new_phasic5:        run_analysis]: Memory usage: 4.2G (44.8%)
+[17:25:26] [new_phasic5:        run_analysis]: Saving as: Rat5_SD8_HC_0_posttrial2.
+[17:25:26] [new_phasic5:        run_analysis]: Loading: Rat5_SD8_HC_0_posttrial4
+[17:25:26] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD8_HC_20210721/2021-07-21_14-24-19_posttrial4/2021-07-21_14-24-19_posttrial4-states_ES.mat
+[17:25:26] [new_phasic5:        run_analysis]: LFP shape: (6752086,), size: 51MB)
+[17:25:26] [new_phasic5:        run_analysis]: Memory usage: 4.2G (45.5%)
+[17:25:26] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:27] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:27] [new_phasic5:        run_analysis]: Resampled: (6752086,) -> (1350417,).
+[17:25:27] [new_phasic5:        run_analysis]: Memory usage: 3.7G (51.8%)
+[17:25:27] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:27] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:27] [new_phasic5:        run_analysis]: Resampled data shape: (1350417,), size: 10MB)
+[17:25:27] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:27] [new_phasic5:        run_analysis]: REM indices: [(657, 711), (736, 804), (821, 860), (1669, 1783), (1873, 1914)].
+[17:25:27] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:27] [new_phasic5:        run_analysis]: Memory usage: 3.7G (51.1%)
+[17:25:27] [new_phasic5:        run_analysis]: Saving as: Rat5_SD8_HC_0_posttrial4.
+[17:25:28] [new_phasic5:        run_analysis]: Loading: Rat5_SD8_HC_0_posttrial5
+[17:25:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD8_HC_20210721/2021-07-21_15-14-50_posttrial5/2021-07-21_15-14-50_posttrial5-states_ES.mat
+[17:25:28] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:25:28] [new_phasic5:        run_analysis]: Loading: Rat5_SD15_HC_0_posttrial3
+[17:25:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD15_HC_20210801/2021-08-01_13-57-48_posttrial3/2021-08-01_13-57-48_posttrial3-states_ES.mat
+[17:25:29] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:29] [new_phasic5:        run_analysis]: Loading: Rat5_SD15_HC_0_posttrial4
+[17:25:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD15_HC_20210801/2021-08-01_15-00-02_posttrial4/2021-08-01_15-00-02_posttrial4-states_ES.mat
+[17:25:29] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:29] [new_phasic5:        run_analysis]: Loading: Rat5_SD15_HC_0_posttrial5
+[17:25:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD15_HC_20210801/2021-08-01_15-51-31_posttrial5/2021-08-01_15-51-31_posttrial5-states_ES.mat
+[17:25:29] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:29] [new_phasic5:        run_analysis]: Loading: Rat5_SD15_HC_0_posttrial2
+[17:25:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD15_HC_20210801/2021-08-01_12-56-21_posttrial2/2021-08-01_12-56-21_posttrial2-states_ES.mat
+[17:25:29] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:29] [new_phasic5:        run_analysis]: Loading: Rat5_SD15_HC_0_posttrial1
+[17:25:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD15_HC_20210801/2021-08-01_12-05-33_posttrial1/2021-08-01_12-05-33_posttrial1-states_ES.mat
+[17:25:30] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:30] [new_phasic5:        run_analysis]: Loading: Rat5_SD16_OR_1_posttrial1
+[17:25:30] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD16_OR_20210802/2021-08-02_11-14-06_posttrial1/2021-08-02_11-14-06_posttrial1-states_ES.mat
+[17:25:30] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:30] [new_phasic5:        run_analysis]: Loading: Rat5_SD16_OR_1_posttrial5
+[17:25:30] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD16_OR_20210802/2021-08-02_15-12-21_posttrial5/2021-08-02_15-12-21_posttrial5-states_ES.mat
+[17:25:31] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:25:31] [new_phasic5:        run_analysis]: Loading: Rat5_SD16_OR_1_posttrial2
+[17:25:31] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD16_OR_20210802/2021-08-02_12-04-52_posttrial2/2021-08-02_12-04-52_posttrial2-states_ES.mat
+[17:25:31] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:31] [new_phasic5:        run_analysis]: Loading: Rat5_SD16_OR_1_posttrial3
+[17:25:31] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD16_OR_20210802/2021-08-02_13-14-15_posttrial3/2021-08-02_13-14-15_posttrial3-states_ES.mat
+[17:25:31] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:31] [new_phasic5:        run_analysis]: Loading: Rat5_SD16_OR_1_posttrial4
+[17:25:31] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD16_OR_20210802/2021-08-02_14-21-32_posttrial4/2021-08-02_14-21-32_posttrial4-states_ES.mat
+[17:25:31] [new_phasic5:        run_analysis]: LFP shape: (6750379,), size: 51MB)
+[17:25:31] [new_phasic5:        run_analysis]: Memory usage: 3.7G (51.4%)
+[17:25:31] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:33] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:33] [new_phasic5:        run_analysis]: Resampled: (6750379,) -> (1350076,).
+[17:25:33] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.1%)
+[17:25:33] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:33] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:33] [new_phasic5:        run_analysis]: Resampled data shape: (1350076,), size: 10MB)
+[17:25:33] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:33] [new_phasic5:        run_analysis]: REM indices: [(1134, 1224)].
+[17:25:33] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:33] [new_phasic5:        run_analysis]: Memory usage: 3.2G (57.7%)
+[17:25:33] [new_phasic5:        run_analysis]: Saving as: Rat5_SD16_OR_1_posttrial4.
+[17:25:33] [new_phasic5:        run_analysis]: Loading: Rat5_SD2_OR_0_posttrial4
+[17:25:33] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD2_OR_9_07_2021/2021-07-09_15-37-26_posttrial4/2021-07-09_15-37-26_posttrial4-states_ES.mat
+[17:25:34] [new_phasic5:        run_analysis]: LFP shape: (6751915,), size: 51MB)
+[17:25:34] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.2%)
+[17:25:34] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:35] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:35] [new_phasic5:        run_analysis]: Resampled: (6751915,) -> (1350383,).
+[17:25:35] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.8%)
+[17:25:35] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:35] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:35] [new_phasic5:        run_analysis]: Resampled data shape: (1350383,), size: 10MB)
+[17:25:35] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:35] [new_phasic5:        run_analysis]: REM indices: [(1855, 1899), (1977, 2053)].
+[17:25:35] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:35] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.2%)
+[17:25:35] [new_phasic5:        run_analysis]: Saving as: Rat5_SD2_OR_0_posttrial4.
+[17:25:35] [new_phasic5:        run_analysis]: Loading: Rat5_SD2_OR_0_posttrial2
+[17:25:35] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD2_OR_9_07_2021/2021-07-09_13-44-23_posttrial2/2021-07-09_13-44-23_posttrial2-states_ES_TS.mat
+[17:25:35] [new_phasic5:        run_analysis]: LFP shape: (6751318,), size: 51MB)
+[17:25:35] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.8%)
+[17:25:35] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:37] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:37] [new_phasic5:        run_analysis]: Resampled: (6751318,) -> (1350264,).
+[17:25:37] [new_phasic5:        run_analysis]: Memory usage: 2.5G (66.9%)
+[17:25:37] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:37] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:37] [new_phasic5:        run_analysis]: Resampled data shape: (1350264,), size: 10MB)
+[17:25:37] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:37] [new_phasic5:        run_analysis]: REM indices: [(1659, 1759), (2357, 2384)].
+[17:25:37] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:37] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.6%)
+[17:25:37] [new_phasic5:        run_analysis]: Saving as: Rat5_SD2_OR_0_posttrial2.
+[17:25:37] [new_phasic5:        run_analysis]: Loading: Rat5_SD2_OR_0_posttrial5
+[17:25:37] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD2_OR_9_07_2021/2021-07-09_16-28-31_posttrial5/2021-07-09_16-28-31_posttrial5-states_ES.mat
+[17:25:38] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:25:38] [new_phasic5:        run_analysis]: Loading: Rat5_SD2_OR_0_posttrial3
+[17:25:38] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD2_OR_9_07_2021/2021-07-09_14-35-12_posttrial3/2021-07-09_14-35-12_posttrial3-states_ES.mat
+[17:25:38] [new_phasic5:        run_analysis]: LFP shape: (6753707,), size: 51MB)
+[17:25:38] [new_phasic5:        run_analysis]: Memory usage: 2.7G (65.3%)
+[17:25:38] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:40] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:40] [new_phasic5:        run_analysis]: Resampled: (6753707,) -> (1350741,).
+[17:25:40] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.7%)
+[17:25:40] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:40] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:40] [new_phasic5:        run_analysis]: Resampled data shape: (1350741,), size: 10MB)
+[17:25:40] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:40] [new_phasic5:        run_analysis]: REM indices: [(1381, 1413), (1671, 1790), (1839, 1876)].
+[17:25:40] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:40] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.1%)
+[17:25:40] [new_phasic5:        run_analysis]: Saving as: Rat5_SD2_OR_0_posttrial3.
+[17:25:40] [new_phasic5:        run_analysis]: Loading: Rat5_SD2_OR_0_posttrial1
+[17:25:40] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD2_OR_9_07_2021/2021-07-09_12-41-42_posttrial1/2021-07-09_12-41-42_posttrial1-states_ES.mat
+[17:25:41] [new_phasic5:        run_analysis]: LFP shape: (6754816,), size: 51MB)
+[17:25:41] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.7%)
+[17:25:41] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:43] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:43] [new_phasic5:        run_analysis]: Resampled: (6754816,) -> (1350963,).
+[17:25:43] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.3%)
+[17:25:43] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:43] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:43] [new_phasic5:        run_analysis]: Resampled data shape: (1350963,), size: 10MB)
+[17:25:43] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:43] [new_phasic5:        run_analysis]: REM indices: [(2203, 2292)].
+[17:25:43] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:43] [new_phasic5:        run_analysis]: Memory usage: 2.3G (70.5%)
+[17:25:43] [new_phasic5:        run_analysis]: Saving as: Rat5_SD2_OR_0_posttrial1.
+[17:25:43] [new_phasic5:        run_analysis]: Loading: Rat5_SD1_OR_1_posttrial5
+[17:25:43] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD1_OR_6_07_2021/2021-07-06_15-49-34_posttrial5/2021-07-06_15-49-34_posttrial5-states_ES.mat
+[17:25:44] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:25:44] [new_phasic5:        run_analysis]: Loading: Rat5_SD1_OR_1_posttrial1
+[17:25:44] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD1_OR_6_07_2021/2021-07-06_12-25-59_posttrial1/2021-07-06_12-25-59_posttrial1-states_ES.mat
+[17:25:44] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:44] [new_phasic5:        run_analysis]: Loading: Rat5_SD1_OR_1_posttrial3
+[17:25:44] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD1_OR_6_07_2021/2021-07-06_14-07-30_posttrial3/2021-07-06_14-07-30_posttrial3-states_ES.mat
+[17:25:44] [new_phasic5:        run_analysis]: LFP shape: (6750891,), size: 51MB)
+[17:25:44] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.2%)
+[17:25:44] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:46] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:46] [new_phasic5:        run_analysis]: Resampled: (6750891,) -> (1350178,).
+[17:25:46] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.4%)
+[17:25:46] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:46] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:46] [new_phasic5:        run_analysis]: Resampled data shape: (1350178,), size: 10MB)
+[17:25:46] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:46] [new_phasic5:        run_analysis]: REM indices: [(1890, 1902), (1905, 1961)].
+[17:25:46] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:46] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.7%)
+[17:25:46] [new_phasic5:        run_analysis]: Saving as: Rat5_SD1_OR_1_posttrial3.
+[17:25:47] [new_phasic5:        run_analysis]: Loading: Rat5_SD1_OR_1_posttrial2
+[17:25:47] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD1_OR_6_07_2021/2021-07-06_13-16-37_posttrial2/2021-07-06_13-16-37_posttrial2-states_ES.mat
+[17:25:47] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:47] [new_phasic5:        run_analysis]: Loading: Rat5_SD1_OR_1_posttrial4
+[17:25:47] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD1_OR_6_07_2021/2021-07-06_14-58-28_posttrial4/2021-07-06_14-58-28_posttrial4-states_ES.mat
+[17:25:47] [new_phasic5:        run_analysis]: LFP shape: (6750976,), size: 51MB)
+[17:25:47] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.5%)
+[17:25:47] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:49] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:49] [new_phasic5:        run_analysis]: Resampled: (6750976,) -> (1350195,).
+[17:25:49] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.3%)
+[17:25:49] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:49] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:49] [new_phasic5:        run_analysis]: Resampled data shape: (1350195,), size: 10MB)
+[17:25:49] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:49] [new_phasic5:        run_analysis]: REM indices: [(780, 902), (1551, 1563), (1786, 1831), (1836, 1901)].
+[17:25:49] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:49] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.7%)
+[17:25:49] [new_phasic5:        run_analysis]: Saving as: Rat5_SD1_OR_1_posttrial4.
+[17:25:49] [new_phasic5:        run_analysis]: Loading: Rat5_SD3_OD_0_posttrial4
+[17:25:49] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD3_OD_14-15_07_2021/2021-07-14_15-25-54_posttrial4/2021-07-14_15-25-54_posttrial4-states_ES.mat
+[17:25:49] [new_phasic5:        run_analysis]: LFP shape: (6774187,), size: 51MB)
+[17:25:49] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.3%)
+[17:25:49] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:51] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:51] [new_phasic5:        run_analysis]: Resampled: (6774187,) -> (1354837,).
+[17:25:51] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.4%)
+[17:25:51] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:51] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:51] [new_phasic5:        run_analysis]: Resampled data shape: (1354837,), size: 10MB)
+[17:25:51] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:51] [new_phasic5:        run_analysis]: REM indices: [(1006, 1113), (1735, 1757), (1787, 1855)].
+[17:25:51] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:51] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.7%)
+[17:25:51] [new_phasic5:        run_analysis]: Saving as: Rat5_SD3_OD_0_posttrial4.
+[17:25:51] [new_phasic5:        run_analysis]: Loading: Rat5_SD3_OD_0_posttrial1
+[17:25:51] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD3_OD_14-15_07_2021/2021-07-14_12-53-09_posttrial1/2021-07-14_12-53-09_posttrial1-states_ES.mat
+[17:25:51] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:51] [new_phasic5:        run_analysis]: Loading: Rat5_SD3_OD_0_posttrial3
+[17:25:51] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD3_OD_14-15_07_2021/2021-07-14_14-34-53_posttrial3/2021-07-14_14-34-53_posttrial3-states_ES.mat
+[17:25:51] [new_phasic5:        run_analysis]: LFP shape: (6775382,), size: 51MB)
+[17:25:51] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.4%)
+[17:25:51] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:25:55] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:25:55] [new_phasic5:        run_analysis]: Resampled: (6775382,) -> (1355076,).
+[17:25:55] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.3%)
+[17:25:55] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:25:55] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:25:55] [new_phasic5:        run_analysis]: Resampled data shape: (1355076,), size: 10MB)
+[17:25:55] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:25:55] [new_phasic5:        run_analysis]: REM indices: [(995, 1107)].
+[17:25:55] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:25:55] [new_phasic5:        run_analysis]: Memory usage: 2.3G (70.6%)
+[17:25:55] [new_phasic5:        run_analysis]: Saving as: Rat5_SD3_OD_0_posttrial3.
+[17:25:55] [new_phasic5:        run_analysis]: Loading: Rat5_SD3_OD_0_posttrial2
+[17:25:55] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD3_OD_14-15_07_2021/2021-07-14_13-43-51_posttrial2/2021-07-14_13-43-51_posttrial2-states_ES.mat
+[17:25:55] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:55] [new_phasic5:        run_analysis]: Loading: Rat5_SD3_OD_0_posttrial5
+[17:25:55] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD3_OD_14-15_07_2021/2021-07-14_16-17-11_posttrial5/2021-07-14_16-17-11_posttrial5-states_ES.mat
+[17:25:56] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:25:56] [new_phasic5:        run_analysis]: Loading: Rat5_SD14_OR_0_posttrial5
+[17:25:56] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD14_OR_20210729/2021-07-29_16-00-16_posttrial5/2021-07-29_16-00-16_posttrial5-states_ES.mat
+[17:25:57] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:25:57] [new_phasic5:        run_analysis]: Loading: Rat5_SD14_OR_0_posttrial1
+[17:25:57] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD14_OR_20210729/2021-07-29_12-35-48_posttrial1/2021-07-29_12-35-48_posttrial1-states_ES.mat
+[17:25:58] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:25:58] [new_phasic5:        run_analysis]: Loading: Rat5_SD14_OR_0_posttrial4
+[17:25:58] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD14_OR_20210729/2021-07-29_15-08-48_posttrial4/2021-07-29_15-08-48_posttrial4-states_ES.mat
+[17:25:58] [new_phasic5:        run_analysis]: LFP shape: (6755328,), size: 51MB)
+[17:25:58] [new_phasic5:        run_analysis]: Memory usage: 2.2G (71.4%)
+[17:25:58] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:00] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:00] [new_phasic5:        run_analysis]: Resampled: (6755328,) -> (1351066,).
+[17:26:00] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.9%)
+[17:26:00] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:00] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:00] [new_phasic5:        run_analysis]: Resampled data shape: (1351066,), size: 10MB)
+[17:26:00] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:00] [new_phasic5:        run_analysis]: REM indices: [(1168, 1293), (1932, 2002), (2645, 2699)].
+[17:26:00] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:00] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.2%)
+[17:26:00] [new_phasic5:        run_analysis]: Saving as: Rat5_SD14_OR_0_posttrial4.
+[17:26:00] [new_phasic5:        run_analysis]: Loading: Rat5_SD14_OR_0_posttrial2
+[17:26:00] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD14_OR_20210729/2021-07-29_13-26-22_posttrial2/2021-07-29_13-26-22_posttrial2-states_ES.mat
+[17:26:01] [new_phasic5:        run_analysis]: LFP shape: (6761302,), size: 51MB)
+[17:26:01] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.9%)
+[17:26:01] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:03] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:03] [new_phasic5:        run_analysis]: Resampled: (6761302,) -> (1352260,).
+[17:26:03] [new_phasic5:        run_analysis]: Memory usage: 1.8G (75.9%)
+[17:26:03] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:03] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:03] [new_phasic5:        run_analysis]: Resampled data shape: (1352260,), size: 10MB)
+[17:26:03] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:03] [new_phasic5:        run_analysis]: REM indices: [(1517, 1616)].
+[17:26:03] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:03] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.3%)
+[17:26:03] [new_phasic5:        run_analysis]: Saving as: Rat5_SD14_OR_0_posttrial2.
+[17:26:03] [new_phasic5:        run_analysis]: Loading: Rat5_SD14_OR_0_posttrial3
+[17:26:03] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD14_OR_20210729/2021-07-29_14-17-13_posttrial3/2021-07-29_14-17-13_posttrial3-states_ES.mat
+[17:26:03] [new_phasic5:        run_analysis]: LFP shape: (6754816,), size: 51MB)
+[17:26:03] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.2%)
+[17:26:03] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:05] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:05] [new_phasic5:        run_analysis]: Resampled: (6754816,) -> (1350963,).
+[17:26:05] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.1%)
+[17:26:05] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:05] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:05] [new_phasic5:        run_analysis]: Resampled data shape: (1350963,), size: 10MB)
+[17:26:05] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:05] [new_phasic5:        run_analysis]: REM indices: [(1420, 1504), (2084, 2200)].
+[17:26:05] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:05] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.4%)
+[17:26:05] [new_phasic5:        run_analysis]: Saving as: Rat5_SD14_OR_0_posttrial3.
+[17:26:05] [new_phasic5:        run_analysis]: Loading: Rat5_SD4_HC_0_posttrial2
+[17:26:05] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD4_HC_16_07_2021/2021-07-16_12-13-39_posttrial2/2021-07-16_12-13-39_posttrial2-states_ES.mat
+[17:26:05] [new_phasic5:        run_analysis]: LFP shape: (7315030,), size: 55MB)
+[17:26:05] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.2%)
+[17:26:05] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:07] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:07] [new_phasic5:        run_analysis]: Resampled: (7315030,) -> (1463006,).
+[17:26:07] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.4%)
+[17:26:07] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:07] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:07] [new_phasic5:        run_analysis]: Resampled data shape: (1463006,), size: 11MB)
+[17:26:07] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:07] [new_phasic5:        run_analysis]: REM indices: [(1171, 1212), (1260, 1370), (2892, 2924)].
+[17:26:07] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:07] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.7%)
+[17:26:07] [new_phasic5:        run_analysis]: Saving as: Rat5_SD4_HC_0_posttrial2.
+[17:26:08] [new_phasic5:        run_analysis]: Loading: Rat5_SD4_HC_0_posttrial5
+[17:26:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD4_HC_16_07_2021/2021-07-16_14-49-56_posttrial5/2021-07-16_14-49-56_posttrial5-states_ES.mat
+[17:26:09] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:09] [new_phasic5:        run_analysis]: Loading: Rat5_SD4_HC_0_posttrial4
+[17:26:09] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD4_HC_16_07_2021/2021-07-16_13-59-43_posttrial4/2021-07-16_13-59-43_posttrial4-states_ES.mat
+[17:26:09] [new_phasic5:        run_analysis]: LFP shape: (6752512,), size: 51MB)
+[17:26:09] [new_phasic5:        run_analysis]: Memory usage: 1.8G (76.5%)
+[17:26:09] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:11] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:11] [new_phasic5:        run_analysis]: Resampled: (6752512,) -> (1350502,).
+[17:26:11] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.5%)
+[17:26:11] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:11] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:11] [new_phasic5:        run_analysis]: Resampled data shape: (1350502,), size: 10MB)
+[17:26:11] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:11] [new_phasic5:        run_analysis]: REM indices: [(644, 745), (1568, 1598), (1616, 1710), (2674, 2692)].
+[17:26:11] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:11] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.8%)
+[17:26:11] [new_phasic5:        run_analysis]: Saving as: Rat5_SD4_HC_0_posttrial4.
+[17:26:11] [new_phasic5:        run_analysis]: Loading: Rat5_SD4_HC_0_posttrial1
+[17:26:11] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD4_HC_16_07_2021/2021-07-16_11-23-25_posttrial1/2021-07-16_11-23-25_posttrial1-states_ES.mat
+[17:26:11] [new_phasic5:        run_analysis]: LFP shape: (6751232,), size: 51MB)
+[17:26:11] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.1%)
+[17:26:11] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:13] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:13] [new_phasic5:        run_analysis]: Resampled: (6751232,) -> (1350246,).
+[17:26:13] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.6%)
+[17:26:13] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:13] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:13] [new_phasic5:        run_analysis]: Resampled data shape: (1350246,), size: 10MB)
+[17:26:13] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:13] [new_phasic5:        run_analysis]: REM indices: [(1480, 1526), (2081, 2278)].
+[17:26:13] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:13] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.9%)
+[17:26:13] [new_phasic5:        run_analysis]: Saving as: Rat5_SD4_HC_0_posttrial1.
+[17:26:13] [new_phasic5:        run_analysis]: Loading: Rat5_SD4_HC_0_posttrial3
+[17:26:13] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD4_HC_16_07_2021/2021-07-16_13-09-26_posttrial3/2021-07-16_13-09-26_posttrial3-states_ES.mat
+[17:26:13] [new_phasic5:        run_analysis]: LFP shape: (6756608,), size: 51MB)
+[17:26:13] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.6%)
+[17:26:13] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:15] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:15] [new_phasic5:        run_analysis]: Resampled: (6756608,) -> (1351322,).
+[17:26:15] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.6%)
+[17:26:15] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:15] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:15] [new_phasic5:        run_analysis]: Resampled data shape: (1351322,), size: 10MB)
+[17:26:15] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:15] [new_phasic5:        run_analysis]: REM indices: [(518, 737), (1835, 1945), (1978, 1999)].
+[17:26:15] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:15] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.0%)
+[17:26:15] [new_phasic5:        run_analysis]: Saving as: Rat5_SD4_HC_0_posttrial3.
+[17:26:15] [new_phasic5:        run_analysis]: Loading: Rat5_SD5_OD_1_posttrial5
+[17:26:15] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD5_OD_20210717/2021-07-17_15-34-48_posttrial5/2021-07-17_15-34-48_posttrial5-states_ES.mat
+[17:26:16] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:16] [new_phasic5:        run_analysis]: Loading: Rat5_SD5_OD_1_posttrial1
+[17:26:16] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD5_OD_20210717/2021-07-17_12-10-34_posttrial1/2021-07-17_12-10-34_posttrial1-states_ES.mat
+[17:26:17] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:17] [new_phasic5:        run_analysis]: Loading: Rat5_SD5_OD_1_posttrial2
+[17:26:17] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD5_OD_20210717/2021-07-17_13-01-39_posttrial2/2021-07-17_13-01-39_posttrial2-states_ES.mat
+[17:26:17] [new_phasic5:        run_analysis]: LFP shape: (6751659,), size: 51MB)
+[17:26:17] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.7%)
+[17:26:17] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:19] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:19] [new_phasic5:        run_analysis]: Resampled: (6751659,) -> (1350332,).
+[17:26:19] [new_phasic5:        run_analysis]: Memory usage: 1.5G (80.4%)
+[17:26:19] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:19] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:19] [new_phasic5:        run_analysis]: Resampled data shape: (1350332,), size: 10MB)
+[17:26:19] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:19] [new_phasic5:        run_analysis]: REM indices: [(1452, 1477), (1957, 2026)].
+[17:26:19] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:19] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.7%)
+[17:26:19] [new_phasic5:        run_analysis]: Saving as: Rat5_SD5_OD_1_posttrial2.
+[17:26:19] [new_phasic5:        run_analysis]: Loading: Rat5_SD5_OD_1_posttrial3
+[17:26:19] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD5_OD_20210717/2021-07-17_13-52-48_posttrial3/2021-07-17_13-52-48_posttrial3-states_ES.mat
+[17:26:19] [new_phasic5:        run_analysis]: LFP shape: (6751830,), size: 51MB)
+[17:26:19] [new_phasic5:        run_analysis]: Memory usage: 1.5G (80.4%)
+[17:26:19] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:21] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:21] [new_phasic5:        run_analysis]: Resampled: (6751830,) -> (1350366,).
+[17:26:21] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.6%)
+[17:26:21] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:21] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:21] [new_phasic5:        run_analysis]: Resampled data shape: (1350366,), size: 10MB)
+[17:26:21] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:21] [new_phasic5:        run_analysis]: REM indices: [(1217, 1298), (1300, 1343), (1989, 2018), (2058, 2102)].
+[17:26:21] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:21] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.2%)
+[17:26:21] [new_phasic5:        run_analysis]: Saving as: Rat5_SD5_OD_1_posttrial3.
+[17:26:21] [new_phasic5:        run_analysis]: Loading: Rat5_SD5_OD_1_posttrial4
+[17:26:21] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD5_OD_20210717/2021-07-17_14-43-53_posttrial4/2021-07-17_14-43-53_posttrial4-states_ES.mat
+[17:26:21] [new_phasic5:        run_analysis]: LFP shape: (6752171,), size: 51MB)
+[17:26:21] [new_phasic5:        run_analysis]: Memory usage: 1.5G (79.9%)
+[17:26:21] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:23] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:23] [new_phasic5:        run_analysis]: Resampled: (6752171,) -> (1350434,).
+[17:26:23] [new_phasic5:        run_analysis]: Memory usage: 1.5G (80.2%)
+[17:26:23] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:23] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:23] [new_phasic5:        run_analysis]: Resampled data shape: (1350434,), size: 10MB)
+[17:26:23] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:23] [new_phasic5:        run_analysis]: REM indices: [(1100, 1159), (1692, 1804)].
+[17:26:23] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:23] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.5%)
+[17:26:23] [new_phasic5:        run_analysis]: Saving as: Rat5_SD5_OD_1_posttrial4.
+[17:26:23] [new_phasic5:        run_analysis]: Loading: Rat5_SD17_HC_1_posttrial1
+[17:26:23] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD17_HC_20210804/2021-08-04_10-42-36_posttrial1/2021-08-04_10-42-36_posttrial1-states_ES.mat
+[17:26:23] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:23] [new_phasic5:        run_analysis]: Loading: Rat5_SD17_HC_1_posttrial2
+[17:26:23] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD17_HC_20210804/2021-08-04_11-33-35_posttrial2/2021-08-04_11-33-35_posttrial2-states_ES.mat
+[17:26:24] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:24] [new_phasic5:        run_analysis]: Loading: Rat5_SD17_HC_1_posttrial4
+[17:26:24] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD17_HC_20210804/2021-08-04_13-14-51_posttrial4/2021-08-04_13-14-51_posttrial4-states_ES.mat
+[17:26:24] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:24] [new_phasic5:        run_analysis]: Loading: Rat5_SD17_HC_1_posttrial5
+[17:26:24] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD17_HC_20210804/2021-08-04_14-05-15_posttrial5/2021-08-04_14-05-15_posttrial5-states_ES.mat
+[17:26:25] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:25] [new_phasic5:        run_analysis]: Loading: Rat5_SD17_HC_1_posttrial3
+[17:26:25] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD17_HC_20210804/2021-08-04_12-24-29_posttrial3/2021-08-04_12-24-29_posttrial3-states_ES.mat
+[17:26:25] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:25] [new_phasic5:        run_analysis]: Loading: Rat5_SD7_HC_1_posttrial3
+[17:26:25] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD7_HC_20210720/2021-07-20_12-58-43_posttrial3/2021-07-20_12-58-43_posttrial3-states_ES.mat
+[17:26:26] [new_phasic5:        run_analysis]: LFP shape: (6750464,), size: 51MB)
+[17:26:26] [new_phasic5:        run_analysis]: Memory usage: 1.5G (80.2%)
+[17:26:26] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:28] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:28] [new_phasic5:        run_analysis]: Resampled: (6750464,) -> (1350093,).
+[17:26:28] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.6%)
+[17:26:28] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:28] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:28] [new_phasic5:        run_analysis]: Resampled data shape: (1350093,), size: 10MB)
+[17:26:28] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:28] [new_phasic5:        run_analysis]: REM indices: [(1200, 1448), (2431, 2643)].
+[17:26:28] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:28] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.0%)
+[17:26:28] [new_phasic5:        run_analysis]: Saving as: Rat5_SD7_HC_1_posttrial3.
+[17:26:28] [new_phasic5:        run_analysis]: Loading: Rat5_SD7_HC_1_posttrial2
+[17:26:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD7_HC_20210720/2021-07-20_12-08-26_posttrial2/2021-07-20_12-08-26_posttrial2-states_ES.mat
+[17:26:28] [new_phasic5:        run_analysis]: LFP shape: (6752854,), size: 51MB)
+[17:26:28] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.7%)
+[17:26:28] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:29] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:29] [new_phasic5:        run_analysis]: Resampled: (6752854,) -> (1350571,).
+[17:26:29] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.7%)
+[17:26:29] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:29] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:29] [new_phasic5:        run_analysis]: Resampled data shape: (1350571,), size: 10MB)
+[17:26:29] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:29] [new_phasic5:        run_analysis]: REM indices: [(1149, 1214), (1882, 2059), (2632, 2698)].
+[17:26:29] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:29] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.0%)
+[17:26:29] [new_phasic5:        run_analysis]: Saving as: Rat5_SD7_HC_1_posttrial2.
+[17:26:29] [new_phasic5:        run_analysis]: Loading: Rat5_SD7_HC_1_posttrial4
+[17:26:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD7_HC_20210720/2021-07-20_13-49-50_posttrial4/2021-07-20_13-49-50_posttrial4-states_ES.mat
+[17:26:29] [new_phasic5:        run_analysis]: LFP shape: (6752427,), size: 51MB)
+[17:26:29] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.6%)
+[17:26:29] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:31] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:31] [new_phasic5:        run_analysis]: Resampled: (6752427,) -> (1350485,).
+[17:26:31] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.8%)
+[17:26:31] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:31] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:31] [new_phasic5:        run_analysis]: Resampled data shape: (1350485,), size: 10MB)
+[17:26:31] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:31] [new_phasic5:        run_analysis]: REM indices: [(844, 874), (1549, 1662), (1689, 1815)].
+[17:26:31] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:31] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.2%)
+[17:26:31] [new_phasic5:        run_analysis]: Saving as: Rat5_SD7_HC_1_posttrial4.
+[17:26:31] [new_phasic5:        run_analysis]: Loading: Rat5_SD7_HC_1_posttrial5
+[17:26:31] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD7_HC_20210720/2021-07-20_14-40-05_posttrial5/2021-07-20_14-40-05_posttrial5-states_ES.mat
+[17:26:32] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:32] [new_phasic5:        run_analysis]: Loading: Rat5_SD7_HC_1_posttrial1
+[17:26:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD7_HC_20210720/2021-07-20_11-18-01_posttrial1/2021-07-20_11-18-01_posttrial1-states_ES.mat
+[17:26:32] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:32] [new_phasic5:        run_analysis]: Loading: Rat5_SD6_HC_1_posttrial2
+[17:26:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD6_HC_20210719/2021-07-19_12-14-30_posttrial2/2021-07-19_12-14-30_posttrial2-states_ES.mat
+[17:26:32] [new_phasic5:        run_analysis]: LFP shape: (6751403,), size: 51MB)
+[17:26:32] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.0%)
+[17:26:32] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:34] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:34] [new_phasic5:        run_analysis]: Resampled: (6751403,) -> (1350281,).
+[17:26:34] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.2%)
+[17:26:34] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:34] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:34] [new_phasic5:        run_analysis]: Resampled data shape: (1350281,), size: 10MB)
+[17:26:34] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:34] [new_phasic5:        run_analysis]: REM indices: [(435, 461), (991, 1046), (1081, 1156), (2041, 2168)].
+[17:26:34] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:34] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.6%)
+[17:26:34] [new_phasic5:        run_analysis]: Saving as: Rat5_SD6_HC_1_posttrial2.
+[17:26:34] [new_phasic5:        run_analysis]: Loading: Rat5_SD6_HC_1_posttrial1
+[17:26:34] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD6_HC_20210719/2021-07-19_11-22-20_posttrial1/2021-07-19_11-22-20_posttrial1-states_ES.mat
+[17:26:34] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:34] [new_phasic5:        run_analysis]: Loading: Rat5_SD6_HC_1_posttrial3
+[17:26:34] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD6_HC_20210719/2021-07-19_13-04-46_posttrial3/2021-07-19_13-04-46_posttrial3-states_ES.mat
+[17:26:34] [new_phasic5:        run_analysis]: LFP shape: (6751915,), size: 51MB)
+[17:26:34] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.1%)
+[17:26:34] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:36] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:36] [new_phasic5:        run_analysis]: Resampled: (6751915,) -> (1350383,).
+[17:26:36] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.6%)
+[17:26:36] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:36] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:36] [new_phasic5:        run_analysis]: Resampled data shape: (1350383,), size: 10MB)
+[17:26:36] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:36] [new_phasic5:        run_analysis]: REM indices: [(1254, 1282), (1905, 2002)].
+[17:26:36] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:36] [new_phasic5:        run_analysis]: Memory usage: 2.5G (67.9%)
+[17:26:36] [new_phasic5:        run_analysis]: Saving as: Rat5_SD6_HC_1_posttrial3.
+[17:26:36] [new_phasic5:        run_analysis]: Loading: Rat5_SD6_HC_1_posttrial5
+[17:26:36] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD6_HC_20210719/2021-07-19_14-48-05_posttrial5/2021-07-19_14-48-05_posttrial5-states_ES.mat
+[17:26:37] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:37] [new_phasic5:        run_analysis]: Loading: Rat5_SD6_HC_1_posttrial4
+[17:26:37] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat5/Rat_OS_Ephys_cbd_chronic_Rat5_411358_SD6_HC_20210719/2021-07-19_13-55-07_posttrial4/2021-07-19_13-55-07_posttrial4-states_ES.mat
+[17:26:38] [new_phasic5:        run_analysis]: LFP shape: (7070208,), size: 53MB)
+[17:26:38] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.7%)
+[17:26:38] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:41] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:41] [new_phasic5:        run_analysis]: Resampled: (7070208,) -> (1414042,).
+[17:26:41] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.4%)
+[17:26:41] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:41] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:41] [new_phasic5:        run_analysis]: Resampled data shape: (1414042,), size: 10MB)
+[17:26:41] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:41] [new_phasic5:        run_analysis]: REM indices: [(1006, 1101), (1584, 1738)].
+[17:26:41] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:41] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.8%)
+[17:26:41] [new_phasic5:        run_analysis]: Saving as: Rat5_SD6_HC_1_posttrial4.
+[17:26:41] [new_phasic5:        run_analysis]: Loading: Rat3_SD6_OD_1_posttrial2
+[17:26:41] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD6_OD_20210610/2021-06-10_09-20-52_posttrial2/2021-06-10_09-20-52_posttrial2-states_TS.mat
+[17:26:41] [new_phasic5:        run_analysis]: LFP shape: (6753792,), size: 51MB)
+[17:26:41] [new_phasic5:        run_analysis]: Memory usage: 2.6G (66.0%)
+[17:26:41] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:43] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:43] [new_phasic5:        run_analysis]: Resampled: (6753792,) -> (1350758,).
+[17:26:43] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.4%)
+[17:26:43] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:43] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:43] [new_phasic5:        run_analysis]: Resampled data shape: (1350758,), size: 10MB)
+[17:26:43] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:43] [new_phasic5:        run_analysis]: REM indices: [(2011, 2103)].
+[17:26:43] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:43] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.8%)
+[17:26:43] [new_phasic5:        run_analysis]: Saving as: Rat3_SD6_OD_1_posttrial2.
+[17:26:43] [new_phasic5:        run_analysis]: Loading: Rat3_SD6_OD_1_posttrial4
+[17:26:43] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD6_OD_20210610/2021-06-10_11-02-34_posttrial4/2021-06-10_11-02-34_posttrial4-states_TS.mat
+[17:26:43] [new_phasic5:        run_analysis]: LFP shape: (6752000,), size: 51MB)
+[17:26:43] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.4%)
+[17:26:43] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:44] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:44] [new_phasic5:        run_analysis]: Resampled: (6752000,) -> (1350400,).
+[17:26:44] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.7%)
+[17:26:44] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:44] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:44] [new_phasic5:        run_analysis]: Resampled data shape: (1350400,), size: 10MB)
+[17:26:44] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:44] [new_phasic5:        run_analysis]: REM indices: [(939, 1026), (1482, 1542), (2314, 2330), (2373, 2414)].
+[17:26:44] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:44] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.1%)
+[17:26:44] [new_phasic5:        run_analysis]: Saving as: Rat3_SD6_OD_1_posttrial4.
+[17:26:44] [new_phasic5:        run_analysis]: Loading: Rat3_SD6_OD_1_posttrial5
+[17:26:44] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD6_OD_20210610/2021-06-10_11-53-15_posttrial5/2021-06-10_11-53-15_posttrial5-states_TS.mat
+[17:26:45] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:45] [new_phasic5:        run_analysis]: Loading: Rat3_SD6_OD_1_posttrial3
+[17:26:45] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD6_OD_20210610/2021-06-10_10-11-43_posttrial3/2021-06-10_10-11-43_posttrial3-states_TS.mat
+[17:26:45] [new_phasic5:        run_analysis]: LFP shape: (6752427,), size: 51MB)
+[17:26:45] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.2%)
+[17:26:45] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:46] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:46] [new_phasic5:        run_analysis]: Resampled: (6752427,) -> (1350485,).
+[17:26:46] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.7%)
+[17:26:46] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:46] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:46] [new_phasic5:        run_analysis]: Resampled data shape: (1350485,), size: 10MB)
+[17:26:46] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:46] [new_phasic5:        run_analysis]: REM indices: [(1371, 1407), (1452, 1591)].
+[17:26:46] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:46] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.0%)
+[17:26:46] [new_phasic5:        run_analysis]: Saving as: Rat3_SD6_OD_1_posttrial3.
+[17:26:46] [new_phasic5:        run_analysis]: Loading: Rat3_SD6_OD_1_posttrial1
+[17:26:46] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD6_OD_20210610/2021-06-10_08-30-07_posttrial1/2021-06-10_08-30-07_posttrial1-states_TS.mat
+[17:26:47] [new_phasic5:        run_analysis]: LFP shape: (6752342,), size: 51MB)
+[17:26:47] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.7%)
+[17:26:47] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:48] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:48] [new_phasic5:        run_analysis]: Resampled: (6752342,) -> (1350468,).
+[17:26:48] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.8%)
+[17:26:48] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:48] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:48] [new_phasic5:        run_analysis]: Resampled data shape: (1350468,), size: 10MB)
+[17:26:48] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:48] [new_phasic5:        run_analysis]: REM indices: [(1408, 1481), (2309, 2472)].
+[17:26:48] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:48] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.2%)
+[17:26:48] [new_phasic5:        run_analysis]: Saving as: Rat3_SD6_OD_1_posttrial1.
+[17:26:48] [new_phasic5:        run_analysis]: Loading: Rat3_SD7_HC_1_posttrial2
+[17:26:48] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD7_HC_20210614/2021-06-14_11-49-30_posttrial2/2021-06-14_11-49-30_posttrial2-states_ES.mat
+[17:26:49] [new_phasic5:        run_analysis]: LFP shape: (6752512,), size: 51MB)
+[17:26:49] [new_phasic5:        run_analysis]: Memory usage: 3.2G (58.8%)
+[17:26:49] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:50] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:50] [new_phasic5:        run_analysis]: Resampled: (6752512,) -> (1350502,).
+[17:26:50] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.5%)
+[17:26:50] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:50] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:50] [new_phasic5:        run_analysis]: Resampled data shape: (1350502,), size: 10MB)
+[17:26:50] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:50] [new_phasic5:        run_analysis]: REM indices: [(2610, 2699)].
+[17:26:50] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:50] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.8%)
+[17:26:50] [new_phasic5:        run_analysis]: Saving as: Rat3_SD7_HC_1_posttrial2.
+[17:26:50] [new_phasic5:        run_analysis]: Loading: Rat3_SD7_HC_1_posttrial3
+[17:26:50] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD7_HC_20210614/2021-06-14_12-39-49_posttrial3/2021-06-14_12-39-49_posttrial3-states_ES.mat
+[17:26:51] [new_phasic5:        run_analysis]: LFP shape: (6752171,), size: 51MB)
+[17:26:51] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.5%)
+[17:26:51] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:52] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:52] [new_phasic5:        run_analysis]: Resampled: (6752171,) -> (1350434,).
+[17:26:52] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.5%)
+[17:26:52] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:52] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:52] [new_phasic5:        run_analysis]: Resampled data shape: (1350434,), size: 10MB)
+[17:26:52] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:52] [new_phasic5:        run_analysis]: REM indices: [(1929, 2052), (2133, 2161)].
+[17:26:52] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:52] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.9%)
+[17:26:52] [new_phasic5:        run_analysis]: Saving as: Rat3_SD7_HC_1_posttrial3.
+[17:26:53] [new_phasic5:        run_analysis]: Loading: Rat3_SD7_HC_1_posttrial5
+[17:26:53] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD7_HC_20210614/2021-06-14_14-20-34_posttrial5/2021-06-14_14-20-34_posttrial5-states_ES.mat
+[17:26:54] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:26:54] [new_phasic5:        run_analysis]: Loading: Rat3_SD7_HC_1_posttrial1
+[17:26:54] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD7_HC_20210614/2021-06-14_10-59-13_posttrial1/2021-06-14_10-59-13_posttrial1-states_ES.mat
+[17:26:54] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:54] [new_phasic5:        run_analysis]: Loading: Rat3_SD7_HC_1_posttrial4
+[17:26:54] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD7_HC_20210614/2021-06-14_13-30-14_posttrial4/2021-06-14_13-30-14_posttrial4-states_ES.mat
+[17:26:54] [new_phasic5:        run_analysis]: LFP shape: (6753024,), size: 51MB)
+[17:26:54] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.5%)
+[17:26:54] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:26:56] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:26:56] [new_phasic5:        run_analysis]: Resampled: (6753024,) -> (1350605,).
+[17:26:56] [new_phasic5:        run_analysis]: Memory usage: 2.4G (69.1%)
+[17:26:56] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:26:56] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:26:56] [new_phasic5:        run_analysis]: Resampled data shape: (1350605,), size: 10MB)
+[17:26:56] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:26:56] [new_phasic5:        run_analysis]: REM indices: [(1585, 1687), (1723, 1783), (1844, 1910), (2618, 2673)].
+[17:26:56] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:26:56] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.4%)
+[17:26:56] [new_phasic5:        run_analysis]: Saving as: Rat3_SD7_HC_1_posttrial4.
+[17:26:56] [new_phasic5:        run_analysis]: Loading: Rat3_SD2_HC_0_posttrial2
+[17:26:56] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD2_HC_20210603/2021-06-03_11-02-55_posttrial2/2021-06-03_11-02-55_posttrial2-states_ES2.mat
+[17:26:56] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:26:56] [new_phasic5:        run_analysis]: Loading: Rat3_SD2_HC_0_posttrial4
+[17:26:56] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD2_HC_20210603/2021-06-03_12-43-35_posttrial4/2021-06-03_12-43-35_posttrial4-states_ES2.mat
+[17:26:57] [new_phasic5:        run_analysis]: LFP shape: (6763776,), size: 51MB)
+[17:26:57] [new_phasic5:        run_analysis]: Memory usage: 2.4G (69.1%)
+[17:26:57] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:00] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:00] [new_phasic5:        run_analysis]: Resampled: (6763776,) -> (1352755,).
+[17:27:00] [new_phasic5:        run_analysis]: Memory usage: 2.4G (69.0%)
+[17:27:00] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:00] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:00] [new_phasic5:        run_analysis]: Resampled data shape: (1352755,), size: 10MB)
+[17:27:00] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:00] [new_phasic5:        run_analysis]: REM indices: [(1724, 1781), (2392, 2496)].
+[17:27:00] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:00] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.3%)
+[17:27:00] [new_phasic5:        run_analysis]: Saving as: Rat3_SD2_HC_0_posttrial4.
+[17:27:00] [new_phasic5:        run_analysis]: Loading: Rat3_SD2_HC_0_posttrial5
+[17:27:00] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD2_HC_20210603/2021-06-03_13-34-04_posttrial5/2021-06-03_13-34-04_posttrial5-states_ES2.mat
+[17:27:01] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:01] [new_phasic5:        run_analysis]: Loading: Rat3_SD2_HC_0_posttrial3
+[17:27:01] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD2_HC_20210603/2021-06-03_11-53-13_posttrial3/2021-06-03_11-53-13_posttrial3-states_ES2.mat
+[17:27:01] [new_phasic5:        run_analysis]: LFP shape: (6757718,), size: 51MB)
+[17:27:01] [new_phasic5:        run_analysis]: Memory usage: 2.4G (69.0%)
+[17:27:01] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:03] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:03] [new_phasic5:        run_analysis]: Resampled: (6757718,) -> (1351544,).
+[17:27:03] [new_phasic5:        run_analysis]: Memory usage: 2.5G (68.0%)
+[17:27:03] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:03] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:03] [new_phasic5:        run_analysis]: Resampled data shape: (1351544,), size: 10MB)
+[17:27:03] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:03] [new_phasic5:        run_analysis]: REM indices: [(1871, 1990)].
+[17:27:03] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:03] [new_phasic5:        run_analysis]: Memory usage: 2.5G (67.3%)
+[17:27:03] [new_phasic5:        run_analysis]: Saving as: Rat3_SD2_HC_0_posttrial3.
+[17:27:03] [new_phasic5:        run_analysis]: Loading: Rat3_SD2_HC_0_posttrial1
+[17:27:03] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD2_HC_20210603/2021-06-03_10-12-28_posttrial1/2021-06-03_10-12-28_posttrial1-states_ES2.mat
+[17:27:03] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:03] [new_phasic5:        run_analysis]: Loading: Rat3_SD17_HC_0_posttrial1
+[17:27:03] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD17_HC_20210704/2021-07-04_11-45-37_posttrial1/2021-07-04_11-45-37_posttrial1-states_ES.mat
+[17:27:03] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:03] [new_phasic5:        run_analysis]: Loading: Rat3_SD17_HC_0_posttrial5
+[17:27:03] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD17_HC_20210704/2021-07-04_15-07-11_posttrial5/2021-07-04_15-07-11_posttrial5-states_ES.mat
+[17:27:04] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:04] [new_phasic5:        run_analysis]: Loading: Rat3_SD17_HC_0_posttrial4
+[17:27:04] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD17_HC_20210704/2021-07-04_14-16-46_posttrial4/2021-07-04_14-16-46_posttrial4-states_ES.mat
+[17:27:05] [new_phasic5:        run_analysis]: LFP shape: (6752000,), size: 51MB)
+[17:27:05] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.0%)
+[17:27:05] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:05] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:05] [new_phasic5:        run_analysis]: Resampled: (6752000,) -> (1350400,).
+[17:27:05] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.0%)
+[17:27:05] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:05] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:05] [new_phasic5:        run_analysis]: Resampled data shape: (1350400,), size: 10MB)
+[17:27:05] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:05] [new_phasic5:        run_analysis]: REM indices: [(917, 1014), (2389, 2477)].
+[17:27:05] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:05] [new_phasic5:        run_analysis]: Memory usage: 2.5G (67.4%)
+[17:27:05] [new_phasic5:        run_analysis]: Saving as: Rat3_SD17_HC_0_posttrial4.
+[17:27:05] [new_phasic5:        run_analysis]: Loading: Rat3_SD17_HC_0_posttrial3
+[17:27:05] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD17_HC_20210704/2021-07-04_13-26-20_posttrial3/2021-07-04_13-26-20_posttrial3-states_ES.mat
+[17:27:05] [new_phasic5:        run_analysis]: LFP shape: (6754475,), size: 51MB)
+[17:27:05] [new_phasic5:        run_analysis]: Memory usage: 2.5G (68.0%)
+[17:27:05] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:07] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:07] [new_phasic5:        run_analysis]: Resampled: (6754475,) -> (1350895,).
+[17:27:07] [new_phasic5:        run_analysis]: Memory usage: 2.9G (62.4%)
+[17:27:07] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:07] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:07] [new_phasic5:        run_analysis]: Resampled data shape: (1350895,), size: 10MB)
+[17:27:07] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:07] [new_phasic5:        run_analysis]: REM indices: [(1984, 2101)].
+[17:27:07] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:07] [new_phasic5:        run_analysis]: Memory usage: 2.9G (61.7%)
+[17:27:07] [new_phasic5:        run_analysis]: Saving as: Rat3_SD17_HC_0_posttrial3.
+[17:27:08] [new_phasic5:        run_analysis]: Loading: Rat3_SD17_HC_0_posttrial2
+[17:27:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD17_HC_20210704/2021-07-04_12-35-59_posttrial2/2021-07-04_12-35-59_posttrial2-states_ES.mat
+[17:27:08] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:08] [new_phasic5:        run_analysis]: Loading: Rat3_SD9_HC_1_posttrial2
+[17:27:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD9_HC_20210618/2021-06-18_11-18-46_posttrial2/2021-06-18_11-18-46_posttrial2-states_TS.mat
+[17:27:08] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:08] [new_phasic5:        run_analysis]: Loading: Rat3_SD9_HC_1_posttrial1
+[17:27:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD9_HC_20210618/2021-06-18_10-28-26_posttrial1/2021-06-18_10-28-26_posttrial1-states_TS.mat
+[17:27:08] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:08] [new_phasic5:        run_analysis]: Loading: Rat3_SD9_HC_1_posttrial4
+[17:27:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD9_HC_20210618/2021-06-18_12-59-25_posttrial4/2021-06-18_12-59-25_posttrial4-states_TS.mat
+[17:27:09] [new_phasic5:        run_analysis]: LFP shape: (6754646,), size: 51MB)
+[17:27:09] [new_phasic5:        run_analysis]: Memory usage: 2.9G (62.4%)
+[17:27:09] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:10] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:10] [new_phasic5:        run_analysis]: Resampled: (6754646,) -> (1350929,).
+[17:27:10] [new_phasic5:        run_analysis]: Memory usage: 3.0G (61.3%)
+[17:27:10] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:10] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:10] [new_phasic5:        run_analysis]: Resampled data shape: (1350929,), size: 10MB)
+[17:27:10] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:10] [new_phasic5:        run_analysis]: REM indices: [(1651, 1791), (2304, 2366)].
+[17:27:10] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:10] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.7%)
+[17:27:10] [new_phasic5:        run_analysis]: Saving as: Rat3_SD9_HC_1_posttrial4.
+[17:27:11] [new_phasic5:        run_analysis]: Loading: Rat3_SD9_HC_1_posttrial5
+[17:27:11] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD9_HC_20210618/2021-06-18_13-49-42_posttrial5/2021-06-18_13-49-42_posttrial5-states_TS.mat
+[17:27:12] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:12] [new_phasic5:        run_analysis]: Loading: Rat3_SD9_HC_1_posttrial3
+[17:27:12] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD9_HC_20210618/2021-06-18_12-09-06_posttrial3/2021-06-18_12-09-06_posttrial3-states_TS.mat
+[17:27:12] [new_phasic5:        run_analysis]: LFP shape: (6752512,), size: 51MB)
+[17:27:12] [new_phasic5:        run_analysis]: Memory usage: 3.0G (61.4%)
+[17:27:12] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:13] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:13] [new_phasic5:        run_analysis]: Resampled: (6752512,) -> (1350502,).
+[17:27:13] [new_phasic5:        run_analysis]: Memory usage: 3.0G (61.5%)
+[17:27:13] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:13] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:13] [new_phasic5:        run_analysis]: Resampled data shape: (1350502,), size: 10MB)
+[17:27:13] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:13] [new_phasic5:        run_analysis]: REM indices: [(1880, 1970)].
+[17:27:13] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:13] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.8%)
+[17:27:13] [new_phasic5:        run_analysis]: Saving as: Rat3_SD9_HC_1_posttrial3.
+[17:27:13] [new_phasic5:        run_analysis]: Loading: Rat3_SD8_HC_0_posttrial2
+[17:27:13] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD8_HC_20210616/2021-06-16_09-15-49_posttrial2/2021-06-16_09-15-49_posttrial2-states_ES.mat
+[17:27:14] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:14] [new_phasic5:        run_analysis]: Loading: Rat3_SD8_HC_0_posttrial4
+[17:27:14] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD8_HC_20210616/2021-06-16_10-56-34_posttrial4/2021-06-16_10-56-34_posttrial4-states_ES.mat
+[17:27:14] [new_phasic5:        run_analysis]: LFP shape: (6752000,), size: 51MB)
+[17:27:14] [new_phasic5:        run_analysis]: Memory usage: 2.9G (61.5%)
+[17:27:14] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:14] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:14] [new_phasic5:        run_analysis]: Resampled: (6752000,) -> (1350400,).
+[17:27:14] [new_phasic5:        run_analysis]: Memory usage: 2.9G (61.5%)
+[17:27:14] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:14] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:14] [new_phasic5:        run_analysis]: Resampled data shape: (1350400,), size: 10MB)
+[17:27:14] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:14] [new_phasic5:        run_analysis]: REM indices: [(713, 843), (1578, 1740), (2425, 2493)].
+[17:27:14] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:14] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.8%)
+[17:27:14] [new_phasic5:        run_analysis]: Saving as: Rat3_SD8_HC_0_posttrial4.
+[17:27:14] [new_phasic5:        run_analysis]: Loading: Rat3_SD8_HC_0_posttrial1
+[17:27:14] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD8_HC_20210616/2021-06-16_08-25-31_posttrial1/2021-06-16_08-25-31_posttrial1-states_ES.mat
+[17:27:15] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:15] [new_phasic5:        run_analysis]: Loading: Rat3_SD8_HC_0_posttrial5
+[17:27:15] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD8_HC_20210616/2021-06-16_11-46-46_posttrial5/2021-06-16_11-46-46_posttrial5-states_ES.mat
+[17:27:16] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:16] [new_phasic5:        run_analysis]: Loading: Rat3_SD8_HC_0_posttrial3
+[17:27:16] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD8_HC_20210616/2021-06-16_10-06-10_posttrial3/2021-06-16_10-06-10_posttrial3-states_ES.mat
+[17:27:16] [new_phasic5:        run_analysis]: LFP shape: (6757974,), size: 51MB)
+[17:27:16] [new_phasic5:        run_analysis]: Memory usage: 2.9G (61.5%)
+[17:27:16] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:18] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:18] [new_phasic5:        run_analysis]: Resampled: (6757974,) -> (1351595,).
+[17:27:18] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.6%)
+[17:27:18] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:18] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:18] [new_phasic5:        run_analysis]: Resampled data shape: (1351595,), size: 10MB)
+[17:27:18] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:18] [new_phasic5:        run_analysis]: REM indices: [(1313, 1330), (1530, 1616), (1708, 1768)].
+[17:27:18] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:18] [new_phasic5:        run_analysis]: Memory usage: 3.1G (59.9%)
+[17:27:18] [new_phasic5:        run_analysis]: Saving as: Rat3_SD8_HC_0_posttrial3.
+[17:27:18] [new_phasic5:        run_analysis]: Loading: Rat3_SD4_OD_0_posttrial3
+[17:27:18] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD4_OD_20210607/2021-06-07_12-42-30_posttrial3/2021-06-07_12-42-30_posttrial3-states_ES.mat
+[17:27:18] [new_phasic5:        run_analysis]: LFP shape: (6751318,), size: 51MB)
+[17:27:18] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.6%)
+[17:27:18] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:20] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:20] [new_phasic5:        run_analysis]: Resampled: (6751318,) -> (1350264,).
+[17:27:20] [new_phasic5:        run_analysis]: Memory usage: 3.0G (61.4%)
+[17:27:20] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:20] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:20] [new_phasic5:        run_analysis]: Resampled data shape: (1350264,), size: 10MB)
+[17:27:20] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:20] [new_phasic5:        run_analysis]: REM indices: [(1644, 1688), (1712, 1803)].
+[17:27:20] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:20] [new_phasic5:        run_analysis]: Memory usage: 3.0G (60.7%)
+[17:27:20] [new_phasic5:        run_analysis]: Saving as: Rat3_SD4_OD_0_posttrial3.
+[17:27:20] [new_phasic5:        run_analysis]: Loading: Rat3_SD4_OD_0_posttrial4
+[17:27:20] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD4_OD_20210607/2021-06-07_13-33-01_posttrial4/2021-06-07_13-33-01_posttrial4-states_ES.mat
+[17:27:20] [new_phasic5:        run_analysis]: LFP shape: (6768555,), size: 51MB)
+[17:27:20] [new_phasic5:        run_analysis]: Memory usage: 3.0G (61.3%)
+[17:27:20] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:22] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:22] [new_phasic5:        run_analysis]: Resampled: (6768555,) -> (1353711,).
+[17:27:22] [new_phasic5:        run_analysis]: Memory usage: 2.6G (66.1%)
+[17:27:22] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:22] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:22] [new_phasic5:        run_analysis]: Resampled data shape: (1353711,), size: 10MB)
+[17:27:22] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:22] [new_phasic5:        run_analysis]: REM indices: [(1091, 1166), (1757, 1802), (2569, 2584)].
+[17:27:22] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:22] [new_phasic5:        run_analysis]: Memory usage: 2.6G (65.5%)
+[17:27:22] [new_phasic5:        run_analysis]: Saving as: Rat3_SD4_OD_0_posttrial4.
+[17:27:22] [new_phasic5:        run_analysis]: Loading: Rat3_SD4_OD_0_posttrial5
+[17:27:22] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD4_OD_20210607/2021-06-07_14-23-57_posttrial5/2021-06-07_14-23-57_posttrial5-states_ES.mat
+[17:27:23] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:23] [new_phasic5:        run_analysis]: Loading: Rat3_SD4_OD_0_posttrial2
+[17:27:23] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD4_OD_20210607/2021-06-07_11-51-47_posttrial2/2021-06-07_11-51-47_posttrial2-states_ES.mat
+[17:27:24] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:24] [new_phasic5:        run_analysis]: Loading: Rat3_SD4_OD_0_posttrial1
+[17:27:24] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD4_OD_20210607/2021-06-07_11-01-04_posttrial1/2021-06-07_11-01-04_posttrial1-states_ES.mat
+[17:27:24] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:24] [new_phasic5:        run_analysis]: Loading: Rat3_SD1_OR_1_posttrial5
+[17:27:24] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD1_OR_20210601/2021-06-01_11-44-08_posttrial5/2021-06-01_11-44-08_posttrial5-states_ES2.mat
+[17:27:25] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:25] [new_phasic5:        run_analysis]: Loading: Rat3_SD1_OR_1_posttrial3
+[17:27:25] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD1_OR_20210601/2021-06-01_10-02-21_posttrial3/2021-06-01_10-02-21_posttrial3-states_ES2.mat
+[17:27:25] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:25] [new_phasic5:        run_analysis]: Loading: Rat3_SD1_OR_1_posttrial1
+[17:27:25] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD1_OR_20210601/2021-06-01_08-19-20_posttrial1/2021-06-01_08-19-20_posttrial1-states_ES2.mat
+[17:27:26] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:26] [new_phasic5:        run_analysis]: Loading: Rat3_SD1_OR_1_posttrial2
+[17:27:26] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD1_OR_20210601/2021-06-01_09-10-28_posttrial2/2021-06-01_09-10-28_posttrial2-states_ES2.mat
+[17:27:26] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:26] [new_phasic5:        run_analysis]: Loading: Rat3_SD1_OR_1_posttrial4
+[17:27:26] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD1_OR_20210601/2021-06-01_10-53-15_posttrial4/2021-06-01_10-53-15_posttrial4-states_ES2.mat
+[17:27:26] [new_phasic5:        run_analysis]: LFP shape: (6752427,), size: 51MB)
+[17:27:26] [new_phasic5:        run_analysis]: Memory usage: 2.6G (65.9%)
+[17:27:26] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:28] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:28] [new_phasic5:        run_analysis]: Resampled: (6752427,) -> (1350485,).
+[17:27:28] [new_phasic5:        run_analysis]: Memory usage: 2.5G (67.3%)
+[17:27:28] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:28] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:28] [new_phasic5:        run_analysis]: Resampled data shape: (1350485,), size: 10MB)
+[17:27:28] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:28] [new_phasic5:        run_analysis]: REM indices: [(1371, 1449)].
+[17:27:28] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:28] [new_phasic5:        run_analysis]: Memory usage: 2.6G (66.6%)
+[17:27:28] [new_phasic5:        run_analysis]: Saving as: Rat3_SD1_OR_1_posttrial4.
+[17:27:28] [new_phasic5:        run_analysis]: Loading: Rat3_SD5_HC_0_posttrial2
+[17:27:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD5_HC_20210609/2021-06-09_11-05-36_posttrial2/2021-06-09_11-05-36_posttrial2-states_ES.mat
+[17:27:28] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:28] [new_phasic5:        run_analysis]: Loading: Rat3_SD5_HC_0_posttrial1
+[17:27:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD5_HC_20210609/2021-06-09_10-15-22_posttrial1/2021-06-09_10-15-22_posttrial1-states_ES.mat
+[17:27:28] [new_phasic5:        run_analysis]: LFP shape: (6751403,), size: 51MB)
+[17:27:28] [new_phasic5:        run_analysis]: Memory usage: 2.5G (67.2%)
+[17:27:28] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:30] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:30] [new_phasic5:        run_analysis]: Resampled: (6751403,) -> (1350281,).
+[17:27:30] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.8%)
+[17:27:30] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:30] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:30] [new_phasic5:        run_analysis]: Resampled data shape: (1350281,), size: 10MB)
+[17:27:30] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:30] [new_phasic5:        run_analysis]: REM indices: [(2138, 2183)].
+[17:27:30] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:30] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.2%)
+[17:27:30] [new_phasic5:        run_analysis]: Saving as: Rat3_SD5_HC_0_posttrial1.
+[17:27:30] [new_phasic5:        run_analysis]: Loading: Rat3_SD5_HC_0_posttrial5
+[17:27:30] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD5_HC_20210609/2021-06-09_13-36-38_posttrial5/2021-06-09_13-36-38_posttrial5-states_ES.mat
+[17:27:31] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:31] [new_phasic5:        run_analysis]: Loading: Rat3_SD5_HC_0_posttrial3
+[17:27:31] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD5_HC_20210609/2021-06-09_11-56-08_posttrial3/2021-06-09_11-56-08_postrial3-states_ES.mat
+[17:27:32] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:32] [new_phasic5:        run_analysis]: Loading: Rat3_SD5_HC_0_posttrial4
+[17:27:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD5_HC_20210609/2021-06-09_12-46-25_posttrial4/2021-06-09_12-46-25_posttrial4-states_ES.mat
+[17:27:32] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:32] [new_phasic5:        run_analysis]: Loading: Rat3_SD3_OR_0_posttrial5
+[17:27:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD3_OR_4_06_2021/2021-06-04_13-43-50_posttrial5/2021-06-04_13-43-50_posttrial5-states_ES2.mat
+[17:27:33] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:33] [new_phasic5:        run_analysis]: Loading: Rat3_SD3_OR_0_posttrial4
+[17:27:33] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD3_OR_4_06_2021/2021-06-04_12-53-01_posttrial4/2021-06-04_12-53-01_posttrial4-states_ES2.mat
+[17:27:33] [new_phasic5:        run_analysis]: LFP shape: (6751403,), size: 51MB)
+[17:27:33] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.0%)
+[17:27:33] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:35] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:35] [new_phasic5:        run_analysis]: Resampled: (6751403,) -> (1350281,).
+[17:27:35] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.9%)
+[17:27:35] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:35] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:35] [new_phasic5:        run_analysis]: Resampled data shape: (1350281,), size: 10MB)
+[17:27:35] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:35] [new_phasic5:        run_analysis]: REM indices: [(1578, 1703), (2687, 2699)].
+[17:27:35] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:35] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.3%)
+[17:27:35] [new_phasic5:        run_analysis]: Saving as: Rat3_SD3_OR_0_posttrial4.
+[17:27:35] [new_phasic5:        run_analysis]: Loading: Rat3_SD3_OR_0_posttrial3
+[17:27:35] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD3_OR_4_06_2021/2021-06-04_12-02-16_posttrial3/2021-06-04_12-02-16_posttrial3-states_ES.mat
+[17:27:35] [new_phasic5:        run_analysis]: LFP shape: (6751318,), size: 51MB)
+[17:27:35] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.9%)
+[17:27:35] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:36] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:36] [new_phasic5:        run_analysis]: Resampled: (6751318,) -> (1350264,).
+[17:27:36] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.0%)
+[17:27:36] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:36] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:36] [new_phasic5:        run_analysis]: Resampled data shape: (1350264,), size: 10MB)
+[17:27:36] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:36] [new_phasic5:        run_analysis]: REM indices: [(1529, 1558), (1587, 1603)].
+[17:27:36] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:36] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.4%)
+[17:27:36] [new_phasic5:        run_analysis]: Saving as: Rat3_SD3_OR_0_posttrial3.
+[17:27:36] [new_phasic5:        run_analysis]: Loading: Rat3_SD3_OR_0_posttrial2
+[17:27:36] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD3_OR_4_06_2021/2021-06-04_11-11-32_posttrial2/2021-06-04_11-11-32_posttrial2-states_ES.mat
+[17:27:36] [new_phasic5:        run_analysis]: LFP shape: (6751232,), size: 51MB)
+[17:27:36] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.0%)
+[17:27:36] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:38] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:38] [new_phasic5:        run_analysis]: Resampled: (6751232,) -> (1350246,).
+[17:27:38] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.1%)
+[17:27:38] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:38] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:38] [new_phasic5:        run_analysis]: Resampled data shape: (1350246,), size: 10MB)
+[17:27:38] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:38] [new_phasic5:        run_analysis]: REM indices: [(2378, 2446)].
+[17:27:38] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:38] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.3%)
+[17:27:38] [new_phasic5:        run_analysis]: Saving as: Rat3_SD3_OR_0_posttrial2.
+[17:27:38] [new_phasic5:        run_analysis]: Loading: Rat3_SD3_OR_0_posttrial1
+[17:27:38] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD3_OR_4_06_2021/2021-06-04_10-20-45_posttrial1/2021-06-04_10-20-45_posttrial1-states_ES2.mat
+[17:27:38] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:38] [new_phasic5:        run_analysis]: Loading: Rat3_SD16_OR_1_posttrial5
+[17:27:38] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD16_OR_20210701/2021-07-02_13-19-27_posttrial5/2021-07-02_13-19-27_posttrial5-states_ES.mat
+[17:27:40] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:40] [new_phasic5:        run_analysis]: Loading: Rat3_SD16_OR_1_posttrial2
+[17:27:40] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD16_OR_20210701/2021-07-02_10-47-21_posttrial2/2021-07-02_10-47-21_posttrial2-states_ES.mat
+[17:27:40] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:40] [new_phasic5:        run_analysis]: Loading: Rat3_SD16_OR_1_posttrial3
+[17:27:40] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD16_OR_20210701/2021-07-02_11-38-01_posttrial3/2021-07-02_11-38-01_posttrial3-states_ES.mat
+[17:27:40] [new_phasic5:        run_analysis]: LFP shape: (6755414,), size: 51MB)
+[17:27:40] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.1%)
+[17:27:40] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:42] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:42] [new_phasic5:        run_analysis]: Resampled: (6755414,) -> (1351083,).
+[17:27:42] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.2%)
+[17:27:42] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:42] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:42] [new_phasic5:        run_analysis]: Resampled data shape: (1351083,), size: 10MB)
+[17:27:42] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:42] [new_phasic5:        run_analysis]: REM indices: [(1596, 1632), (2177, 2307)].
+[17:27:42] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:42] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.5%)
+[17:27:42] [new_phasic5:        run_analysis]: Saving as: Rat3_SD16_OR_1_posttrial3.
+[17:27:42] [new_phasic5:        run_analysis]: Loading: Rat3_SD16_OR_1_posttrial1
+[17:27:42] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD16_OR_20210701/2021-07-02_09-56-43_posttrial1/2021-07-02_09-56-43_posttrial1-states_ES.mat
+[17:27:42] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:42] [new_phasic5:        run_analysis]: Loading: Rat3_SD16_OR_1_posttrial4
+[17:27:42] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat3/Rat_OS_Ephys_cbd_chronic_Rat3_407698_SD16_OR_20210701/2021-07-02_12-28-46_posttrial4/2021-07-02_12-28-46_posttrial4-states_ES.mat
+[17:27:42] [new_phasic5:        run_analysis]: LFP shape: (6751744,), size: 51MB)
+[17:27:42] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.2%)
+[17:27:42] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:44] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:44] [new_phasic5:        run_analysis]: Resampled: (6751744,) -> (1350349,).
+[17:27:44] [new_phasic5:        run_analysis]: Memory usage: 1.5G (79.8%)
+[17:27:44] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:44] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:44] [new_phasic5:        run_analysis]: Resampled data shape: (1350349,), size: 10MB)
+[17:27:44] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:44] [new_phasic5:        run_analysis]: REM indices: [(1698, 1792)].
+[17:27:44] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:44] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.2%)
+[17:27:44] [new_phasic5:        run_analysis]: Saving as: Rat3_SD16_OR_1_posttrial4.
+[17:27:44] [new_phasic5:        run_analysis]: Loading: Rat4_SD4_OD_1_posttrial5
+[17:27:44] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD4_OD_20210607/2021-06-07_14-39-27_posttrial5/2021-06-07_14-39-27_posttrial5-states_SM.mat
+[17:27:45] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:45] [new_phasic5:        run_analysis]: Loading: Rat4_SD4_OD_1_posttrial1
+[17:27:45] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD4_OD_20210607/2021-06-07_11-16-17_posttrial1/2021-06-07_11-16-17_posttrial1-states_SM.mat
+[17:27:46] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:46] [new_phasic5:        run_analysis]: Loading: Rat4_SD4_OD_1_posttrial3
+[17:27:46] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD4_OD_20210607/2021-06-07_12-57-50_posttrial3/2021-06-07_12-57-50_posttrial3-states_SM.mat
+[17:27:46] [new_phasic5:        run_analysis]: LFP shape: (6751062,), size: 51MB)
+[17:27:46] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.4%)
+[17:27:46] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:48] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:48] [new_phasic5:        run_analysis]: Resampled: (6751062,) -> (1350212,).
+[17:27:48] [new_phasic5:        run_analysis]: Memory usage: 1.5G (80.2%)
+[17:27:48] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:48] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:48] [new_phasic5:        run_analysis]: Resampled data shape: (1350212,), size: 10MB)
+[17:27:48] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:48] [new_phasic5:        run_analysis]: REM indices: [(1485, 1500)].
+[17:27:48] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:48] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.5%)
+[17:27:48] [new_phasic5:        run_analysis]: Saving as: Rat4_SD4_OD_1_posttrial3.
+[17:27:48] [new_phasic5:        run_analysis]: Loading: Rat4_SD4_OD_1_posttrial4
+[17:27:48] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD4_OD_20210607/2021-06-07_13-48-35_posttrial4/2021-06-07_13-48-35_posttrial4-states_SM.mat
+[17:27:48] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:48] [new_phasic5:        run_analysis]: Loading: Rat4_SD4_OD_1_posttrial2
+[17:27:48] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD4_OD_20210607/2021-06-07_12-07-03_posttrial2/2021-06-07_12-07-03_posttrial2-states_SM.mat
+[17:27:49] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:49] [new_phasic5:        run_analysis]: Loading: Rat4_SD5_HC_0_posttrial4
+[17:27:49] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD5_HC_20210609/2021-06-09_12-57-04_posttrial4/2021-06-09_12-57-04_posttrial4-states_SM.mat
+[17:27:49] [new_phasic5:        run_analysis]: LFP shape: (6751915,), size: 51MB)
+[17:27:49] [new_phasic5:        run_analysis]: Memory usage: 1.5G (80.2%)
+[17:27:49] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:50] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:50] [new_phasic5:        run_analysis]: Resampled: (6751915,) -> (1350383,).
+[17:27:50] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.7%)
+[17:27:50] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:51] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:51] [new_phasic5:        run_analysis]: Resampled data shape: (1350383,), size: 10MB)
+[17:27:51] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:51] [new_phasic5:        run_analysis]: REM indices: [(2375, 2484)].
+[17:27:51] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:51] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.1%)
+[17:27:51] [new_phasic5:        run_analysis]: Saving as: Rat4_SD5_HC_0_posttrial4.
+[17:27:51] [new_phasic5:        run_analysis]: Loading: Rat4_SD5_HC_0_posttrial5
+[17:27:51] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD5_HC_20210609/2021-06-09_13-47-17_posttrial5/2021-06-09_13-47-17_posttrial5-states_SM.mat
+[17:27:52] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:52] [new_phasic5:        run_analysis]: Loading: Rat4_SD5_HC_0_posttrial2
+[17:27:52] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD5_HC_20210609/2021-06-09_11-15-33_posttrial2/2021-06-09_11-15-33_posttrial2-states_SM.mat
+[17:27:52] [new_phasic5:        run_analysis]: LFP shape: (6752000,), size: 51MB)
+[17:27:52] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.8%)
+[17:27:52] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:52] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:52] [new_phasic5:        run_analysis]: Resampled: (6752000,) -> (1350400,).
+[17:27:52] [new_phasic5:        run_analysis]: Memory usage: 2.4G (69.2%)
+[17:27:52] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:52] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:52] [new_phasic5:        run_analysis]: Resampled data shape: (1350400,), size: 10MB)
+[17:27:52] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:52] [new_phasic5:        run_analysis]: REM indices: [(2064, 2166)].
+[17:27:52] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:52] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.6%)
+[17:27:52] [new_phasic5:        run_analysis]: Saving as: Rat4_SD5_HC_0_posttrial2.
+[17:27:52] [new_phasic5:        run_analysis]: Loading: Rat4_SD5_HC_0_posttrial3
+[17:27:52] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD5_HC_20210609/2021-06-09_12-06-20_posttrial3/2021-06-09_12-06-20_posttrial3-states_SM.mat
+[17:27:53] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:53] [new_phasic5:        run_analysis]: Loading: Rat4_SD5_HC_0_posttrial1
+[17:27:53] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD5_HC_20210609/2021-06-09_10-25-17_posttrial1/2021-06-09_10-25-17_posttrial1-states_SM.mat
+[17:27:53] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:53] [new_phasic5:        run_analysis]: Loading: Rat4_SD17_HC_0_posttrial1
+[17:27:53] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD17_HC_20210704/2021-07-04_12-02-19_posttrial1/2021-07-04_12-02-19_posttrial1-states_SM.mat
+[17:27:53] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:53] [new_phasic5:        run_analysis]: Loading: Rat4_SD17_HC_0_posttrial5
+[17:27:53] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD17_HC_20210704/2021-07-04_15-23-42_posttrial5/2021-07-04_15-23-42_posttrial5-states_SM.mat
+[17:27:54] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:54] [new_phasic5:        run_analysis]: Loading: Rat4_SD17_HC_0_posttrial4
+[17:27:54] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD17_HC_20210704/2021-07-04_14-33-20_posttrial4/2021-07-04_14-33-20_posttrial4-states_SM.mat
+[17:27:55] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:55] [new_phasic5:        run_analysis]: Loading: Rat4_SD17_HC_0_posttrial3
+[17:27:55] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD17_HC_20210704/2021-07-04_13-43-01_posttrial3/2021-07-04_13-43-01_posttrial3-states_SM.mat
+[17:27:55] [new_phasic5:        run_analysis]: LFP shape: (6751830,), size: 51MB)
+[17:27:55] [new_phasic5:        run_analysis]: Memory usage: 2.3G (70.3%)
+[17:27:55] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:56] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:56] [new_phasic5:        run_analysis]: Resampled: (6751830,) -> (1350366,).
+[17:27:56] [new_phasic5:        run_analysis]: Memory usage: 2.3G (69.4%)
+[17:27:56] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:57] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:57] [new_phasic5:        run_analysis]: Resampled data shape: (1350366,), size: 10MB)
+[17:27:57] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:57] [new_phasic5:        run_analysis]: REM indices: [(2522, 2616)].
+[17:27:57] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:57] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.8%)
+[17:27:57] [new_phasic5:        run_analysis]: Saving as: Rat4_SD17_HC_0_posttrial3.
+[17:27:57] [new_phasic5:        run_analysis]: Loading: Rat4_SD17_HC_0_posttrial2
+[17:27:57] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD17_HC_20210704/2021-07-04_12-52-40_posttrial2/2021-07-04_12-52-40_posttrial2-states_SM.mat
+[17:27:57] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:57] [new_phasic5:        run_analysis]: Loading: Rat4_SD9_HC_0_posttrial4
+[17:27:57] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD9_HC_20210618/2021-06-18_13-09-53_posttrial4/2021-06-18_13-09-53_posttrial4-states_SM.mat
+[17:27:57] [new_phasic5:        run_analysis]: LFP shape: (6801920,), size: 51MB)
+[17:27:57] [new_phasic5:        run_analysis]: Memory usage: 2.3G (69.4%)
+[17:27:57] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:27:58] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:27:58] [new_phasic5:        run_analysis]: Resampled: (6801920,) -> (1360384,).
+[17:27:58] [new_phasic5:        run_analysis]: Memory usage: 2.8G (64.0%)
+[17:27:58] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:27:58] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:27:58] [new_phasic5:        run_analysis]: Resampled data shape: (1360384,), size: 10MB)
+[17:27:58] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:27:58] [new_phasic5:        run_analysis]: REM indices: [(1001, 1110), (1946, 2032), (2561, 2719)].
+[17:27:58] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:27:58] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.3%)
+[17:27:58] [new_phasic5:        run_analysis]: Saving as: Rat4_SD9_HC_0_posttrial4.
+[17:27:58] [new_phasic5:        run_analysis]: Loading: Rat4_SD9_HC_0_posttrial2
+[17:27:58] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD9_HC_20210618/2021-06-18_11-28-59_posttrial2/2021-06-18_11-28-59_posttrial2-states_SM.mat
+[17:27:58] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:27:58] [new_phasic5:        run_analysis]: Loading: Rat4_SD9_HC_0_posttrial5
+[17:27:58] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD9_HC_20210618/2021-06-18_14-00-33_posttrial5/2021-06-18_14-00-33_posttrial5-states_SM.mat
+[17:27:59] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:27:59] [new_phasic5:        run_analysis]: Loading: Rat4_SD9_HC_0_posttrial1
+[17:27:59] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD9_HC_20210618/2021-06-18_10-38-38_posttrial1/2021-06-18_10-38-38_posttrial1-states_SM.mat
+[17:28:00] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:00] [new_phasic5:        run_analysis]: Loading: Rat4_SD9_HC_0_posttrial3
+[17:28:00] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD9_HC_20210618/2021-06-18_12-19-29_posttrial3/2021-06-18_12-19-29_posttrial3-states_SM.mat
+[17:28:00] [new_phasic5:        run_analysis]: LFP shape: (6753110,), size: 51MB)
+[17:28:00] [new_phasic5:        run_analysis]: Memory usage: 2.8G (64.0%)
+[17:28:00] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:02] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:02] [new_phasic5:        run_analysis]: Resampled: (6753110,) -> (1350622,).
+[17:28:02] [new_phasic5:        run_analysis]: Memory usage: 2.8G (64.0%)
+[17:28:02] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:02] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:02] [new_phasic5:        run_analysis]: Resampled data shape: (1350622,), size: 10MB)
+[17:28:02] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:02] [new_phasic5:        run_analysis]: REM indices: [(1599, 1722)].
+[17:28:02] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:02] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.3%)
+[17:28:02] [new_phasic5:        run_analysis]: Saving as: Rat4_SD9_HC_0_posttrial3.
+[17:28:02] [new_phasic5:        run_analysis]: Loading: Rat4_SD3_OR_1_posttrial2
+[17:28:02] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD3_OR_20210604/2021-06-04_11-21-11_posttrial2/2021-06-04_11-21-11_posttrial2-states_SM.mat
+[17:28:02] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:02] [new_phasic5:        run_analysis]: Loading: Rat4_SD3_OR_1_posttrial5
+[17:28:02] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD3_OR_20210604/2021-06-04_13-54-11_posttrial5/2021-06-04_13-54-11_posttrial5-states_SM.mat
+[17:28:03] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:03] [new_phasic5:        run_analysis]: Loading: Rat4_SD3_OR_1_posttrial3
+[17:28:03] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD3_OR_20210604/2021-06-04_12-11-49_posttrial3/2021-06-04_12-11-49_posttrial3-states_SM.mat
+[17:28:03] [new_phasic5:        run_analysis]: LFP shape: (6755072,), size: 51MB)
+[17:28:03] [new_phasic5:        run_analysis]: Memory usage: 2.8G (64.0%)
+[17:28:03] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:05] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:05] [new_phasic5:        run_analysis]: Resampled: (6755072,) -> (1351014,).
+[17:28:05] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.1%)
+[17:28:05] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:05] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:05] [new_phasic5:        run_analysis]: Resampled data shape: (1351014,), size: 10MB)
+[17:28:05] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:05] [new_phasic5:        run_analysis]: REM indices: [(1469, 1476), (2113, 2385)].
+[17:28:05] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:05] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.5%)
+[17:28:05] [new_phasic5:        run_analysis]: Saving as: Rat4_SD3_OR_1_posttrial3.
+[17:28:05] [new_phasic5:        run_analysis]: Loading: Rat4_SD3_OR_1_posttrial1
+[17:28:05] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD3_OR_20210604/2021-06-04_10-30-41_posttrial1/2021-06-04_10-30-41_posttrial1-states_SM.mat
+[17:28:06] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:06] [new_phasic5:        run_analysis]: Loading: Rat4_SD3_OR_1_posttrial4
+[17:28:06] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD3_OR_20210604/2021-06-04_13-03-27_posttrial4/2021-06-04_13-03-27_posttrial4-states_SM.mat
+[17:28:06] [new_phasic5:        run_analysis]: LFP shape: (6751574,), size: 51MB)
+[17:28:06] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.2%)
+[17:28:06] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:08] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:08] [new_phasic5:        run_analysis]: Resampled: (6751574,) -> (1350315,).
+[17:28:08] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.1%)
+[17:28:08] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:08] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:08] [new_phasic5:        run_analysis]: Resampled data shape: (1350315,), size: 10MB)
+[17:28:08] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:08] [new_phasic5:        run_analysis]: REM indices: [(1290, 1435)].
+[17:28:08] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:08] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.5%)
+[17:28:08] [new_phasic5:        run_analysis]: Saving as: Rat4_SD3_OR_1_posttrial4.
+[17:28:08] [new_phasic5:        run_analysis]: Loading: Rat4_SD7_HC_1_posttrial3
+[17:28:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD7_HC_20210614/2021-06-14_12-31-57_posttrial3/2021-06-14_12-31-57_posttrial3-states_SM.mat
+[17:28:08] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:08] [new_phasic5:        run_analysis]: Loading: Rat4_SD7_HC_1_posttrial4
+[17:28:08] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD7_HC_20210614/2021-06-14_13-22-20_posttrial4/2021-06-14_13-22-20_posttrial4-states_SM.mat
+[17:28:08] [new_phasic5:        run_analysis]: LFP shape: (6752086,), size: 51MB)
+[17:28:08] [new_phasic5:        run_analysis]: Memory usage: 2.7G (64.1%)
+[17:28:08] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:10] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:10] [new_phasic5:        run_analysis]: Resampled: (6752086,) -> (1350417,).
+[17:28:10] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.8%)
+[17:28:10] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:10] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:10] [new_phasic5:        run_analysis]: Resampled data shape: (1350417,), size: 10MB)
+[17:28:10] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:10] [new_phasic5:        run_analysis]: REM indices: [(2267, 2391)].
+[17:28:10] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:10] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.2%)
+[17:28:10] [new_phasic5:        run_analysis]: Saving as: Rat4_SD7_HC_1_posttrial4.
+[17:28:10] [new_phasic5:        run_analysis]: Loading: Rat4_SD7_HC_1_posttrial5
+[17:28:10] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD7_HC_20210614/2021-06-14_14-12-36_posttrial5/2021-06-14_14-12-36_posttrial5-states_SM.mat
+[17:28:11] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:11] [new_phasic5:        run_analysis]: Loading: Rat4_SD7_HC_1_posttrial1
+[17:28:11] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD7_HC_20210614/2021-06-14_10-51-15_posttrial1/2021-06-14_10-51-15_posttrial1-states_SM.mat
+[17:28:11] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:11] [new_phasic5:        run_analysis]: Loading: Rat4_SD7_HC_1_posttrial2
+[17:28:11] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD7_HC_20210614/2021-06-14_11-41-31_posttrial2/2021-06-14_11-41-31_posttrial2-states_SM.mat
+[17:28:12] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:12] [new_phasic5:        run_analysis]: Loading: Rat4_SD2_HC_0_posttrial3
+[17:28:12] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD2_HC_20210603/2021-06-03_11-57-21_posttrial3/2021-06-03_11-57-21_posttrial3-states_SM.mat
+[17:28:12] [new_phasic5:        run_analysis]: LFP shape: (6757120,), size: 51MB)
+[17:28:12] [new_phasic5:        run_analysis]: Memory usage: 2.8G (63.9%)
+[17:28:12] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:14] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:14] [new_phasic5:        run_analysis]: Resampled: (6757120,) -> (1351424,).
+[17:28:14] [new_phasic5:        run_analysis]: Memory usage: 2.3G (69.6%)
+[17:28:14] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:14] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:14] [new_phasic5:        run_analysis]: Resampled data shape: (1351424,), size: 10MB)
+[17:28:14] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:14] [new_phasic5:        run_analysis]: REM indices: [(1904, 1922)].
+[17:28:14] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:14] [new_phasic5:        run_analysis]: Memory usage: 2.4G (68.9%)
+[17:28:14] [new_phasic5:        run_analysis]: Saving as: Rat4_SD2_HC_0_posttrial3.
+[17:28:14] [new_phasic5:        run_analysis]: Loading: Rat4_SD2_HC_0_posttrial2
+[17:28:14] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD2_HC_20210603/2021-06-03_11-06-57_posttrial2/2021-06-03_11-06-57_posttrial2-states_SM.mat
+[17:28:14] [new_phasic5:        run_analysis]: LFP shape: (6753622,), size: 51MB)
+[17:28:14] [new_phasic5:        run_analysis]: Memory usage: 2.3G (69.6%)
+[17:28:14] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:16] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:16] [new_phasic5:        run_analysis]: Resampled: (6753622,) -> (1350724,).
+[17:28:16] [new_phasic5:        run_analysis]: Memory usage: 1.9G (75.3%)
+[17:28:16] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:16] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:16] [new_phasic5:        run_analysis]: Resampled data shape: (1350724,), size: 10MB)
+[17:28:16] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:16] [new_phasic5:        run_analysis]: REM indices: [(449, 464), (712, 839)].
+[17:28:16] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:16] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.7%)
+[17:28:16] [new_phasic5:        run_analysis]: Saving as: Rat4_SD2_HC_0_posttrial2.
+[17:28:16] [new_phasic5:        run_analysis]: Loading: Rat4_SD2_HC_0_posttrial4
+[17:28:16] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD2_HC_20210603/2021-06-03_12-47-52_posttrial4/2021-06-03_12-47-52_posttrial4-states_SM.mat
+[17:28:17] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:17] [new_phasic5:        run_analysis]: Loading: Rat4_SD2_HC_0_posttrial5
+[17:28:17] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD2_HC_20210603/2021-06-03_13-38-14_posttrial5/2021-06-03_13-38-14_posttrial5-states_SM.mat
+[17:28:18] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:18] [new_phasic5:        run_analysis]: Loading: Rat4_SD2_HC_0_posttrial1
+[17:28:18] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD2_HC_20210603/2021-06-03_10-16-28_posttrial1/2021-06-03_10-16-28_posttrial1-states_SM.mat
+[17:28:18] [new_phasic5:        run_analysis]: LFP shape: (6753536,), size: 51MB)
+[17:28:18] [new_phasic5:        run_analysis]: Memory usage: 2.0G (74.4%)
+[17:28:18] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:20] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:20] [new_phasic5:        run_analysis]: Resampled: (6753536,) -> (1350707,).
+[17:28:20] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.8%)
+[17:28:20] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:20] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:20] [new_phasic5:        run_analysis]: Resampled data shape: (1350707,), size: 10MB)
+[17:28:20] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:20] [new_phasic5:        run_analysis]: REM indices: [(2342, 2399)].
+[17:28:20] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:20] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.8%)
+[17:28:20] [new_phasic5:        run_analysis]: Saving as: Rat4_SD2_HC_0_posttrial1.
+[17:28:20] [new_phasic5:        run_analysis]: Loading: Rat4_SD6_OD_0_posttrial4
+[17:28:20] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD6_OD_20210610/2021-06-10_13-12-11_posttrial4/2021-06-10_13-12-11_posttrial4-states_SM.mat
+[17:28:20] [new_phasic5:        run_analysis]: LFP shape: (6753195,), size: 51MB)
+[17:28:20] [new_phasic5:        run_analysis]: Memory usage: 1.9G (74.8%)
+[17:28:20] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:22] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:22] [new_phasic5:        run_analysis]: Resampled: (6753195,) -> (1350639,).
+[17:28:22] [new_phasic5:        run_analysis]: Memory usage: 1.5G (79.8%)
+[17:28:22] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:22] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:22] [new_phasic5:        run_analysis]: Resampled data shape: (1350639,), size: 10MB)
+[17:28:22] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:22] [new_phasic5:        run_analysis]: REM indices: [(1234, 1312), (1870, 1906), (2560, 2577)].
+[17:28:22] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:22] [new_phasic5:        run_analysis]: Memory usage: 1.6G (78.8%)
+[17:28:22] [new_phasic5:        run_analysis]: Saving as: Rat4_SD6_OD_0_posttrial4.
+[17:28:22] [new_phasic5:        run_analysis]: Loading: Rat4_SD6_OD_0_posttrial3
+[17:28:22] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD6_OD_20210610/2021-06-10_12-21-12_posttrial3/2021-06-10_12-21-12_posttrial3-states_SM.mat
+[17:28:22] [new_phasic5:        run_analysis]: LFP shape: (6752768,), size: 51MB)
+[17:28:22] [new_phasic5:        run_analysis]: Memory usage: 1.6G (79.4%)
+[17:28:22] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:24] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:24] [new_phasic5:        run_analysis]: Resampled: (6752768,) -> (1350554,).
+[17:28:24] [new_phasic5:        run_analysis]: Memory usage: 1.6G (78.6%)
+[17:28:24] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:24] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:24] [new_phasic5:        run_analysis]: Resampled data shape: (1350554,), size: 10MB)
+[17:28:24] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:24] [new_phasic5:        run_analysis]: REM indices: [(1238, 1247), (1509, 1600), (2106, 2249)].
+[17:28:24] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:24] [new_phasic5:        run_analysis]: Memory usage: 1.7G (78.0%)
+[17:28:24] [new_phasic5:        run_analysis]: Saving as: Rat4_SD6_OD_0_posttrial3.
+[17:28:24] [new_phasic5:        run_analysis]: Loading: Rat4_SD6_OD_0_posttrial5
+[17:28:24] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD6_OD_20210610/2021-06-10_14-03-03_posttrial5/2021-06-10_14-03-03_posttrial5-states_SM.mat
+[17:28:25] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:25] [new_phasic5:        run_analysis]: Loading: Rat4_SD6_OD_0_posttrial2
+[17:28:25] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD6_OD_20210610/2021-06-10_11-30-16_posttrial2/2021-06-10_11-30-16_posttrial2-states_SM.mat
+[17:28:26] [new_phasic5:        run_analysis]: LFP shape: (6753024,), size: 51MB)
+[17:28:26] [new_phasic5:        run_analysis]: Memory usage: 1.6G (78.6%)
+[17:28:26] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:27] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:27] [new_phasic5:        run_analysis]: Resampled: (6753024,) -> (1350605,).
+[17:28:27] [new_phasic5:        run_analysis]: Memory usage: 1.7G (77.7%)
+[17:28:27] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:27] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:27] [new_phasic5:        run_analysis]: Resampled data shape: (1350605,), size: 10MB)
+[17:28:27] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:27] [new_phasic5:        run_analysis]: REM indices: [(2444, 2557)].
+[17:28:27] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:27] [new_phasic5:        run_analysis]: Memory usage: 1.8G (77.0%)
+[17:28:27] [new_phasic5:        run_analysis]: Saving as: Rat4_SD6_OD_0_posttrial2.
+[17:28:27] [new_phasic5:        run_analysis]: Loading: Rat4_SD6_OD_0_posttrial1
+[17:28:27] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD6_OD_20210610/2021-06-10_10-39-35_posttrial1/2021-06-10_10-39-35_posttrial1-states_SM.mat
+[17:28:28] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:28] [new_phasic5:        run_analysis]: Loading: Rat4_SD8_HC_1_posttrial1
+[17:28:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD8_HC_20210616/2021-06-16_10-35-22_posttrial1/2021-06-16_10-35-22_posttrial1-states_SM.mat
+[17:28:28] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:28] [new_phasic5:        run_analysis]: Loading: Rat4_SD8_HC_1_posttrial5
+[17:28:28] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD8_HC_20210616/2021-06-16_13-56-44_posttrial5/2021-06-16_13-56-44_posttrial5-states_SM.mat
+[17:28:29] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:29] [new_phasic5:        run_analysis]: Loading: Rat4_SD8_HC_1_posttrial2
+[17:28:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD8_HC_20210616/2021-06-16_11-25-41_posttrial2/2021-06-16_11-25-41_posttrial2-states_SM.mat
+[17:28:29] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:29] [new_phasic5:        run_analysis]: Loading: Rat4_SD8_HC_1_posttrial4
+[17:28:29] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD8_HC_20210616/2021-06-16_13-06-28_posttrial4/2021-06-16_13-06-28_posttrial4-states_ES.mat
+[17:28:30] [new_phasic5:        run_analysis]: LFP shape: (6751488,), size: 51MB)
+[17:28:30] [new_phasic5:        run_analysis]: Memory usage: 1.7G (77.7%)
+[17:28:30] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:31] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:31] [new_phasic5:        run_analysis]: Resampled: (6751488,) -> (1350298,).
+[17:28:31] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.2%)
+[17:28:31] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:32] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:32] [new_phasic5:        run_analysis]: Resampled data shape: (1350298,), size: 10MB)
+[17:28:32] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:32] [new_phasic5:        run_analysis]: REM indices: [(1391, 1543), (1545, 1548), (2166, 2223)].
+[17:28:32] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:32] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.5%)
+[17:28:32] [new_phasic5:        run_analysis]: Saving as: Rat4_SD8_HC_1_posttrial4.
+[17:28:32] [new_phasic5:        run_analysis]: Loading: Rat4_SD8_HC_1_posttrial3
+[17:28:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD8_HC_20210616/2021-06-16_12-16-09_posttrial3/2021-06-16_12-16-09_posttrial3-states_SM.mat
+[17:28:32] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:32] [new_phasic5:        run_analysis]: Loading: Rat4_SD16_OR_0_posttrial3
+[17:28:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD16_OR_20210701/2021-07-02_13-52-31_posttrial3/2021-07-02_13-52-31_posttrial3-states_SM.mat
+[17:28:32] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:32] [new_phasic5:        run_analysis]: Loading: Rat4_SD16_OR_0_posttrial2
+[17:28:32] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD16_OR_20210701/2021-07-02_13-01-47_posttrial2/2021-07-02_13-01-47_posttrial2-states_SM.mat
+[17:28:33] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:33] [new_phasic5:        run_analysis]: Loading: Rat4_SD16_OR_0_posttrial5
+[17:28:33] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD16_OR_20210701/2021-07-02_15-34-05_posttrial5/2021-07-02_15-34-05_posttrial5-states_SM.mat
+[17:28:34] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:34] [new_phasic5:        run_analysis]: Loading: Rat4_SD16_OR_0_posttrial1
+[17:28:34] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD16_OR_20210701/2021-07-02_12-11-01_posttrial1/2021-07-02_12-11-01_posttrial1-states_SM.mat
+[17:28:34] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:34] [new_phasic5:        run_analysis]: Loading: Rat4_SD16_OR_0_posttrial4
+[17:28:34] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD16_OR_20210701/2021-07-02_14-43-11_posttrial4/2021-07-02_14-43-11_posttrial4-states_SM.mat
+[17:28:34] [new_phasic5:        run_analysis]: LFP shape: (6752342,), size: 51MB)
+[17:28:34] [new_phasic5:        run_analysis]: Memory usage: 2.1G (73.2%)
+[17:28:34] [new_phasic5:        run_analysis]: STARTED: Resampling to 500 Hz.
+[17:28:36] [new_phasic5:        run_analysis]: FINISHED: Resampling to 500 Hz.
+[17:28:36] [new_phasic5:        run_analysis]: Resampled: (6752342,) -> (1350468,).
+[17:28:36] [new_phasic5:        run_analysis]: Memory usage: 2.0G (73.4%)
+[17:28:36] [new_phasic5:        run_analysis]: STARTED: Remove artifacts.
+[17:28:36] [new_phasic5:        run_analysis]: FINISHED: Remove artifacts.
+[17:28:36] [new_phasic5:        run_analysis]: Resampled data shape: (1350468,), size: 10MB)
+[17:28:36] [new_phasic5:        run_analysis]: STARTED: Extract REM epochs.
+[17:28:36] [new_phasic5:        run_analysis]: REM indices: [(2192, 2267), (2632, 2642)].
+[17:28:36] [new_phasic5:        run_analysis]: FINISHED: Extract REM epochs.
+[17:28:36] [new_phasic5:        run_analysis]: Memory usage: 2.1G (72.7%)
+[17:28:36] [new_phasic5:        run_analysis]: Saving as: Rat4_SD16_OR_0_posttrial4.
+[17:28:36] [new_phasic5:        run_analysis]: Loading: Rat4_SD1_OR_0_posttrial1
+[17:28:36] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD1_OR_20210601/2021-06-01_10-30-03_posttrial1/2021-06-01_10-30-03_posttrial1-states_TS.mat
+[17:28:36] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:36] [new_phasic5:        run_analysis]: Loading: Rat4_SD1_OR_0_posttrial5
+[17:28:36] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD1_OR_20210601/2021-06-01_13-53-04_posttrial5/2021-06-01_13-53-04_posttrial5-states_TS.mat
+[17:28:38] [new_phasic5:        run_analysis]: Skip Trial 5.
+[17:28:38] [new_phasic5:        run_analysis]: Loading: Rat4_SD1_OR_0_posttrial3
+[17:28:38] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD1_OR_20210601/2021-06-01_12-11-46_posttrial3/2021-06-01_12-11-46_posttrial3-states_TS.mat
+[17:28:38] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:38] [new_phasic5:        run_analysis]: Loading: Rat4_SD1_OR_0_posttrial4
+[17:28:38] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD1_OR_20210601/2021-06-01_13-02-26_posttrial4/2021-06-01_13-02-26_posttrial4-states_TS.mat
+[17:28:38] [new_phasic5:        run_analysis]: No REM detected. Skipping.
+[17:28:38] [new_phasic5:        run_analysis]: Loading: Rat4_SD1_OR_0_posttrial2
+[17:28:38] [new_phasic5:        run_analysis]: fname: /home/nero/datasets/CBD/Rat4/Rat_OS_Ephys_cbd_chronic_Rat4_407699_SD1_OR_20210601/2021-06-01_11-21-01_posttrial2/2021-06-01_11-21-01_posttrial2-states_TS.mat
+[17:28:38] [new_phasic5:        run_analysis]: No REM detected. Skipping.
