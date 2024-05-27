@@ -1,5 +1,4 @@
 import re
-from sys import getsizeof
 from pathlib import Path
 import logging
 
@@ -7,7 +6,7 @@ import numpy as np
 from scipy.signal import hilbert
 from neurodsp.filt import filter_signal
 
-logger = logging.getLogger('record')
+logger = logging.getLogger('runtime')
 
 def get_sequences(x, ibreak=1):
     """
@@ -152,9 +151,7 @@ def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
         logger.debug("Candidates: {0}".format(str(cand)))
         for start, end in cand:
             dur = ( (tridx[end]-tridx[start]+1)/fs ) * 1000
-            min_sdiff = np.min(sdiff[start:end])
-            mean_amp = np.mean(eegh[tridx[start]:tridx[end]+1])
-            if dur > thr_dur and min_sdiff < thr2 and mean_amp > thr3:
+            if dur > thr_dur and np.min(sdiff[start:end]) < thr2 and np.mean(eegh[tridx[start]:tridx[end]+1]) > thr3:
                 a = tridx[start]   + offset
                 b = tridx[end]  + offset
                 ph_idx = (a,b+1)

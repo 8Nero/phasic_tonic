@@ -2,7 +2,7 @@ from pathlib import Path
 import numpy as np
 
 import logging
-logger = logging.getLogger('record')
+logger = logging.getLogger('runtime')
 
 class DataFolder:
     def __init__(self, input_dir: str):
