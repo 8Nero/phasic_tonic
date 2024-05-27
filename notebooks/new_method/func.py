@@ -129,7 +129,7 @@ def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
     # of the REM EEG.
     thr3 = rem_eeg.mean()
 
-    logger.info("Thresholds: thr1 = {0:.3f}, thr2 = {1:.3f}, thr3 = {2:.3f}".format(thr1, thr2, thr3))
+    logger.debug("Thresholds: thr1 = {0:.3f}, thr2 = {1:.3f}, thr3 = {2:.3f}".format(thr1, thr2, thr3))
 
     phrem = {}
     for idx in tridx_seq:
