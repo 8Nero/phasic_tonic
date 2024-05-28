@@ -133,8 +133,8 @@ def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
 
     phrem = {}
     for idx in tridx_seq:
-        start, end = idx
-        offset = start * fs
+        rem_start, rem_end = idx
+        offset = rem_start * fs
 
         # trough indices
         tridx = tridx_seq[idx]
@@ -155,8 +155,8 @@ def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
                 a = tridx[start]   + offset
                 b = tridx[end]  + offset
                 
-                if b > (end * fs):
-                    b = end*fs
+                if b > (rem_end * fs):
+                    b = rem_end*fs
 
                 ph_idx = (a,b)
 
