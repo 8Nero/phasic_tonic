@@ -128,12 +128,13 @@ def phasic_detect(rem, fs, thr_dur=900, nfilt=11):
 
     logger.debug("Thresholds: thr1 = {0:.3f}, thr2 = {1:.3f}, thr3 = {2:.3f}".format(thr1, thr2, thr3))
 
-    phrem = {}
+    phrem = {rem_idx:[] for rem_idx in rem.keys()}
+
+    logger.debug("tridx_seq: {0}".format(str(tridx_seq)))
+    
     for rem_idx in tridx_seq:
         rem_start, rem_end = rem_idx
         offset = rem_start * fs
-
-        phrem[rem_idx] = []
 
         # trough indices
         tridx = tridx_seq[idx]
