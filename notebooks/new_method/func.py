@@ -135,13 +135,13 @@ def phasic_detect(rem, fs, thr_dur=900, nfilt=11):
         offset = rem_start * fs
 
         # trough indices
-        tridx = tridx_seq[idx]
+        tridx = tridx_seq[rem_idx]
 
         # smoothed trough interval
-        sdiff = sdiff_seq[idx]
+        sdiff = sdiff_seq[rem_idx]
 
         # ampplitude of the REM epoch
-        eegh = eeg_seq[idx]
+        eegh = eeg_seq[rem_idx]
 
         cand_idx = np.where(sdiff <= thr1)[0]
         cand = get_sequences(cand_idx)
