@@ -154,7 +154,11 @@ def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
             if dur > thr_dur and np.min(sdiff[start:end]) < thr2 and np.mean(eegh[tridx[start]:tridx[end]+1]) > thr3:
                 a = tridx[start]   + offset
                 b = tridx[end]  + offset
-                ph_idx = (a,b+1)
+                
+                if b > (end * fs):
+                    b = end*fs
+
+                ph_idx = (a,b)
 
                 if idx in phrem:
                     phrem[idx].append(ph_idx)
