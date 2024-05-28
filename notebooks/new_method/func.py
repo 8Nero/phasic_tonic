@@ -65,7 +65,7 @@ def _detect_troughs(signal, thr):
     sidx = np.intersect1d(lidx, np.intersect1d(ridx, thidx))+1
     return sidx
 
-def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
+def phasic_detect(rem, fs, thr_dur=900, nfilt=11):
     w1 = 5.0
     w2 = 12.0
     nfilt = 11
@@ -81,9 +81,6 @@ def phasic_detect(rem, fs, min_dur=3, thr_dur=900, nfilt=11):
 
     for idx in rem:
         start, end = idx
-
-        if end-start < min_dur:
-            continue
 
         epoch = rem[idx]
         epoch = filter_signal(epoch, fs, 'bandpass', (w1,w2), remove_edges=False)
