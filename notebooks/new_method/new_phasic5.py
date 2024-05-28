@@ -3,14 +3,11 @@ import re
 import numpy as np
 import pandas as pd
 import yasa
-import psutil
-from psutil._common import bytes2human
 
 from pathlib import Path
 from scipy.io import loadmat
 from mne.filter import resample
 from tqdm import tqdm
-from sys import getsizeof
 
 from func import get_sequences, get_segments, create_name_cbd, create_name_rgs, create_name_os
 from runtime_logger import logger_setup
@@ -32,8 +29,6 @@ targetFs = 500
 n_down_cbd = fs_cbd/targetFs
 n_down_rgs = fs_rgs/targetFs
 n_down_os = fs_os/targetFs
-
-min_dur = 2
 
 def run(mapped, name_func, n_down):
   with tqdm(mapped.keys()) as t:
@@ -59,15 +54,11 @@ def run(mapped, name_func, n_down):
               logger.debug("No REM detected. Skipping.")
               continue
 
-          logger.debug("LFP shape: {0}, size: {1}MB)".format(str(lfpHPC.shape), getsizeof(lfpHPC)//1024**2))
-          logger.debug("Memory usage: {0} ({1}%)".format(bytes2human(psutil.virtual_memory().available), str(psutil.virtual_memory().percent)))
-  
           logger.debug("STARTED: Resampling to 500 Hz.")
           # Downsample to 500 Hz
           data_resample = resample(lfpHPC, down=n_down, method='fft', npad='auto')
           logger.debug("FINISHED: Resampling to 500 Hz.")
           logger.debug("Resampled: {0} -> {1}.".format(str(lfpHPC.shape), str(data_resample.shape)))
-          logger.debug("Memory usage: {0} ({1}%)".format(bytes2human(psutil.virtual_memory().available), str(psutil.virtual_memory().percent)))
   
           logger.debug("STARTED: Remove artifacts.")
           # Remove artifacts
@@ -77,23 +68,19 @@ def run(mapped, name_func, n_down):
           logger.debug("FINISHED: Remove artifacts.")
   
           data_resample = data_resample - data_resample.mean()
-          logger.debug("Resampled data shape: {0}, size: {1}MB)".format(str(data_resample.shape), getsizeof(data_resample)//1024**2))
-  
+
+          logger.debug("STARTED: Extract REM epochs.")
           rem_seq = get_sequences(np.where(hypno == 5)[0])
           # Another representation: matrix of 2 columns and n rows (n number of rem epochs), first row is the start and second is for end idx.
-  
-          # minimum duration > 2s
-          logger.debug("STARTED: Extract REM epochs.")
-          rem_seq = [(start, end) for start, end in rem_seq if (end-start) > min_dur]
+          
+          rem_seq = [(start, end) for start, end in rem_seq]
           logger.debug("REM indices: {0}.".format(rem_seq))
   
           # get REM segments
           rem_idx = [(start * targetFs, (end+1) * targetFs) for start, end in rem_seq]
           rem_epochs = get_segments(rem_idx, data_resample)
           logger.debug("FINISHED: Extract REM epochs.")
-  
-          logger.debug("Memory usage: {0} ({1}%)".format(bytes2human(psutil.virtual_memory().available), str(psutil.virtual_memory().percent)))
-  
+    
           # Combine the REM indices with the corresponding downsampled segments
           rem = {seq:seg for seq, seg in zip(rem_seq, rem_epochs)}
   
@@ -146,23 +133,22 @@ if __name__ == "__main__":
     mapped1 = load_dataset(CBD_DIR, pattern_args=cbd_patterns)
     mapped2 = load_dataset(RGS_DIR, pattern_args=rgs_patterns)
     mapped3 = load_dataset(OS_DIR, pattern_args=os_patterns)
-
-    print("Number of CBD recordings: ", len(mapped1))
-    print("Number of RGS14 recordings: ", len(mapped2))
-    print("Number of OS_Basic recordings: ", len(mapped3))
-
+    
     # Wrapper for create name function for CBD dataset
     def wrapper(hpc):
         overview_df = pd.read_csv(CBD_OVERVIEW_PATH)
         return create_name_cbd(hpc, overview_df=overview_df)
     
     # CBD preprocessing
+    logger.info("Number of CBD recordings: {0}.".format(len(mapped1)))
     run(mapped=mapped1, name_func=wrapper, n_down=n_down_cbd)
 
     # RGS14 preprocessing
+    logger.info("Number of RGS14 recordings: {0}.".format(len(mapped2)))
     run(mapped=mapped2, name_func=create_name_rgs, n_down=n_down_rgs)
 
     # OS basic preprocessing
+    logger.info("Number of OS_Basic recordings: {0}.".format(len(mapped3)))
     run(mapped=mapped3, name_func=create_name_os, n_down=n_down_os)
 
     
