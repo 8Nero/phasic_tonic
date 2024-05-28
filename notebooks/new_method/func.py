@@ -130,8 +130,6 @@ def phasic_detect(rem, fs, thr_dur=900, nfilt=11):
 
     phrem = {rem_idx:[] for rem_idx in rem.keys()}
 
-    logger.debug("tridx_seq: {0}".format(str(tridx_seq)))
-    
     for rem_idx in tridx_seq:
         rem_start, rem_end = rem_idx
         offset = rem_start * fs
@@ -158,7 +156,7 @@ def phasic_detect(rem, fs, thr_dur=900, nfilt=11):
                 if b > (rem_end * fs):
                     b = rem_end*fs
 
-                ph_idx = (a,b)
+                ph_idx = (a, b+1)
                 phrem[rem_idx].append(ph_idx)
     return phrem
 
