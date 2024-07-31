@@ -5,11 +5,14 @@ from neurodsp.filt import filter_signal
 def detect_phasic(eeg, hypno, fs):
 
     rem_seq = get_sequences(np.where(hypno == 5)[0])
-    rem_idx = [(start * fs, (end+1) * fs) for start, end in rem_seq]
-
-    rem_idx = ensure_duration(rem_idx, min_dur=3)
-    if len(rem_idx) == 0:
-        raise ValueError("No REM epochs greater than min_dur.")
+    
+    min_dur = 3
+    rem_idx = []
+    for start, end in rem_seq:
+        if ((end-start) > min_dur):
+            rem_idx.append((start * fs, (end+1) * fs))
+        if len(rem_idx) == 0:
+            raise ValueError("No REM epochs greater than min_dur.")
 
     # get REM segments
     rem_epochs = get_segments(rem_idx, eeg)
