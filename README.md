@@ -12,14 +12,3 @@ $ cd phasic_tonic
 $ # Install in editable mode with `-e` or, equivalently, `--editable`
 $ pip install -e .
 ```
-
-## To do:
-- [ ] workflow, branching, PRs, code ownership
-- [ ] layout / structure
-- [ ] packaging (setuptools, pyproject, poetry)
-- [ ] documentation / readthedocs
-- [ ] docstrings
-- [ ] linters, style guide
-- [ ] tests
-- [ ] continuous integration / github actions
-- [ ] coverage
