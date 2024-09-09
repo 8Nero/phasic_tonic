@@ -11,8 +11,8 @@ def detect_phasic(eeg, hypno, fs):
     for start, end in rem_seq:
         if ((end-start) > min_dur):
             rem_idx.append((start * fs, (end+1) * fs))
-        if len(rem_idx) == 0:
-            raise ValueError("No REM epochs greater than min_dur.")
+    if len(rem_idx) == 0:
+        raise ValueError("No REM epochs greater than min_dur.")
 
     # get REM segments
     rem_epochs = get_segments(rem_idx, eeg)

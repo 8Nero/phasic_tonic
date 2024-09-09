@@ -6,6 +6,7 @@ mkdocs.yml
 pyproject.toml
 tox.ini
 data/dataset_loading.yaml
+data/example_cycles.csv
 docs/about.md
 docs/gen_ref_pages.py
 docs/index.md
@@ -22,6 +23,11 @@ docs/notes/06-ci.md
 docs/notes/07-data.md
 docs/notes/08-open-source.md
 docs/notes/gitflow.jpg
+notebooks/Rat5_SD8_HC_0_posttrial3_phasic.npy
+notebooks/Rat5_SD8_HC_0_posttrial3_phasic.npz
+notebooks/Rat5_SD8_HC_0_posttrial3_tonic.npz
+notebooks/pipeline2.ipynb
+notebooks/preprocess_dataset.ipynb
 notebooks/preprocess_dataset.py
 notebooks/preprocess_percentage.ipynb
 notebooks/preprocess_power_ifreq.ipynb
