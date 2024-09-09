@@ -24,8 +24,7 @@ docs/notes/07-data.md
 docs/notes/08-open-source.md
 docs/notes/gitflow.jpg
 notebooks/Rat5_SD8_HC_0_posttrial3_phasic.npy
-notebooks/Rat5_SD8_HC_0_posttrial3_phasic.npz
-notebooks/Rat5_SD8_HC_0_posttrial3_tonic.npz
+notebooks/build_dataset.ipynb
 notebooks/pipeline2.ipynb
 notebooks/preprocess_dataset.ipynb
 notebooks/preprocess_dataset.py
@@ -37,6 +36,7 @@ notebooks/tutorial.ipynb
 src/phasic_tonic/DatasetLoader.py
 src/phasic_tonic/__init__.py
 src/phasic_tonic/detect_phasic.py
+src/phasic_tonic/detect_phasic_v2.py
 src/phasic_tonic/helper.py
 src/phasic_tonic/pipeline.py
 src/phasic_tonic/runtime_logger.py

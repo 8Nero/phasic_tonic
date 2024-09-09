@@ -23,7 +23,7 @@ def get_metadata(metaname):
   metadata["study_day"] = int(metaname[1][2:])
   metadata["condition"] = metaname[2]
   metadata["treatment"] = int(metaname[3])
-  metadata["trial_num"] = metaname[4][-1]
+  metadata["trial_num"] = metaname[4][9:]
 
   return metadata
 
