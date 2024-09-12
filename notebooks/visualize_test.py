@@ -1,5 +1,18 @@
-from .detect_phasic import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic
-from .utils import get_start_end
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Sep 12 21:50:34 2024
+
+@author: animu
+"""
+import sys
+if "C:/Users/animu/phasic_tonic/src" not in sys.path:
+    sys.path.append("C:/Users/animu/phasic_tonic/src")
+
+from phasic_tonic.utils import preprocess
+from scipy.io import loadmat
+
+from phasic_tonic.detect_phasic import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic
+from phasic_tonic.utils import get_start_end
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -151,12 +164,17 @@ def _despine_axes(ax):
     ax.spines["left"].set_visible(False)
     ax.axes.get_xaxis().set_visible(False)
     ax.axes.get_yaxis().set_visible(False)
-        
-        
-        
-        
-        
-        
+#%% Loading
+lfp = loadmat("C:/Users/animu/phasic_tonic/data/example/HPC_100_CH15.continuous_merged.mat")['HPC'].flatten()
+sleep = loadmat("C:/Users/animu/phasic_tonic/data/example/post_trial5_2017-11-16_14-46-12-states.mat")['states'].flatten()
+
+lfp = preprocess(lfp, 5)
+#%% Plotting
+g = PhasicTonic(fs=500, thr_dur=900)
+g.fit(lfp, sleep)
+g.plot()
+
+#
         
         
         
