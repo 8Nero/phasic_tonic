@@ -1,51 +1,61 @@
 import numpy as np
-import logging
 
-from scipy.signal import hilbert
-from neurodsp.filt import filter_signal
+import yasa
+from mne.filter import resample
+
+import logging
+from typing import Dict, List, Tuple
 
 logger = logging.getLogger('runtime')
 
-def get_sequences(x, ibreak=1):
+def get_sequences(a: np.ndarray, ibreak: int = 1) -> List[Tuple[int, int]]:
     """
-    Identifies contiguous sequences.
+    Identify contiguous sequences.
 
-    Parameters:
-    x (np.ndarray): 1D time series.
-    ibreak (int): A threshold value for determining breaks between sequences (default is 1).
+    Parameters
+    ----------
+    a : array_like
+        Input array.
+    ibreak : int, optional
+        Threshold value for determining breaks between sequences, by default 1.
 
-    Returns:
-    list of tuples: Each tuple contains the start and end integer of each contiguous sequence.
+    Returns
+    -------
+    List[Tuple[int, int]]
+        List of tuples containing the start and end integer of each contiguous sequence.
     """
-    if len(x) == 0:
+    if len(a) == 0:
         return []
 
-    diff = np.diff(x)
+    diff = np.diff(a)
     breaks = np.where(diff > ibreak)[0]
-
-    # Append the last index to handle the end of the array
-    breaks = np.append(breaks, len(x) - 1)
+    breaks = np.append(breaks, len(a) - 1)
     
     sequences = []
     start_idx = 0
     
     for break_idx in breaks:
         end_idx = break_idx
-        sequences.append((x[start_idx], x[end_idx]))
+        sequences.append((a[start_idx], a[end_idx]))
         start_idx = end_idx + 1
     
     return sequences
 
-def get_segments(idx, signal):
+def get_segments(idx: List[Tuple[int, int]], signal: np.ndarray) -> List[np.ndarray]:
     """
-    Extracts segments of the signal between specified start and end time indices.
+    Extract segments of the signal between specified start and end time indices.
 
-    Parameters:
-    idx (list of tuples): Each tuple contains (start_time, end_time).
-    signal (np.ndarray): The signal from which to extract segments.
+    Parameters
+    ----------
+    idx : List[Tuple[int, int]]
+        List of tuples, each containing (start_time, end_time).
+    signal : np.ndarray
+        The signal from which to extract segments.
 
-    Returns:
-    list of np.ndarray: Each element is a segment of the signal corresponding to the given time ranges.
+    Returns
+    -------
+    List[np.ndarray]
+        List of signal segments corresponding to the given time ranges.
     """
     segments = []
     for (start_time, end_time) in idx:
@@ -56,47 +66,64 @@ def get_segments(idx, signal):
     
     return segments
 
-def get_tonic(rem_start, rem_end, phasic):
-  tonic_seg = []
-  current_start = rem_start
+def get_rem_epochs(eeg: np.ndarray, hypno: np.ndarray, fs: float, min_dur: float = 3) -> Dict[Tuple[int, int], np.ndarray]:
+    """
+    Extract REM epochs from EEG data based on hypnogram.
 
-  for ph_start, ph_end in phasic:
-    # A gap between current start and start of a phasic episode
-    if current_start < ph_start:
-      tonic_seg.append((current_start, ph_start))
+    Parameters
+    ----------
+    eeg : np.ndarray
+        EEG signal.
+    hypno : np.ndarray
+        Hypnogram array.
+    fs : float
+        Sampling frequency.
+    min_dur : float, optional
+        Minimum duration of REM epoch in seconds, by default 3.
 
-    # Update current start
-    current_start = max(current_start, ph_end)
+    Returns
+    -------
+    Dict[Tuple[int, int], np.ndarray]
+        Dictionary of REM epochs with sequence indices as keys.
 
-  # After the last phasic episode there might be a remaining tonic episode
-  if current_start < rem_end:
-    tonic_seg.append((current_start, rem_end))
-
-  return tonic_seg
+    Raises
+    ------
+    ValueError
+        If no REM epochs greater than min_dur are found.
+    """
+    rem_seq = get_sequences(np.where(hypno == 5)[0])
+    rem_idx = [(start * fs, (end + 1) * fs) for start, end in rem_seq if (end - start) > min_dur]
+   
+    if not rem_idx:
+        raise ValueError("No REM epochs greater than min_dur.")
+   
+    rem_epochs = get_segments(rem_idx, eeg)
+    return {seq: seg for seq, seg in zip(rem_seq, rem_epochs)}
 
 def create_hypnogram(phasicREM, length):
        binary_hypnogram = np.zeros(length, dtype=int)
        for start, end in phasicREM:
            binary_hypnogram[start:end] = 1
        return binary_hypnogram
+   
+def get_start_end(sleep_states, sleep_state_id, fs=500):
+    seq = get_sequences(np.where(sleep_states==sleep_state_id)[0])
+    start, end = [], []
+    for s, e in seq:
+        start.append(s)
+        end.append(e)
+    return (start, end)
 
-# bug
-def ensure_duration(rem_idx, min_dur):
-    for rem_start, rem_end in rem_idx:
-      if(rem_end-rem_start) < min_dur:
-        logger.debug("Removing REM epoch: ({0}, {1})".format(rem_start, rem_end))
-        rem_idx.remove(rem_idx)
-
-    if len(rem_idx) == 0:
-      raise ValueError("No REM epochs greater than min_dur.")
-    return rem_idx
-
-def _detect_troughs(signal, thr):
-    lidx  = np.where(signal[0:-2] > signal[1:-1])[0]
-    ridx  = np.where(signal[1:-1] <= signal[2:])[0]
-    thidx = np.where(signal[1:-1] < thr)[0]
-    sidx = np.intersect1d(lidx, np.intersect1d(ridx, thidx))+1
-    return sidx
+def preprocess(signal: np.ndarray, n_down: int, target_fs=500) -> np.ndarray:
+    """Downsample and remove artifacts."""
+    # Downsample to 500 Hz
+    data = resample(signal, down=n_down, method='fft', npad='auto')
+    # Remove artifacts
+    art_std, _ = yasa.art_detect(data, target_fs , window=1, method='std', threshold=4)
+    art_up = yasa.hypno_upsample_to_data(art_std, 1, data, target_fs)
+    data[art_up] = 0
+    data -= data.mean()
+    return data
 
 def _despine_axes(ax):
     ax.spines["top"].set_visible(False)
@@ -105,107 +132,3 @@ def _despine_axes(ax):
     ax.spines["left"].set_visible(False)
     ax.axes.get_xaxis().set_visible(False)
     ax.axes.get_yaxis().set_visible(False)
-
-def phasic_detect(rem, fs, thr_dur=900, nfilt=11):
-    w1 = 5.0
-    w2 = 12.0
-
-    trdiff_list = []
-    rem_eeg = np.array([])
-    eeg_seq = {}
-    sdiff_seq = {}
-    tridx_seq = {}
-    filt = np.ones((nfilt,))
-    filt = filt / filt.sum()
-    all_empty = True
-
-    for idx in rem:
-        start, end = idx
-
-        epoch = rem[idx]
-        
-        if epoch.size == 0:  # Check if the epoch is empty
-            continue
-
-        all_empty = False
-        
-        epoch = filter_signal(epoch, fs, 'bandpass', (w1,w2), remove_edges=False)
-        epoch = hilbert(epoch)
-
-        inst_phase = np.angle(epoch)
-        inst_amp = np.abs(epoch)
-
-        # trough indices
-        tridx = _detect_troughs(inst_phase, -3)
-
-        # alternative version:
-        #tridx = np.where(np.diff(np.sign(np.diff(eegh))))[0]+1
-
-        # differences between troughs
-        trdiff = np.diff(tridx)
-
-        # smoothed trough differences
-        sdiff_seq[idx] = np.convolve(trdiff, filt, 'same')
-
-        # dict of trough differences for each REM period
-        tridx_seq[idx] = tridx
-
-        eeg_seq[idx] = inst_amp
-
-        # differences between troughs
-        trdiff_list += list(trdiff)
-
-        # amplitude of the entire REM sleep
-        rem_eeg = np.concatenate((rem_eeg, inst_amp)) 
-    
-    if all_empty:  # Check if all epochs were empty
-        logger.debug("All epochs are empty. Returning empty result.")
-        return {}
-    
-    trdiff = np.array(trdiff_list)
-    trdiff_sm = np.convolve(trdiff, filt, 'same')
-
-    # potential candidates for phasic REM:
-    # the smoothed difference between troughs is less than
-    # the 10th percentile:
-    thr1 = np.percentile(trdiff_sm, 10)
-    # the minimum difference in the candidate phREM is less than
-    # the 5th percentile
-    thr2 = np.percentile(trdiff_sm, 5)
-    # the peak amplitude is larger than the mean of the amplitude
-    # of the REM EEG.
-    thr3 = rem_eeg.mean()
-
-    logger.debug("Thresholds: thr1 = {0:.3f}, thr2 = {1:.3f}, thr3 = {2:.3f}".format(thr1, thr2, thr3))
-
-    phrem = {rem_idx:[] for rem_idx in rem.keys()}
-
-    for rem_idx in tridx_seq:
-        rem_start, rem_end = rem_idx
-        offset = rem_start * fs
-
-        # trough indices
-        tridx = tridx_seq[rem_idx]
-
-        # smoothed trough interval
-        sdiff = sdiff_seq[rem_idx]
-
-        # ampplitude of the REM epoch
-        eegh = eeg_seq[rem_idx]
-
-        cand_idx = np.where(sdiff <= thr1)[0]
-        cand = get_sequences(cand_idx)
-
-        logger.debug("Candidates: {0}".format(str(cand)))
-        for start, end in cand:
-            dur = ( (tridx[end]-tridx[start]+1)/fs ) * 1000
-            if dur > thr_dur and np.min(sdiff[start:end]) < thr2 and np.mean(eegh[tridx[start]:tridx[end]+1]) > thr3:
-                a = tridx[start]   + offset
-                b = tridx[end]  + offset
-                
-                if b > (rem_end * fs):
-                    b = rem_end*fs
-
-                ph_idx = (a, b+1)
-                phrem[rem_idx].append(ph_idx)
-    return phrem
