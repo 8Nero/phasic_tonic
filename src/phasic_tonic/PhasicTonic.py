@@ -14,7 +14,7 @@ class PhasicTonic:
     A class for analyzing phasic and tonic REM sleep periods in EEG data.
     """
 
-    def __init__(self, fs: float, thr_dur: float):
+    def __init__(self, fs: float, thr_dur: float = 900):
         """
         Initialize the PhasicTonic object.
 
