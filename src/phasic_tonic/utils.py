@@ -100,12 +100,6 @@ def get_rem_epochs(eeg: np.ndarray, hypno: np.ndarray, fs: float, min_dur: float
     rem_epochs = get_segments(rem_idx, eeg)
     return {seq: seg for seq, seg in zip(rem_seq, rem_epochs)}
 
-def create_hypnogram(phasicREM, length):
-       binary_hypnogram = np.zeros(length, dtype=int)
-       for start, end in phasicREM:
-           binary_hypnogram[start:end] = 1
-       return binary_hypnogram
-   
 def get_start_end(sleep_states, sleep_state_id, fs=500):
     seq = get_sequences(np.where(sleep_states==sleep_state_id)[0])
     start, end = [], []
@@ -125,10 +119,12 @@ def preprocess(signal: np.ndarray, n_down: int, target_fs=500) -> np.ndarray:
     data -= data.mean()
     return data
 
-def _despine_axes(ax):
-    ax.spines["top"].set_visible(False)
-    ax.spines["right"].set_visible(False)
-    ax.spines["bottom"].set_visible(False)
-    ax.spines["left"].set_visible(False)
-    ax.axes.get_xaxis().set_visible(False)
-    ax.axes.get_yaxis().set_visible(False)
+def str_to_tuple(string):
+    string = string.strip("()")
+    parts = string.split(",")
+    return tuple(map(int, parts))
+
+def load_data(fname):
+    loaded_data = np.load(fname)
+    loaded_dict = {str_to_tuple(key): loaded_data[key] for key in loaded_data.files}
+    return loaded_dict
