@@ -1,1 +1,1 @@
-Template for packages developed at CCN, Flatiron
+A package for phasic tonic analysis.

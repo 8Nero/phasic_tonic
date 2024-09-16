@@ -1,13 +1,12 @@
-site_name: PhasicTonic
+site_name: ccn-template
+repo_url: https://github.com/flatironinstitute/ccn-template
 
 theme: flatly
-
 plugins:
     - search                           # make sure the search plugin is enabled
     - mkdocstrings:                    # plugin for generating documentation from Python docstrings
         handlers:                      # handler is responsible for loading and parsing source files
           python:                      # set handler is for Python
-            path: [src]                      
             options:                   # configuration of options for the Python handler
               docstring_style: numpy   # style of docstrings (convention followed)
               show_source: true        # include a link to the source code
