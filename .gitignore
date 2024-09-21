@@ -172,4 +172,4 @@ docs/generated/
 .DS_store
 
 # Data
-*.csv
+#*.csv
