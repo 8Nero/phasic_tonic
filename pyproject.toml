@@ -17,15 +17,11 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "matplotlib >= 3.8.4",
-    "mne >= 1.7.1",
     "neurodsp >= 2.2.1",
     "numpy >= 1.26.4",
     "pandas >= 2.2.2",
     "pynapple >= 0.6.6",
     "scipy >= 1.14.0",
-    "tqdm >= 4.66.4",
-    "yasa >= 0.6.5",
 ]
 
 [project.optional-dependencies]
@@ -54,6 +50,9 @@ local_scheme = 'no-local-version'
 
 [tool.black]
 exclude = '/version\.py$'
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
 
 [tool.coverage.report]
 exclude_lines = [

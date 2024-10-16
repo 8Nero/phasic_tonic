@@ -119,3 +119,24 @@ def load_config(yaml_file):
     with open(yaml_file, 'r') as file:
         config = yaml.safe_load(file)
     return config
+
+def preprocess(signal: np.ndarray, n_down: int, target_fs=500) -> np.ndarray:
+    """Downsample and remove artifacts."""
+    # Downsample to 500 Hz
+    data = resample(signal, down=n_down, method='fft', npad='auto')
+    # Remove artifacts
+    art_std, _ = yasa.art_detect(data, target_fs , window=1, method='std', threshold=4)
+    art_up = yasa.hypno_upsample_to_data(art_std, 1, data, target_fs)
+    data[art_up] = 0
+    data -= data.mean()
+    return data
+
+def str_to_tuple(string):
+    string = string.strip("()")
+    parts = string.split(",")
+    return tuple(map(int, parts))
+
+def load_data(fname):
+    loaded_data = np.load(fname)
+    loaded_dict = {str_to_tuple(key): loaded_data[key] for key in loaded_data.files}
+    return loaded_dict

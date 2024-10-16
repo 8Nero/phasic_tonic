@@ -1,6 +1,3 @@
-from .detect_phasic import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic
-from .utils import get_start_end
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -8,6 +5,10 @@ import pynapple as nap
 
 from matplotlib.colors import LinearSegmentedColormap
 from scipy.signal import spectrogram
+
+from .detector import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic
+
+from .utils import get_start_end
 
 class PhasicTonic:
     """
@@ -20,10 +21,10 @@ class PhasicTonic:
 
         Parameters
         ----------
-        fs : (float)
+        fs : float
             Sampling frequency of the EEG data.
-        thr_dur : (float)
-            Threshold duration for phasic REM detection.
+        thr_dur : float, optional
+            Threshold duration for phasic REM detection in milliseconds, by default 900.
         """
         self.fs = fs
         self.thr_dur = thr_dur
@@ -37,50 +38,61 @@ class PhasicTonic:
         self.trough_idx_seq = None
         self.smooth_difference_seq = None
         self.eeg_seq = None
+    
+    def detect(self, eeg: np.ndarray, hypno: np.ndarray) -> dict:
+    """
+    Detect phasic REM periods.
+
+    Parameters
+    ----------
+    eeg : np.ndarray
+        EEG signal.
+    hypno : np.ndarray
+        Hypnogram array.
+
+    Returns
+    -------
+    Dict[Tuple[int, int], list]
+        Dictionary containing phasic REM intervals for each REM epoch.
+    """
+    
+    self._prepare_data(eeg, hypno)
+    
+    # Extract REM epochs
+    rem_epochs = get_rem_epochs(eeg=eeg, hypno=hypno, fs=self.fs, min_dur=3)
+    
+    # Compute thresholds for detecting phasic REM
+    self.thresholds, self.trough_idx_seq, self.smooth_difference_seq, self.eeg_seq = compute_thresholds(rem_epochs, self.fs)
+    
+    phasic_rem = {}
+    threshold_10th_percentile, threshold_5th_percentile, mean_inst_amplitude = self.thresholds
+
+    for rem_idx, trough_indices in self.trough_idx_seq.items():
+        rem_start, rem_end = rem_idx
+        offset = rem_start * self.fs
+        smooth_difference = self.smooth_difference_seq[rem_idx]
+        inst_amp = self.eeg_seq[rem_idx]
+
+        # Get candidate periods
+        candidates = get_phasic_candidates(smooth_difference, trough_indices, threshold_10th_percentile, self.thr_dur, self.fs)
+
+        valid_periods = []
+        for start, end in candidates:
+            # Prepare slices for validation
+            smoothed_diffs_slice = smooth_difference[start:end]
+            inst_amp_slice = inst_amp[trough_indices[start]:trough_indices[end] + 1]
+
+            # Validate candidate periods
+            if is_valid_phasic(smoothed_diffs_slice, inst_amp_slice, threshold_5th_percentile, mean_inst_amplitude):
+                start_time = trough_indices[start] + offset
+                end_time = min(trough_indices[end] + offset, rem_end * self.fs)
+                valid_periods.append((int(start_time), int(end_time) + 1))
         
-    def fit(self, eeg: np.ndarray, hypno: np.ndarray) -> dict:
-        """
-        Fit the model to the EEG and hypnogram data.
+        if valid_periods:
+            phasic_rem[rem_idx] = valid_periods
 
-        Parameters
-        ----------
-        eeg : np.ndarray
-            EEG time series data.
-        hypno : np.ndarray
-            Hypnogram data.
-
-        Returns
-        -------
-        Dict[Tuple[int, int], list]
-            Dictionary containing phasic REM intervals for each REM epoch.
-        """
-        
-        self._prepare_data(eeg, hypno)
-        
-        # Extract REM epochs
-        rem_epochs = get_rem_epochs(eeg=eeg, hypno=hypno, fs=self.fs, min_dur=3)
-        
-        # Compute thresholds for detecting phasic REM
-        self.thresholds, self.trough_idx_seq, self.smooth_difference_seq, self.eeg_seq = compute_thresholds(rem_epochs, self.fs)
-        
-        phasic_rem = {rem_idx: [] for rem_idx in rem_epochs}
-        thr1, thr2, thr3 = self.thresholds
-
-        for rem_idx, trough_idx in self.trough_idx_seq.items():
-            rem_start, rem_end = rem_idx
-            offset = rem_start * self.fs
-            smooth_difference, eegh = self.smooth_difference_seq[rem_idx], self.eeg_seq[rem_idx]
-
-            candidates = get_phasic_candidates(smooth_difference, trough_idx, thr1, self.thr_dur, self.fs)
-
-            for start, end in candidates:
-                if is_valid_phasic(start, end, smooth_difference, eegh, trough_idx, thr2, thr3):
-                    t_a = trough_idx[start] + offset
-                    t_b = min(trough_idx[end] + offset, rem_end * self.fs)
-                    phasic_rem[rem_idx].append((t_a, t_b + 1))
-
-        self._create_interval_sets(phasic_rem)
-        return phasic_rem
+    self._create_interval_sets(phasic_rem)
+    return phasic_rem
     
     def _prepare_data(self, eeg: np.ndarray, hypno: np.ndarray):
         """
@@ -149,8 +161,7 @@ class PhasicTonic:
                     self.eeg_seq[(rem_start, rem_end)], 'y', '--')
             ax.plot([self.t[rem_start*self.fs], self.t[(rem_end+1)*self.fs]], 
                     [self.thresholds[2], self.thresholds[2]], 'r', '--')
-        [ax.plot(self.eeg.restrict(self.phasic_interval[i]), color='r') 
-         for i in range(len(self.phasic_interval))]
+        [ax.plot(self.eeg.restrict(self.phasic_interval[i]), color='r') for i in range(len(self.phasic_interval))]
 
     def _plot_spectrogram(self, ax):
         """Plot spectrogram."""

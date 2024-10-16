@@ -7,6 +7,8 @@ import numpy as np
 from scipy.signal import hilbert
 from neurodsp.filt import filter_signal
 
+from .utils import get_sequences, get_rem_epochs
+
 def preprocess_rem_epoch(epoch: np.ndarray, fs: float) -> Tuple[np.ndarray, np.ndarray]:
     """Preprocess a REM epoch by applying bandpass filter and Hilbert transform."""
     epoch = filter_signal(epoch, fs, 'bandpass', (5, 12), remove_edges=False)
@@ -25,17 +27,7 @@ def get_phasic_candidates(
     """
     cand_idx = np.where(smoothed_trough_differences <= threshold_percentile_10)[0]
     cand = get_sequences(cand_idx)
-
-    candidates = []
-    for start, end in cand:
-        if end < len(trough_indices):
-            end += 1 # Add 1 to `end` to align with `trough_indices`
-
-        # Compute duration in milliseconds
-        duration_ms = ((trough_indices[end] - trough_indices[start]) / fs) * 1000
-        if duration_ms >= thr_dur:  
-            candidates.append((start, end))
-    return candidates
+    return [(start, end) for start, end in cand if ((trough_indices[end] - trough_indices[start] + 1) / fs) * 1000 >= thr_dur]
 
 def is_valid_phasic(
     smoothed_diffs_slice: np.ndarray, 
@@ -69,11 +61,11 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
         - 10th percentile of smoothed trough differences across all epochs.
         - 5th percentile of smoothed trough differences across all epochs.
         - Mean instantaneous amplitude across all REM epochs.
-    epoch_trough_idx : Dict[Tuple[int, int], np.ndarray]
+    trough_idx_seq : Dict[Tuple[int, int], np.ndarray]
         Dictionary mapping REM epoch indices to their trough indices.
-    epoch_smooth_diffs : Dict[Tuple[int, int], np.ndarray]
+    smooth_differences : Dict[Tuple[int, int], np.ndarray]
         Dictionary mapping REM epoch indices to their smoothed trough differences.
-    epoch_trough_idx : Dict[Tuple[int, int], np.ndarray]
+    eeg_seq : Dict[Tuple[int, int], np.ndarray]
         Dictionary mapping REM epoch indices to their instantaneous amplitudes.
     """
     if not rem_epochs:
@@ -81,9 +73,9 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
     
     all_trough_diffs = []
     all_inst_amplitudes = []
-    epoch_amplitudes = {}
-    epoch_smooth_diffs = {}
-    epoch_trough_idx = {}
+    eeg_seq = {}
+    smooth_differences = {}
+    trough_idx_seq = {}
    
     for rem_idx, epoch in rem_epochs.items():
         # Instantaneous phase and amplitude
@@ -96,12 +88,12 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
         trough_diffs = np.diff(trough_idx)
        
         # Smooth the trough differences
-        smooth_diffs = smooth_signal(trough_diffs)
+        smoothed_diffs = smooth_signal(trough_diffs)
         
         # Store per-epoch data
-        epoch_smooth_diffs[rem_idx] = smooth_diffs
-        epoch_trough_idx[rem_idx] = trough_idx
-        epoch_amplitudes[rem_idx] = inst_amp
+        smooth_differences[rem_idx] = smoothed_diffs
+        trough_idx_seq[rem_idx] = trough_idx
+        eeg_seq[rem_idx] = inst_amp
        
         # Accumulate trough differences and instantaneous amplitudes
         all_trough_diffs.extend(trough_diffs)
@@ -121,76 +113,60 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
 
     thresholds = (threshold_10th_percentile, threshold_5th_percentile, mean_inst_amplitude)
     
-    return thresholds, epoch_trough_idx, epoch_smooth_diffs, epoch_amplitudes
+    return thresholds, trough_idx_seq, smooth_differences, eeg_seq
 
-def get_sequences(a: np.ndarray, ibreak: int = 1) -> List[Tuple[int, int]]:
-    """
-    Identify contiguous sequences.
-    """
-    if len(a) == 0:
-        return []
-
-    diff = np.diff(a)
-    breaks = np.where(diff > ibreak)[0]
-    breaks = np.append(breaks, len(a) - 1)
-    
-    sequences = []
-    start_idx = 0
-    
-    for break_idx in breaks:
-        end_idx = break_idx
-        sequences.append((a[start_idx], a[end_idx]))
-        start_idx = end_idx + 1
-    
-    return sequences
-
-def get_segments(idx: List[Tuple[int, int]], signal: np.ndarray) -> List[np.ndarray]:
-    """
-    Extract segments of the signal between specified start and end time indices.
-    """
-    segments = []
-    for (start_time, end_time) in idx:
-        if end_time > len(signal):
-            end_time = len(signal)
-        segment = signal[start_time:end_time]
-        segments.append(segment)
-    
-    return segments
-
-def get_rem_epochs(
+def detect_phasic(
     eeg: np.ndarray, 
     hypno: np.ndarray, 
-    fs: int, 
-    min_dur: float = 3) -> Dict[Tuple[int, int], np.ndarray]:
+    fs: float, 
+    thr_dur: float = 900
+    ) -> Dict[Tuple[int, int], List[Tuple[int, int]]]:
     """
-    Extract REM epochs from EEG data based on hypnogram.
+    Detect phasic REM periods in EEG data based on the method described by Mizuseki et al. (2011).
+    
+    Parameters
+    ----------
+    eeg : np.ndarray
+        EEG signal.
+    hypno : np.ndarray
+        Hypnogram array.
+    fs : float
+        Sampling frequency.
+    thr_dur : float, optional
+        Minimum duration threshold for phasic REM in milliseconds, by default 900.
+
+    Returns
+    -------
+    Dict[Tuple[int, int], List[Tuple[int, int]]]
+        Dictionary of detected phasic REM periods for each REM epoch.
     """
-    rem_seq = get_sequences(np.where(hypno == 5)[0]) # Assuming 5 represents REM sleep
-    rem_idx = [(start * fs, (end + 1) * fs) for start, end in rem_seq if (end - start) > min_dur]
-   
-    if not rem_idx:
-        raise ValueError(f"No REM epochs greater than {min_dur} seconds.")
-   
-    rem_epochs = get_segments(rem_idx, eeg)
-    return {seq: seg for seq, seg in zip(rem_seq, rem_epochs)}
+    rem_epochs = get_rem_epochs(eeg, hypno, fs)
+    thresholds, trough_idx_seq, smooth_difference_seq, eeg_seq = compute_thresholds(rem_epochs, fs)
+    threshold_percentile_10, threshold_percentile_5, mean_amplitude_threshold = thresholds
 
-def get_start_end(sleep_states: np.ndarray, sleep_state_id: int) -> Tuple[List[int], List[int]]:
-    """Get start and end indices for a specific sleep state."""
-    seq = get_sequences(np.where(sleep_states == sleep_state_id)[0])
-    start, end = [], []
-    for s, e in seq:
-        start.append(s)
-        end.append(e)
-    return (start, end)
+    phasicREM = {}
 
-def detect_troughs(signal: np.ndarray, threshold: float = -3.0) -> np.ndarray:
-    """Detect troughs in a signal below a certain threshold."""
-    lidx = np.where(signal[0:-2] > signal[1:-1])[0]
-    ridx = np.where(signal[1:-1] <= signal[2:])[0]
-    thidx = np.where(signal[1:-1] < threshold)[0]
-    return np.intersect1d(lidx, np.intersect1d(ridx, thidx)) + 1
+    for rem_idx, trough_indices in trough_idx_seq.items():
+        rem_start, rem_end = rem_idx
+        offset = rem_start * fs
+        smooth_difference = smooth_difference_seq[rem_idx]
+        inst_amp = eeg_seq[rem_idx]
 
-def smooth_signal(signal: np.ndarray, window_size: int = 11) -> np.ndarray:
-    """Apply moving average smoothing to a signal."""
-    filt = np.ones(window_size) / window_size
-    return np.convolve(signal, filt, 'same')
+        # Get candidate periods
+        candidates = get_phasic_candidates(smooth_difference, trough_indices, threshold_percentile_10, thr_dur, fs)
+
+        # Validate candidates
+        valid_periods = []
+        for start, end in candidates:
+            smoothed_diffs_slice = smooth_difference[start:end]
+            inst_amp_slice = inst_amp[trough_indices[start]:trough_indices[end] + 1]
+
+            if is_valid_phasic(smoothed_diffs_slice, inst_amp_slice, threshold_percentile_5, mean_amplitude_threshold):
+                start_time = trough_indices[start] + offset
+                end_time = min(trough_indices[end] + offset, rem_end * fs)
+                valid_periods.append((int(start_time), int(end_time) + 1))
+
+        if valid_periods:
+            phasicREM[rem_idx] = valid_periods
+
+    return phasicREM
