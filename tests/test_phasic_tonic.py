@@ -4,7 +4,7 @@ import warnings
 from scipy.signal import hilbert, windows
 from neurodsp.filt import filter_signal
 
-from phasic_tonic.utils import (
+from phasic_tonic.core import (
     preprocess_rem_epoch,
     get_phasic_candidates,
     is_valid_phasic,
@@ -17,7 +17,7 @@ from phasic_tonic.utils import (
     smooth_signal,
 )
 
-from phasic_tonic.detector import detect_phasic
+from phasic_tonic.detect import detect_phasic
 
 def sim_rem_epochs(fs, num_epochs=3, epoch_length=10):
     rem_epochs = {}

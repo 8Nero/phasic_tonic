@@ -6,6 +6,11 @@ theme:
     primary: 'light blue'
     features:
       - navigation.tabs
+    markdown_extensions:
+      - attr_list
+      - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
     - search                           # make sure the search plugin is enabled
@@ -27,6 +32,7 @@ plugins:
     - gallery:
         examples_dirs: docs/examples          # path to your example scripts
         gallery_dirs: docs/generated/gallery  # where to save generated gallery
+        conf_script:  docs/gen_conf.py
 nav:
     - Home: index.md
     - Install: install.md

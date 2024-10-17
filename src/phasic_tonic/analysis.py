@@ -2,7 +2,8 @@ import numpy as np
 import pandas as pd
 import pynapple as nap
 import warnings
-from .utils import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic, get_start_end
+
+from .core import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic, get_start_end
 
 class PhasicTonic:
     """

@@ -2,7 +2,7 @@ from typing import Dict, List, Tuple
 import numpy as np
 import warnings
 
-from .utils import get_rem_epochs, compute_thresholds, get_phasic_candidates, is_valid_phasic
+from .core import get_rem_epochs, compute_thresholds, get_phasic_candidates, is_valid_phasic
 
 def detect_phasic(
     eeg: np.ndarray, 
