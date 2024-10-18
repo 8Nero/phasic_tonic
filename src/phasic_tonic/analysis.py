@@ -10,13 +10,13 @@ class PhasicTonic:
     A class for detecting phasic and tonic REM sleep periods in EEG data.
     """
 
-    def __init__(self, fs: float, thr_dur: float = 900):
+    def __init__(self, fs: int, thr_dur: float = 900):
         """
         Initialize the PhasicTonic.
 
         Parameters
         ----------
-        fs : float
+        fs : int
             Sampling frequency of the EEG data.
         thr_dur : float, optional
             Threshold duration for phasic REM detection in milliseconds, by default 900.
