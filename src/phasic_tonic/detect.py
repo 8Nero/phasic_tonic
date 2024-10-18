@@ -1,3 +1,6 @@
+"""
+This module provides the `detect_function` for detecting phasic REM sleep periods in EEG data.
+"""
 from typing import Dict, List, Tuple
 import numpy as np
 import warnings

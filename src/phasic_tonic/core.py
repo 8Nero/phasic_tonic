@@ -23,9 +23,10 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
     -------
     thresholds : Tuple[float, float, float]
         A tuple containing:
-        - 10th percentile of smoothed trough differences across all epochs.
-        - 5th percentile of smoothed trough differences across all epochs.
-        - Mean instantaneous amplitude across all REM epochs.
+
+            - 10th percentile of smoothed trough differences across all epochs.
+            - 5th percentile of smoothed trough differences across all epochs.
+            - Mean instantaneous amplitude across all REM epochs.
     epoch_trough_idx : Dict[Tuple[int, int], np.ndarray]
         Dictionary mapping REM epoch indices to their trough indices.
     epoch_smooth_diffs : Dict[Tuple[int, int], np.ndarray]
@@ -87,7 +88,23 @@ def is_valid_phasic(
     mean_amplitude_threshold: float
     ) -> bool:
     """
-    Check if a candidate phasic REM period is valid.
+    Determine if a candidate phasic REM period is valid based on thresholds.
+
+    Parameters
+    ----------
+    smoothed_diffs_slice : np.ndarray
+        Array of smoothed trough differences for the candidate period.
+    inst_amp_slice : np.ndarray
+        Array of instantaneous amplitudes for the candidate period.
+    threshold_percentile_5 : float
+        5th percentile threshold for smoothed trough differences.
+    mean_amplitude_threshold : float
+        Mean amplitude threshold for validating phasic activity.
+
+    Returns
+    -------
+    bool
+        `True` if the candidate period meets the phasic criteria, `False` otherwise.
     """
     min_smoothed_diff = np.min(smoothed_diffs_slice)
     mean_amp = np.mean(inst_amp_slice)
@@ -101,7 +118,25 @@ def get_phasic_candidates(
     fs: float
     ) -> List[Tuple[int, int]]:
     """
-    Get candidate phasic REM periods based on smoothed trough differences.
+    Identify candidate phasic REM periods based on smoothed trough differences.
+
+    Parameters
+    ----------
+    smoothed_trough_differences : np.ndarray
+        Array of smoothed trough differences.
+    trough_indices : np.ndarray
+        Array of trough indices in the EEG signal.
+    threshold_percentile_10 : float
+        10th percentile threshold for smoothed trough differences.
+    thr_dur : float
+        Minimum duration for a phasic period in milliseconds.
+    fs : float
+        Sampling frequency.
+
+    Returns
+    -------
+    List[Tuple[int, int]]
+        List of tuples indicating the start and end trough indices of candidate phasic periods.
     """
     cand_idx = np.where(smoothed_trough_differences <= threshold_percentile_10)[0]
     cand = get_sequences(cand_idx)
@@ -118,26 +153,83 @@ def get_phasic_candidates(
     return candidates
 
 def preprocess_rem_epoch(epoch: np.ndarray, fs: float) -> Tuple[np.ndarray, np.ndarray]:
-    """Preprocess a REM epoch by applying bandpass filter and Hilbert transform."""
+    """
+    Preprocess a REM epoch by applying a bandpass filter and computing the Hilbert transform.
+
+    Parameters
+    ----------
+    epoch : np.ndarray
+        EEG signal segment for a REM epoch.
+    fs : float
+        Sampling frequency.
+
+    Returns
+    -------
+    Tuple[np.ndarray, np.ndarray]
+        A tuple containing:
+        
+            - Instantaneous phase of the EEG signal.
+            - Instantaneous amplitude of the EEG signal.
+    """
     epoch = filter_signal(epoch, fs, 'bandpass', (5, 12), remove_edges=False)
     analytic_signal = hilbert(epoch)
     return np.angle(analytic_signal), np.abs(analytic_signal)
 
 def detect_troughs(signal: np.ndarray, threshold: float = -3.0) -> np.ndarray:
-    """Detect troughs in a signal below a certain threshold."""
+    """
+    Detect troughs in a signal that fall below a specified threshold.
+
+    Parameters
+    ----------
+    signal : np.ndarray
+        Signal in which to detect troughs (e.g., instantaneous phase).
+    threshold : float, optional
+        Threshold value for trough detection. Defaults to -3.0.
+
+    Returns
+    -------
+    np.ndarray
+        Array of indices where troughs occur.
+    """
     lidx = np.where(signal[0:-2] > signal[1:-1])[0]
     ridx = np.where(signal[1:-1] <= signal[2:])[0]
     thidx = np.where(signal[1:-1] < threshold)[0]
     return np.intersect1d(lidx, np.intersect1d(ridx, thidx)) + 1
 
 def smooth_signal(signal: np.ndarray, window_size: int = 11) -> np.ndarray:
-    """Apply moving average smoothing to a signal."""
+    """
+    Apply a moving average filter to smooth a signal.
+
+    Parameters
+    ----------
+    signal : np.ndarray
+        Input signal to be smoothed.
+    window_size : int, optional
+        Size of the moving window. Defaults to 11.
+
+    Returns
+    -------
+    np.ndarray
+        Smoothed signal.
+    """
     filt = np.ones(window_size) / window_size
     return np.convolve(signal, filt, 'same')
 
 def get_sequences(a: np.ndarray, ibreak: int = 1) -> List[Tuple[int, int]]:
     """
-    Identify contiguous sequences.
+    Identify contiguous sequences in an array.
+
+    Parameters
+    ----------
+    a : np.ndarray
+        1D array of indices.
+    ibreak : int, optional
+        Maximum allowed gap between consecutive indices to be considered contiguous. Defaults to 1.
+
+    Returns
+    -------
+    List[Tuple[int, int]]
+        List of tuples where each tuple represents the start and end indices of a contiguous sequence.
     """
     if len(a) == 0:
         return []
@@ -158,7 +250,19 @@ def get_sequences(a: np.ndarray, ibreak: int = 1) -> List[Tuple[int, int]]:
 
 def get_segments(idx: List[Tuple[int, int]], signal: np.ndarray) -> List[np.ndarray]:
     """
-    Extract segments of the signal between specified start and end time indices.
+    Extract segments of a signal between specified start and end sample indices.
+
+    Parameters
+    ----------
+    idx : List[Tuple[int, int]]
+        List of tuples indicating start and end sample indices for each segment.
+    signal : np.ndarray
+        The EEG signal from which to extract segments.
+
+    Returns
+    -------
+    List[np.ndarray]
+        List of signal segments corresponding to the specified indices.
     """
     segments = []
     for (start_time, end_time) in idx:
@@ -175,7 +279,31 @@ def get_rem_epochs(
     fs: int, 
     min_dur: float = 3) -> Dict[Tuple[int, int], np.ndarray]:
     """
-    Extract REM epochs from EEG data based on hypnogram.
+    Extract REM sleep epochs from EEG data based on a hypnogram.
+
+    Parameters
+    ----------
+    eeg : np.ndarray
+        EEG signal array.
+    hypno : np.ndarray
+        Hypnogram array where each element represents an epoch of sleep stage.
+        Assumes that the value `5` corresponds to REM sleep.
+        Assumes 1 second epoch.
+    fs : int
+        Sampling frequency.
+    min_dur : float, optional
+        Minimum duration for a REM epoch in seconds. Defaults to 3.
+
+    Returns
+    -------
+    Dict[Tuple[int, int], np.ndarray]
+        Dictionary where keys are tuples of (start_sample, end_sample) for each REM epoch,
+        and values are the corresponding EEG signal segments.
+
+    Raises
+    ------
+    ValueError
+        If no REM epochs longer than `min_dur` seconds are found.
     """
     rem_seq = get_sequences(np.where(hypno == 5)[0]) # Assuming 5 represents REM sleep
     rem_idx = [(start * fs, (end + 1) * fs) for start, end in rem_seq if (end - start) > min_dur]

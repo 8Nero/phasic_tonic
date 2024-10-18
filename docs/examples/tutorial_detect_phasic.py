@@ -6,7 +6,7 @@ Using the `detect_phasic` function
 The `detect_phasic` function detects phasic REM periods in EEG data based on the method described by [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894).
 This tutorial covers the use of `detect_phasic` function.
 """
-#%% Importing libraries
+# %% Importing libraries
 import os
 from urllib.request import urlretrieve
 
@@ -76,7 +76,6 @@ for rem_timestamp, phasic_epochs in phasicREM.items():
 # --------------------------
 time = np.arange(0, len(lfp)/fs, 1/fs)
 
-# mkdocs_gallery_thumbnail_number = 3   
 fig, ax = plt.subplots(1, constrained_layout=True, figsize=(10, 3))
 ax.plot(time, lfp)
 ax.set_xlabel('Time (s)')
@@ -91,6 +90,7 @@ for rem_timestamp, phasic_epochs in phasicREM.items():
 # %%
 # Create a grid of subplots for REM episodes
 # -------------
+# mkdocs_gallery_thumbnail_number = 4   
 
 fig, axes = plt.subplots(2, 2, constrained_layout=True, figsize=(12, 8))
 axes = axes.flatten()
