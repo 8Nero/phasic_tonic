@@ -33,11 +33,11 @@ class PhasicTonic:
             - 10th percentile of smoothed trough differences across all epochs.
             - 5th percentile of smoothed trough differences across all epochs.
             - Mean instantaneous amplitude across all REM epochs.
-    trough_indices : Dict[Tuple[int, int], np.ndarray] or None
+    epoch_trough_idx : Dict[Tuple[int, int], np.ndarray] or None
         Dictionary mapping REM epoch indices to their trough indices.
-    smoothed_differences : Dict[Tuple[int, int], np.ndarray] or None
+    epoch_smooth_diffs : Dict[Tuple[int, int], np.ndarray] or None
         Dictionary mapping REM epoch indices to their smoothed trough differences.
-    instantaneous_amplitudes : Dict[Tuple[int, int], np.ndarray] or None
+    epoch_amplitudes : Dict[Tuple[int, int], np.ndarray] or None
         Dictionary mapping REM epoch indices to their instantaneous amplitudes.
     """
 
@@ -58,9 +58,9 @@ class PhasicTonic:
         self.phasic_intervals = None
         self.tonic_intervals = None
         self.thresholds = None
-        self.trough_indices = None
-        self.smoothed_differences = None
-        self.instantaneous_amplitudes = None
+        self.epoch_trough_idx = None
+        self.epoch_smooth_diffs = None
+        self.epoch_amplitudes = None
 
     def detect(self, eeg: np.ndarray, hypno: np.ndarray):
         """

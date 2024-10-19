@@ -1,1 +1,47 @@
-A package for phasic tonic analysis.
+---
+hide:
+  - toc
+---
+# Phasic-Tonic
+[![PyPI version](https://badge.fury.io/py/phasic_tonic.svg)](https://badge.fury.io/py/phasic_tonic)
+[![Build Status](https://travis-ci.org/yourusername/phasic_tonic.svg?branch=main)](https://travis-ci.org/yourusername/phasic_tonic)
+[![License](https://img.shields.io/github/license/8Nero/phasic_tonic)](LICENSE)
+
+## Overview
+
+**phasic_tonic** is a Python package designed for the neuroscience community to analyze and detect phasic and tonic states during REM sleep from electrophysiological signals such as EEG or LFP data. The package implements a threshold-based signal processing algorithm specifically designed to identify these substates within REM sleep, which are important for understanding sleep-dependent processes, memory consolidation, and brain state modulation. 
+
+This tool is useful for researchers working with sleep data and looking to classify REM sleep into more granular substates for further study.
+
+
+# <div style="text-align: center;"> <img src="images/detect_phasic_001.png" width="70%" alt="phasic tonic image."> </div>
+
+## Key Features
+
+- **Automatic Phasic/Tonic Detection**: Applies threshold-based algorithms to distinguish phasic and tonic states from raw electrophysiological data
+- **Statistical Analysis**: Compute basic statistics for phasic/tonic REM periods.
+
+## Quick Start
+
+Here's a simple example of how to get started with phasic_tonic:
+
+```py
+import numpy as np
+from phasic_tonic.analysis import PhasicTonic
+
+# Load your LFP/EEG data and hypnogram
+lfp_data_hpc = np.load('lfp_hpc.npy')
+hypnogram = np.load('hypnogram.npy')
+
+# Initialize the detector
+pt = PhasicTonic(fs=1000)
+
+# Detect phasic and tonic states
+results = pt.detect(lfp_data_hpc, hypnogram)
+
+# Analyze the results
+summary = pt.compute_stats()
+print(summary)
+```
+
+# <div style="text-align: center;"> <img src="images/detect_phasic_002.png" width="70%" alt="phasic tonic image."> </div>

@@ -13,6 +13,7 @@ from urllib.request import urlretrieve
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+# mkdocs_gallery_thumbnail_number = 4
 
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(context='notebook', style="white", rc=custom_params)
@@ -89,8 +90,7 @@ for rem_timestamp, phasic_epochs in phasicREM.items():
 
 # %%
 # Create a grid of subplots for REM episodes
-# -------------
-# mkdocs_gallery_thumbnail_number = 4   
+# -------------   
 
 fig, axes = plt.subplots(2, 2, constrained_layout=True, figsize=(12, 8))
 axes = axes.flatten()

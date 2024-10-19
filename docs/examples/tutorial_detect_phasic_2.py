@@ -12,6 +12,7 @@ from urllib.request import urlretrieve
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+# mkdocs_gallery_thumbnail_number = 6
 
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(context='notebook', style="white", rc=custom_params)
@@ -152,7 +153,7 @@ axes[0].set_xlim((0,5))
 axes[0].legend()
 
 axes[1].plot(time[troughs[:-1]], smooth_diffs, drawstyle="steps-pre", color='k')
-axes[1].set_ylabel("Inter-Trough interval (s)")
+axes[1].set_ylabel("Inter-Trough interval (ms)")
 axes[1].set_xlabel('Time (s)')
 
 axes[1].axhline(y=thresh_5, color='r', linestyle='--', label='Threshold 2')
@@ -193,20 +194,19 @@ print(valid_periods)
 # We see that it is indeed phasic REM epoch.
 fig, axes = plt.subplots(2, 1, constrained_layout=True, figsize=(10, 6), sharex=True)
 
-axes[0].plot(time, epoch_filt, label='Original signal')
-axes[0].plot(time, inst_amp, label='Instantaneous Amplitude')
-axes[0].axhline(y=mean_amp, color='r', linestyle='--', label="Mean Instantaneous Amplitude")
+axes[0].plot(time, epoch_filt)
+axes[0].plot(time, inst_amp)
+axes[0].axhline(y=mean_amp, color='r', linestyle='--')
 axes[0].set_ylabel('LFP')
 axes[0].set_xlabel('Time (s)')
 axes[0].set_xlim((0,5))
 
 axes[1].plot(time[troughs[:-1]], smooth_diffs, drawstyle="steps-pre", color='k')
-axes[1].set_ylabel("Inter-Trough interval (s)")
+axes[1].set_ylabel("Inter-Trough interval (ms)")
 axes[1].set_xlabel('Time (s)')
 
-axes[1].axhline(y=thresh_5, color='r', linestyle='--', label='Threshold 2')
-axes[1].axhline(y=thresh_10, color='y', linestyle='--', label="")
-# mkdocs_gallery_thumbnail_number = 6
+axes[1].axhline(y=thresh_5, color='r', linestyle='--')
+axes[1].axhline(y=thresh_10, color='y', linestyle='--')
 for start, end in valid_periods:
   axes[0].axvspan(start/fs, end/fs, alpha=0.2, color='r')
   axes[1].axvspan(start/fs, end/fs, alpha=0.2, color='r')
