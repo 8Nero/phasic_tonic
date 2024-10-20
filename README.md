@@ -14,6 +14,11 @@ This tool is useful for researchers working with sleep data and looking to class
   <img width="70%" src="docs/images/detect_phasic_001.png">
 </p>
 
+<!-- ![pic1](detect_phasic_002.png) -->
+<p align="center">
+  <img width="70%" src="docs/images/detect_phasic_002.png">
+</p>
+
 ## Key Features
 
 - **Automatic Phasic/Tonic Detection**: Applies threshold-based algorithms to distinguish phasic and tonic states from raw electrophysiological data
@@ -32,30 +37,19 @@ $ cd phasic_tonic
 $ pip install -e .
 ```
 
+## Package dependencies
+
++ numpy
++ scipy
++ neurodsp
++ pynapple
+
 ## Quick Start
 
 Here's a simple example of how to get started with phasic_tonic:
 
 ```py
-import numpy as np
-from phasic_tonic.analysis import PhasicTonic
+from phasic_tonic.detect import detect_phasic
 
-# Load your LFP/EEG data and hypnogram
-lfp_data_hpc = np.load('lfp_hpc.npy')
-hypnogram = np.load('hypnogram.npy')
-
-# Initialize the detector
-pt = PhasicTonic(fs=1000)
-
-# Detect phasic and tonic states
-results = pt.detect(lfp_data_hpc, hypnogram)
-
-# Analyze the results
-summary = pt.compute_stats()
-print(summary)
+phasicREM = detect_phasic(signal, hypnogram, fs)
 ```
-<!-- ![pic1](detect_phasic_002.png) -->
-<p align="center">
-  <img width="70%" src="docs/images/detect_phasic_002.png">
-</p>
-

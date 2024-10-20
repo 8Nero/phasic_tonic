@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Using the `detect_phasic` function
+Using the detect_phasic function
 ==================================
 
 The `detect_phasic` function detects phasic REM periods in EEG data based on the method described by [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894).

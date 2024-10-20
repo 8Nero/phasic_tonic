@@ -30,6 +30,7 @@ class PhasicTonic:
         IntervalSet representing the detected tonic REM periods.
     thresholds : Tuple[float, float, float] or None
         Tuple containing:
+
             - 10th percentile of smoothed trough differences across all epochs.
             - 5th percentile of smoothed trough differences across all epochs.
             - Mean instantaneous amplitude across all REM epochs.
@@ -97,7 +98,7 @@ class PhasicTonic:
 
         Examples
         --------
-        >>> pt = PhasicTonic(fs=1000, thr_dur=900)
+        >>> pt = PhasicTonic(fs=1000)
         >>> result = pt.detect(eeg_signal, hypnogram)
         >>> phasic = result['phasic_intervals']
         >>> tonic = result['tonic_intervals']
@@ -200,7 +201,7 @@ class PhasicTonic:
 
         Examples
         --------
-        >>> pt = PhasicTonic(fs=1000, thr_dur=900)
+        >>> pt = PhasicTonic(fs=1000)
         >>> pt.detect(eeg_signal, hypnogram)
         >>> stats_df = pt.compute_stats()
         >>> print(stats_df)
