@@ -9,6 +9,7 @@ import warnings
 
 from .core import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic, get_start_end
 
+
 class PhasicTonic:
     """
     A class for detecting phasic and tonic REM sleep periods in EEG data.

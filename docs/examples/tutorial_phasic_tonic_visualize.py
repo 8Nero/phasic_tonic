@@ -3,7 +3,8 @@
 Visualizing phasic and tonic REM states
 =======================================
 
-We cover how `PhasicTonic` detector can be used to create visualizations of phasic and tonic REM detections.
+We cover how `PhasicTonic` detector can be used to create 
+visualizations of phasic and tonic REM detections.
 """
 
 # %% Importing libraries
@@ -16,12 +17,11 @@ from matplotlib.colors import LinearSegmentedColormap
 from scipy.signal import spectrogram
 import seaborn as sns
 
-
 from phasic_tonic.analysis import PhasicTonic
 
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(context='notebook', style="white", rc=custom_params)
-# %% 
+# %%
 # ***
 # Preparing the data
 # ------------------
@@ -37,7 +37,7 @@ data = np.load(file, allow_pickle=True)
 
 hypnogram = data['hypnogram']
 lfp = data['lfp_hpc']
-fs = 500 # Sampling rate
+fs = 500  # Sampling rate
 
 # %%
 # ***
@@ -68,8 +68,7 @@ axs = fig.subplot_mosaic([
     ["lfp"],
     ["iti"],
     ["spectrogram"],
-    ["gamma"]
-], sharex=True, gridspec_kw={'height_ratios': [1, 8, 8, 8, 8], 'hspace': 0.05})
+], sharex=True, gridspec_kw={'height_ratios': [1, 8, 8, 8], 'hspace': 0.05})
 time = np.arange(0, len(lfp)/fs, 1/fs)
 
 nsr_seg, perc_overlap, vm = 1, 0.8, 3000
@@ -94,7 +93,8 @@ axs['lfp'].set_ylabel('LFP')
 
 # Mark phasic states on the plot
 for rem_interval in pt.rem_intervals:
-  axs['lfp'].axvspan(rem_interval['start'].item(), rem_interval['end'].item(), color='black', alpha=0.1)
+    rem_start, rem_end = rem_interval['start'].item(), rem_interval['end'].item()
+    axs['lfp'].axvspan(rem_start, rem_end, color='black', alpha=0.1)
 
 [axs['lfp'].axvspan(phasic_interval['start'].item(), phasic_interval['end'].item(), color='r', alpha=0.5) for phasic_interval in pt.phasic_intervals]
 
@@ -117,16 +117,6 @@ axs["iti"].axhline(y=pt.thresholds[0], color='r', linestyle='--')
 axs["iti"].axhline(y=pt.thresholds[1], color='y', linestyle='--')
 axs["iti"].set_ylabel("ITI")
 
-# Gamma power
-freq, t, SP = spectrogram(lfp, fs=fs, window='hann', 
-                          nperseg=int(fs), 
-                          noverlap=int(fs * 0.8))
-gamma = (50, 90)
-df = freq[1] - freq[0]
-igamma = np.where((freq >= gamma[0]) & (freq <= gamma[1]))[0]
-pow_gamma = SP[igamma,:].sum(axis=0) * df
-axs["gamma"].plot(t, pow_gamma, '.-')
-axs["gamma"].set_ylabel(r'$\gamma$')
 # axs['gamma'].set_xlim((rem_interval['start'], rem_interval['end']))
 # %%
 # 

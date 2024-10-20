@@ -3,7 +3,7 @@
 Using PhasicTonic class
 =========================
 
-`PhasicTonic` provides methods on detecting phasic and tonic states and computing simple statistical results.
+`PhasicTonic` provides methods on analysing phasic and tonic states.
 This tutorial covers how it is used.
 """
 
@@ -11,7 +11,6 @@ This tutorial covers how it is used.
 import os
 from urllib.request import urlretrieve
 
-import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
@@ -19,7 +18,7 @@ from phasic_tonic.analysis import PhasicTonic
 
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
 sns.set_theme(context='notebook', style="white", rc=custom_params)
-# %% 
+# %%
 # ***
 # Preparing the data
 # ------------------
@@ -35,18 +34,19 @@ data = np.load(file, allow_pickle=True)
 
 hypnogram = data['hypnogram']
 lfp = data['lfp_hpc']
-fs = 500 # Sampling rate
+fs = 500  # Sampling rate
 
 # %%
 # ***
 # Initialize a `PhasicTonic` instance
 # -------------------------------------
-# The `PhasicTonic` class uses same detection algorithm as `detect_phasic`. It classifies non phasic REM intervals
-# as tonic REM states.
-pt = PhasicTonic(fs=fs, thr_dur=900)  # thr_dur is the threshold duration of phasic REM epoch in milliseconds
+# The `PhasicTonic` class uses same detection algorithm as `detect_phasic`.
+# It classifies non phasic REM intervals as tonic REM states.
+pt = PhasicTonic(fs=fs)
 results = pt.detect(eeg=lfp, hypno=hypnogram)
 # %%
-# The returned dictionary contains: both phasic and tonic intervals as [IntervalSet](https://pynapple.org/reference/core/interval_set/) objects from Pynapple.
+# The returned dictionary contains: both phasic and tonic intervals as
+# [IntervalSet](https://pynapple.org/reference/core/interval_set/) objects from Pynapple.
 print(results.keys())
 print(results['phasic_intervals'])
 

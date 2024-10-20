@@ -7,12 +7,13 @@ import warnings
 
 from .core import get_rem_epochs, compute_thresholds, get_phasic_candidates, is_valid_phasic
 
+
 def detect_phasic(
     eeg: np.ndarray, 
     hypno: np.ndarray, 
     fs: float, 
     thr_dur: float = 900
-    ) -> Dict[Tuple[int, int], List[Tuple[int, int]]]:
+) -> Dict[Tuple[int, int], List[Tuple[int, int]]]:
     """
     Detect phasic REM periods in EEG data based on the method described by Mizuseki et al. (2011).
     

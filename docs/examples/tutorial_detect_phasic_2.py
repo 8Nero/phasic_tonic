@@ -32,7 +32,7 @@ data = np.load(file, allow_pickle=True)
 
 hypnogram = data['hypnogram']
 lfp = data['lfp_hpc']
-fs = 500 # Sampling rate
+fs = 500  # Sampling rate
 # %%
 # ***
 # Selecting REM epochs
@@ -166,7 +166,7 @@ from phasic_tonic.core import get_phasic_candidates
 
 candidates = get_phasic_candidates(smooth_diffs, troughs, thresh_10, thr_dur=900, fs=fs)
 print(candidates)
-#%%
+# %%
 # In general, candidate epochs are region where inter-trough intervals are less than
 # the 10th percentile. The candidate epochs are considered phasic REM epochs if following criteria is fulfullied:
 ###############################################################################
@@ -208,8 +208,8 @@ axes[1].set_xlabel('Time (s)')
 axes[1].axhline(y=thresh_5, color='r', linestyle='--')
 axes[1].axhline(y=thresh_10, color='y', linestyle='--')
 for start, end in valid_periods:
-  axes[0].axvspan(start/fs, end/fs, alpha=0.2, color='r')
-  axes[1].axvspan(start/fs, end/fs, alpha=0.2, color='r')
+    axes[0].axvspan(start/fs, end/fs, alpha=0.2, color='r')
+    axes[1].axvspan(start/fs, end/fs, alpha=0.2, color='r')
 # %%
 # We can also verify that
 period = valid_periods[0]

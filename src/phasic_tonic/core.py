@@ -7,6 +7,7 @@ import numpy as np
 from scipy.signal import hilbert
 from neurodsp.filt import filter_signal
 
+
 def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float):
     """
     Compute thresholds for detecting phasic REM periods.
@@ -36,7 +37,7 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
     """
     if not rem_epochs:
         raise ValueError("The rem_epochs is empty.")
-    
+
     all_trough_diffs = []
     all_inst_amplitudes = []
     epoch_amplitudes = {}
@@ -81,12 +82,13 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
     
     return thresholds, epoch_trough_idx, epoch_smooth_diffs, epoch_amplitudes
 
+
 def is_valid_phasic(
     smoothed_diffs_slice: np.ndarray, 
     inst_amp_slice: np.ndarray, 
     threshold_percentile_5: float, 
     mean_amplitude_threshold: float
-    ) -> bool:
+) -> bool:
     """
     Determine if a candidate phasic REM period is valid based on thresholds.
 
@@ -110,13 +112,14 @@ def is_valid_phasic(
     mean_amp = np.mean(inst_amp_slice)
     return (min_smoothed_diff <= threshold_percentile_5) and (mean_amp >= mean_amplitude_threshold)
 
+
 def get_phasic_candidates(
     smoothed_trough_differences: np.ndarray, 
     trough_indices: np.ndarray, 
     threshold_percentile_10: float, 
     thr_dur: float, 
     fs: float
-    ) -> List[Tuple[int, int]]:
+) -> List[Tuple[int, int]]:
     """
     Identify candidate phasic REM periods based on smoothed trough differences.
 
@@ -144,13 +147,14 @@ def get_phasic_candidates(
     candidates = []
     for start, end in cand:
         if end < len(trough_indices):
-            end += 1 # Add 1 to `end` to align with `trough_indices`
+            end += 1  # Add 1 to `end` to align with `trough_indices`
 
         # Compute duration in milliseconds
         duration_ms = ((trough_indices[end] - trough_indices[start]) / fs) * 1000
         if duration_ms >= thr_dur:  
             candidates.append((start, end))
     return candidates
+
 
 def preprocess_rem_epoch(epoch: np.ndarray, fs: float) -> Tuple[np.ndarray, np.ndarray]:
     """
@@ -175,6 +179,7 @@ def preprocess_rem_epoch(epoch: np.ndarray, fs: float) -> Tuple[np.ndarray, np.n
     analytic_signal = hilbert(epoch)
     return np.angle(analytic_signal), np.abs(analytic_signal)
 
+
 def detect_troughs(signal: np.ndarray, threshold: float = -3.0) -> np.ndarray:
     """
     Detect troughs in a signal that fall below a specified threshold.
@@ -196,6 +201,7 @@ def detect_troughs(signal: np.ndarray, threshold: float = -3.0) -> np.ndarray:
     thidx = np.where(signal[1:-1] < threshold)[0]
     return np.intersect1d(lidx, np.intersect1d(ridx, thidx)) + 1
 
+
 def smooth_signal(signal: np.ndarray, window_size: int = 11) -> np.ndarray:
     """
     Apply a moving average filter to smooth a signal.
@@ -214,6 +220,7 @@ def smooth_signal(signal: np.ndarray, window_size: int = 11) -> np.ndarray:
     """
     filt = np.ones(window_size) / window_size
     return np.convolve(signal, filt, 'same')
+
 
 def get_sequences(a: np.ndarray, ibreak: int = 1) -> List[Tuple[int, int]]:
     """
@@ -248,6 +255,7 @@ def get_sequences(a: np.ndarray, ibreak: int = 1) -> List[Tuple[int, int]]:
     
     return sequences
 
+
 def get_segments(idx: List[Tuple[int, int]], signal: np.ndarray) -> List[np.ndarray]:
     """
     Extract segments of a signal between specified start and end sample indices.
@@ -273,11 +281,13 @@ def get_segments(idx: List[Tuple[int, int]], signal: np.ndarray) -> List[np.ndar
     
     return segments
 
+
 def get_rem_epochs(
     eeg: np.ndarray, 
     hypno: np.ndarray, 
     fs: int, 
-    min_dur: float = 3) -> Dict[Tuple[int, int], np.ndarray]:
+    min_dur: float = 3
+) -> Dict[Tuple[int, int], np.ndarray]:
     """
     Extract REM sleep epochs from EEG data based on a hypnogram.
 
@@ -305,7 +315,7 @@ def get_rem_epochs(
     ValueError
         If no REM epochs longer than `min_dur` seconds are found.
     """
-    rem_seq = get_sequences(np.where(hypno == 5)[0]) # Assuming 5 represents REM sleep
+    rem_seq = get_sequences(np.where(hypno == 5)[0])  # Assuming 5 represents REM sleep
     rem_idx = [(start * fs, (end + 1) * fs) for start, end in rem_seq if (end - start) > min_dur]
    
     if not rem_idx:
@@ -313,6 +323,7 @@ def get_rem_epochs(
    
     rem_epochs = get_segments(rem_idx, eeg)
     return {seq: seg for seq, seg in zip(rem_seq, rem_epochs)}
+
 
 def get_start_end(sleep_states: np.ndarray, sleep_state_id: int) -> Tuple[List[int], List[int]]:
     """Get start and end indices for a specific sleep state."""

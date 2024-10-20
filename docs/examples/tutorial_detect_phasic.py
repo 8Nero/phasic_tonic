@@ -13,6 +13,8 @@ from urllib.request import urlretrieve
 import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
+
+from phasic_tonic.detect import detect_phasic
 # mkdocs_gallery_thumbnail_number = 4
 
 custom_params = {"axes.spines.right": False, "axes.spines.top": False}
@@ -33,7 +35,7 @@ data = np.load(file, allow_pickle=True)
 
 hypnogram = data['hypnogram']
 lfp = data['lfp_hpc']
-fs = 500 # Sampling rate
+fs = 500  # Sampling rate
 # %%
 # ***
 # Plotting the hypnogram
@@ -60,8 +62,6 @@ ax.set_ylabel('LFP')
 # ***
 # Calling the `detect_phasic` function
 # ------------------------------------
-from phasic_tonic.detect import detect_phasic
-
 phasicREM = detect_phasic(lfp, hypnogram, fs)
 # %%
 # ***
@@ -84,14 +84,13 @@ ax.set_ylabel('LFP')
 
 # Mark phasic states on the plot
 for rem_timestamp, phasic_epochs in phasicREM.items():
-  ax.axvspan(rem_timestamp[0], rem_timestamp[1], color='black', alpha=0.2)  
-  for event in phasic_epochs:
-    ax.axvspan(event[0]/fs, event[1]/fs, color='red', alpha=0.5)
+    ax.axvspan(rem_timestamp[0], rem_timestamp[1], color='black', alpha=0.2)  
+    for event in phasic_epochs:
+      ax.axvspan(event[0]/fs, event[1]/fs, color='red', alpha=0.5)
 
 # %%
 # Create a grid of subplots for REM episodes
-# -------------   
-
+# -------------
 fig, axes = plt.subplots(2, 2, constrained_layout=True, figsize=(12, 8))
 axes = axes.flatten()
 
@@ -110,6 +109,6 @@ for i, (rem_timestamp, phasic_epochs) in enumerate(phasicREM.items()):
     ax.spines.right.set_visible(False)
     
     for event in phasic_epochs:
-      ax.axvspan(event[0] / fs, event[1] / fs, color='red', alpha=0.5)
+        ax.axvspan(event[0] / fs, event[1] / fs, color='red', alpha=0.5)
 
     ax.set_xlim(start_time, end_time)
