@@ -8,16 +8,16 @@
 `phasic_tonic` is a python package for analysing phasic and tonic REM states from electrophysiological signals.
 
 It implements a threshold-based signal processing algorithm for detecting phasic substates within REM sleep.
-`phasic_tonic` is intended for researchers working with sleep data and looking to classify REM sleep into more granular substates for further study.
+`phasic_tonic` is intended for researchers working with sleep data and looking to classify REM sleep into further substates.
 
 <!-- ![pic1](detect_phasic_001.png) -->
 <p align="center">
   <img width="70%" src="docs/images/detect_phasic_001.png">
 </p>
 
-<!-- ![pic1](detect_phasic_002.png) -->
+<!-- ![pic1](phasic_tonic_visualize.png) -->
 <p align="center">
-  <img width="70%" src="docs/images/detect_phasic_002.png">
+  <img width="70%" src="docs/images/phasic_tonic_visualize.png">
 </p>
 
 ## Key Features
