@@ -16,7 +16,7 @@ It implements a threshold-based signal processing algorithm for detecting phasic
 
 # <div style="text-align: center;"> <img src="images/detect_phasic_001.png" width="70%" alt="phasic tonic image."> </div>
 
-# <div style="text-align: center;"> <img src="images/detect_phasic_002.png" width="70%" alt="phasic tonic image."> </div>
+# <div style="text-align: center;"> <img src="images/phasic_tonic_visualize.png" width="70%" alt="phasic tonic image."> </div>
 
 ## Key Features
 
