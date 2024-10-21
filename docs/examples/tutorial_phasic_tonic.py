@@ -2,12 +2,12 @@
 """
 Using PhasicTonic class
 =========================
-
-`PhasicTonic` provides methods on analysing phasic and tonic states.
-This tutorial covers how it is used.
+This tutorial covers how `PhasicTonic` is used for analysing phasic and tonic substates of REM sleep.
 """
-
-# %% Importing libraries
+# %%
+# *** 
+# Importing libraries
+# -------------------
 import os
 from urllib.request import urlretrieve
 
@@ -40,17 +40,19 @@ fs = 500  # Sampling rate
 # ***
 # Initialize a `PhasicTonic` instance
 # -------------------------------------
-# The `PhasicTonic` class uses same detection algorithm as `detect_phasic`.
-# It classifies non phasic REM intervals as tonic REM states.
+# The `detect` method uses same detection algorithm as `detect_phasic`,
+# with the addition of detecting tonic states. 
+# The tonic states are classified as non-phasic intervals in the REM sleep.
 pt = PhasicTonic(fs=fs)
 results = pt.detect(eeg=lfp, hypno=hypnogram)
 # %%
-# The returned dictionary contains: both phasic and tonic intervals as
+# The returned dictionary contains phasic and tonic intervals as
 # [IntervalSet](https://pynapple.org/reference/core/interval_set/) objects from Pynapple.
 print(results.keys())
 print(results['phasic_intervals'])
-
 # %%
-# `compute_stats` method can be used for computing statistics of phasic and tonic states.
+# The `compute_stats` method can be used for computing statistics of phasic and tonic states.
 stats = pt.compute_stats()
 print(stats)
+# %%
+# 

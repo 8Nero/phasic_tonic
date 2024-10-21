@@ -10,7 +10,7 @@ from neurodsp.filt import filter_signal
 
 def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float):
     """
-    Compute thresholds for detecting phasic REM periods.
+    Compute thresholds for detecting phasic REM epochs.
 
     Parameters
     ----------
@@ -18,7 +18,7 @@ def compute_thresholds(rem_epochs: Dict[Tuple[int, int], np.ndarray], fs: float)
         Dictionary where keys are tuples indicating the start and end times of REM epochs (in seconds),
         and values are the corresponding EEG signal segments.
     fs : float
-        Sampling frequency.
+        Sampling rate, in Hz.
 
     Returns
     -------
@@ -90,7 +90,7 @@ def is_valid_phasic(
     mean_amplitude_threshold: float
 ) -> bool:
     """
-    Determine if a candidate phasic REM period is valid based on thresholds.
+    Determine if a candidate phasic REM period passes the thresholds.
 
     Parameters
     ----------
@@ -99,9 +99,9 @@ def is_valid_phasic(
     inst_amp_slice : np.ndarray
         Array of instantaneous amplitudes for the candidate period.
     threshold_percentile_5 : float
-        5th percentile threshold for smoothed trough differences.
+        5th percentile of smoothed trough differences across all epochs.
     mean_amplitude_threshold : float
-        Mean amplitude threshold for validating phasic activity.
+        Mean instantaneous amplitude across all REM epochs.
 
     Returns
     -------
@@ -130,11 +130,11 @@ def get_phasic_candidates(
     trough_indices : np.ndarray
         Array of trough indices in the EEG signal.
     threshold_percentile_10 : float
-        10th percentile threshold for smoothed trough differences.
+        10th percentile of smoothed trough differences across all epochs.
     thr_dur : float
-        Minimum duration for a phasic period in milliseconds.
+        Minimum duration for a phasic epoch in milliseconds.
     fs : float
-        Sampling frequency.
+        Sampling rate, in Hz.
 
     Returns
     -------
@@ -158,22 +158,22 @@ def get_phasic_candidates(
 
 def preprocess_rem_epoch(epoch: np.ndarray, fs: float) -> Tuple[np.ndarray, np.ndarray]:
     """
-    Preprocess a REM epoch by applying a bandpass filter and computing the Hilbert transform.
+    Preprocess a REM epoch by filtering in theta band and compute the Hilbert transform.
 
     Parameters
     ----------
     epoch : np.ndarray
         EEG signal segment for a REM epoch.
     fs : float
-        Sampling frequency.
+        Sampling rate, in Hz.
 
     Returns
     -------
     Tuple[np.ndarray, np.ndarray]
         A tuple containing:
         
-            - Instantaneous phase of the EEG signal.
-            - Instantaneous amplitude of the EEG signal.
+            - Instantaneous phase.
+            - Instantaneous amplitude.
     """
     epoch = filter_signal(epoch, fs, 'bandpass', (5, 12), remove_edges=False)
     analytic_signal = hilbert(epoch)
@@ -296,11 +296,9 @@ def get_rem_epochs(
     eeg : np.ndarray
         EEG signal array.
     hypno : np.ndarray
-        Hypnogram array where each element represents an epoch of sleep stage.
-        Assumes that the value `5` corresponds to REM sleep.
-        Assumes 1 second epoch.
+        Hypnogram array. Expects an array of 1-second epochs where REM stage corresponds to value '5'.
     fs : int
-        Sampling frequency.
+        Sampling rate, in Hz.
     min_dur : float, optional
         Minimum duration for a REM epoch in seconds. Defaults to 3.
 

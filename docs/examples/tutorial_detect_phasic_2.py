@@ -5,7 +5,8 @@ Understanding the detect_phasic algorithm
 The `detect_phasic` function is a threshold based algorithm for identifying phasic REM states within Local Field Potential (LFP) data.
 This tutorial covers the implementation of [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894)
 """
-# %% Importing libraries
+# %% 
+# Importing libraries
 import os
 from urllib.request import urlretrieve
 

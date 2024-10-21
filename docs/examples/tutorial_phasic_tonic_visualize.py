@@ -3,19 +3,20 @@
 Visualizing phasic and tonic REM states
 =======================================
 
-We cover how `PhasicTonic` detector can be used to create 
+This tutorial covers an example of how `PhasicTonic` detector instance can be used to create
 visualizations of phasic and tonic REM detections.
 """
-
-# %% Importing libraries
+# %% 
+# Importing libraries
 import os
 from urllib.request import urlretrieve
 
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+
 from matplotlib.colors import LinearSegmentedColormap
 from scipy.signal import spectrogram
-import seaborn as sns
 
 from phasic_tonic.analysis import PhasicTonic
 
@@ -41,17 +42,20 @@ fs = 500  # Sampling rate
 
 # %%
 # ***
-# Phasic REM detection
+# Detection
 # --------------------
-# We use `get_intermediate_values` method to get intermediate values used for detection.
 
 # Instantiate the PhasicTonic class
 pt = PhasicTonic(fs=fs)
 
-# Detect phasic REM states
+# Detect phasic and tonic REM states
 pt.detect(lfp, hypnogram)
 
-# Access detection results
+# %%
+# ***
+# Access intermediate values
+# --------------------
+# We can access the thresholds and intermediate values used for detection from the attributes.
 rem_intervals = pt.rem_intervals
 phasic_intervals = pt.phasic_intervals
 thresholds = pt.thresholds
@@ -116,6 +120,5 @@ for epoch in pt.rem_intervals:
 axs["iti"].axhline(y=pt.thresholds[0], color='r', linestyle='--')
 axs["iti"].axhline(y=pt.thresholds[1], color='y', linestyle='--')
 axs["iti"].set_ylabel("ITI")
-# axs['iti'].set_xlim((rem_interval['start'], rem_interval['end']))
 # %%
 # 

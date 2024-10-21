@@ -1,5 +1,5 @@
 """
-This module provides the `detect_function` for detecting phasic REM sleep periods in EEG data.
+This module provides the `detect_phasic` function for detecting phasic REM sleep epochs in EEG data.
 """
 from typing import Dict, List, Tuple
 import numpy as np
@@ -11,27 +11,38 @@ from .core import get_rem_epochs, compute_thresholds, get_phasic_candidates, is_
 def detect_phasic(
     eeg: np.ndarray, 
     hypno: np.ndarray, 
-    fs: float, 
-    thr_dur: float = 900
+    fs: int, 
+    thr_dur: int = 900
 ) -> Dict[Tuple[int, int], List[Tuple[int, int]]]:
     """
-    Detect phasic REM periods in EEG data based on the method described by Mizuseki et al. (2011).
+    Detect phasic REM epochs in EEG data based on the method described by Mizuseki et al. (2011).
     
     Parameters
     ----------
     eeg : np.ndarray
-        EEG signal.
+        EEG signal array.
     hypno : np.ndarray
-        Hypnogram array.
-    fs : float
-        Sampling frequency.
-    thr_dur : float, optional
-        Minimum duration threshold for phasic REM in milliseconds, by default 900.
+        Hypnogram array. Expects an array of 1-second epochs where REM stage corresponds to value '5'.
+    fs : int
+        Sampling rate, in Hz.
+    thr_dur : int, optional
+        Minimum duration threshold for a phasic REM epoch in milliseconds, by default 900.
 
     Returns
     -------
     Dict[Tuple[int, int], List[Tuple[int, int]]]
-        Dictionary of detected phasic REM periods for each REM epoch.
+        Dictionary where keys are tuples indicating the start and end times of REM epochs (in seconds),
+        and values are list of tuples indicating the start and end times of detected phasic REM epochs (in samples).
+
+    Raises
+    ------
+    ValueError
+        If `eeg` or `hypno` is not a NumPy array.
+        If the length of `eeg` does not match the expected length based on `hypno` and `fs`.
+
+    Warnings
+    --------
+    Warns if the EEG signal is longer than the hypnogram and trims it to match the hypnogram length.
     """
     if not isinstance(eeg, np.ndarray):
         raise ValueError("EEG must be a numpy array.")

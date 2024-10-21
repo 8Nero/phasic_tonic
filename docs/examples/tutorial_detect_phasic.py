@@ -3,10 +3,12 @@
 Using the detect_phasic function
 ==================================
 
-The `detect_phasic` function detects phasic REM periods in EEG data based on the method described by [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894).
+The `detect_phasic` function detects phasic REM periods in EEG data based on the method 
+described by [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894).
 This tutorial covers the use of `detect_phasic` function.
 """
-# %% Importing libraries
+# %% 
+# Importing libraries
 import os
 from urllib.request import urlretrieve
 
@@ -67,8 +69,9 @@ phasicREM = detect_phasic(lfp, hypnogram, fs)
 # ***
 # Analysing the output
 # --------------------
-# The function returns a dictionary where each key is a tuple of REM epoch timestamps in seconds, and the 
-# corresponding value is a list of phasic REM epochs in sampling points.
+# The function returns a dictionary where keys are tuples indicating the start and end times of 
+# REM epochs (in seconds), and values are list of tuples indicating the start and end times of 
+# detected phasic REM epochs (in samples).
 for rem_timestamp, phasic_epochs in phasicREM.items():
     print(f"REM Epoch: {rem_timestamp}, detected phasic REM epochs: {phasic_epochs}")
 # %%
@@ -89,7 +92,7 @@ for rem_timestamp, phasic_epochs in phasicREM.items():
       ax.axvspan(event[0]/fs, event[1]/fs, color='red', alpha=0.5)
 
 # %%
-# Create a grid of subplots for REM episodes
+# Visualize phasic states for each REM epochs
 # -------------
 fig, axes = plt.subplots(2, 2, constrained_layout=True, figsize=(12, 8))
 axes = axes.flatten()
