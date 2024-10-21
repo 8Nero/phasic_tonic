@@ -3,7 +3,7 @@ Understanding the detect_phasic algorithm
 ===========================================
 
 The `detect_phasic` function is a threshold based algorithm for identifying phasic REM states within Local Field Potential (LFP) data.
-This tutorial covers the implementation of [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894).
+This tutorial covers the implementation of [Mizuseki et al. (2011)](https://doi.org/10.1038/nn.2894)
 """
 # %% Importing libraries
 import os
@@ -47,7 +47,6 @@ print(rem_epochs)
 # Bandpass filtering in the Theta region
 # --------------------------------------
 # We will isolate the theta frequency band (5-12 Hz) from the LFP.
-###############################################################################
 # Phasic REM states are characterized by transient accelerations in theta rhythm, typically lasting around 2 seconds.
 # During these events, there's an increase in high-frequency oscillations and enhanced coherence within hippocampal circuits, particularly between theta and gamma bands.
 # This enhanced activity is believed to facilitate memory consolidation by boosting communication between the hippocampus and neocortical regions, such as the retrosplenial cortex, allowing for effective information transfer during these brief windows of heightened connectivity. [Gomes de Almeida-Filho et al. (2021)](https://doi.org/10.1038/s41598-021-91659-5)
@@ -69,11 +68,8 @@ ax.legend(['Original', 'Filtered'])
 # ***
 # Hilbert Transform for Instantaneous Amplitude and Phase
 # -------------------------------------------------------
-# Extract the instantaneous amplitude and phase of the theta-band filtered LFP signal.
-###############################################################################
-# 1.   Apply the Hilbert transform to the bandpass-filtered LFP to obtain the analytic signal.
-###############################################################################
-# 2.   Compute the instantaneous amplitude (envelope) and instantaneous phase from the analytic signal.
+# We apply Hilbert transform to the theta oscillation to obtain its analytic signal representation.
+# We then compute the instantaneous amplitude (envelope) and instantaneous phase from the analytic signal.
 from scipy.signal import hilbert
 
 analytic_signal = hilbert(epoch_filt)

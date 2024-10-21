@@ -116,7 +116,6 @@ for epoch in pt.rem_intervals:
 axs["iti"].axhline(y=pt.thresholds[0], color='r', linestyle='--')
 axs["iti"].axhline(y=pt.thresholds[1], color='y', linestyle='--')
 axs["iti"].set_ylabel("ITI")
-
-# axs['gamma'].set_xlim((rem_interval['start'], rem_interval['end']))
+# axs['iti'].set_xlim((rem_interval['start'], rem_interval['end']))
 # %%
 # 
