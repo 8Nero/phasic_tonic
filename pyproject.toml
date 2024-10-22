@@ -33,7 +33,8 @@ docs = [
     'mkdocs-gallery',
     'pillow',
     'seaborn',
-    'matplotlib'
+    'matplotlib',
+    'pooch'
 ]
 dev = [
     "black",                        # Code formatter
