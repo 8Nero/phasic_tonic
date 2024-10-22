@@ -34,7 +34,8 @@ docs = [
     'pillow',
     'seaborn',
     'matplotlib',
-    'pooch'
+    'pooch',
+    'pynapple'
 ]
 dev = [
     "black",                        # Code formatter
