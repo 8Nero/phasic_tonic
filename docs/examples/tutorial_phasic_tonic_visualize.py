@@ -8,8 +8,7 @@ visualizations of phasic and tonic REM detections.
 """
 # %% 
 # Importing libraries
-import os
-from urllib.request import urlretrieve
+import pooch
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -27,14 +26,13 @@ sns.set_theme(context='notebook', style="white", rc=custom_params)
 # Preparing the data
 # ------------------
 # We download an example data.
-file = 'ex02.npz'
-if file not in os.listdir("."):
-    urlretrieve("https://raw.githubusercontent.com/8Nero/phasic_tonic/main/data/ex02.npz", file)
+f_path = pooch.retrieve("https://raw.githubusercontent.com/8Nero/phasic_tonic/main/data/ex02.npz",
+                        known_hash="382aa2be86f73ebbf24a9b759a47e35d1d751e161c280ff027bcf9f1068de674")
 # %%
 # ***
 # Loading the data
 # ----------------
-data = np.load(file, allow_pickle=True)
+data = np.load(f_path, allow_pickle=True)
 
 hypnogram = data['hypnogram']
 lfp = data['lfp_hpc']

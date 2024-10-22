@@ -8,8 +8,7 @@ This tutorial covers how `PhasicTonic` is used for analysing phasic and tonic su
 # *** 
 # Importing libraries
 # -------------------
-import os
-from urllib.request import urlretrieve
+import pooch
 
 import numpy as np
 import seaborn as sns
@@ -23,14 +22,13 @@ sns.set_theme(context='notebook', style="white", rc=custom_params)
 # Preparing the data
 # ------------------
 # We download an example data.
-file = 'ex01.npz'
-if file not in os.listdir("."):
-    urlretrieve("https://raw.githubusercontent.com/8Nero/phasic_tonic/main/data/ex01.npz", file)
+f_path = pooch.retrieve("https://raw.githubusercontent.com/8Nero/phasic_tonic/main/data/ex01.npz", 
+                        known_hash="11e579b9305859db9101ba3e227e2d9a72008423b3ffe2ad9a8fee1765236663")
 # %%
 # ***
 # Loading the data
 # ----------------
-data = np.load(file, allow_pickle=True)
+data = np.load(f_path, allow_pickle=True)
 
 hypnogram = data['hypnogram']
 lfp = data['lfp_hpc']

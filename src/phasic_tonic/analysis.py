@@ -4,8 +4,12 @@ This module provides the `PhasicTonic` class for detecting phasic and tonic REM 
 from typing import Dict
 import numpy as np
 import pandas as pd
-import pynapple as nap
 import warnings
+
+try:
+    import pynapple as nap
+except ImportError:
+    pynapple = None
 
 from .core import compute_thresholds, get_rem_epochs, get_phasic_candidates, is_valid_phasic, get_start_end
 
@@ -53,6 +57,13 @@ class PhasicTonic:
         thr_dur : int, optional
             Minimum duration threshold for a phasic REM epoch in milliseconds, by default 900.
         """
+        if pynapple is None:
+            raise ImportError(
+            "Missing optional dependency 'pynapple'."
+            " Please use pip or "
+            "conda to install 'pynapple'."
+                )
+
         self.fs = fs
         self.thr_dur = thr_dur
         self.rem_intervals = None
