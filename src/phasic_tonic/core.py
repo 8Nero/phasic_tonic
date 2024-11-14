@@ -325,11 +325,12 @@ def get_rem_epochs(
     return {seq: seg for seq, seg in zip(rem_seq, rem_epochs)}
 
 
-def get_start_end(sleep_states: np.ndarray, sleep_state_id: int) -> Tuple[List[int], List[int]]:
+def get_start_end(sleep_states: np.ndarray, sleep_state_id: int, min_dur: float = 3) -> Tuple[List[int], List[int]]:
     """Get start and end indices for a specific sleep state."""
     seq = get_sequences(np.where(sleep_states == sleep_state_id)[0])
     start, end = [], []
     for s, e in seq:
-        start.append(s)
-        end.append(e)
+        if (e-s) > min_dur:
+            start.append(s)
+            end.append(e)
     return (start, end)
